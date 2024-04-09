@@ -1,0 +1,156 @@
+
+/*BACKGROUND*/
+
+body {
+  background: linear-gradient(to bottom right, rgba(222, 200, 183, 0.8), rgba(222, 218, 219, 1.0));
+}
+
+/*TOP NAV BAR CODE */
+
+.Home, .Projects, .Resume {
+    list-style: none;
+    display: inline-block;
+}
+
+.Home a, .Projects a, .Resume a {
+    color: black; 
+    font-size: 20px;
+    font-weight: 300;
+    text-decoration: none;
+    font-family: "Work Sans"
+}
+
+.navbar {
+    display: flex;
+    justify-content: center; /* Centers the flex items horizontally and makes sure the border box is in the center*/
+  }
+
+  
+.navbar li {
+    margin: 10px;
+}
+
+.navbar ul li {
+    border-right: 0.5px solid black;
+    display: inline-block;
+    border-right: 1px solid black;
+    padding: 4px 40px;
+    position: relative;
+  }
+
+  .navbar ul li:last-child {
+    border-right: none;
+  }
+
+  .navbar ul {
+    border: 0.5px solid black; /* Sets a black border with 2px width around the <ul> element */
+    border-radius: 0px; /* Optional: Adds rounded corners to the border */
+    padding: 5px;
+  }
+  
+/*PROFILE PICTURE & INTRO CODE */
+
+#profile-pic img{
+  position: relative;
+  border-radius: 50%;
+  overflow: auto;
+  background-position: center;
+  width: 250px; /* Adjust the width and height to your desired size */
+  height: 250px;
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+.middle_section {
+  display: flex;
+  justify-content: center;
+  padding: 60px;
+  gap: 20px;
+  font-family: "Work Sans";
+  max-height: 300px;
+  margin-left: 20px;
+}
+
+#background_text {
+  max-width: 800px;
+}
+
+.MyName {
+  font-size: 50px;
+  margin-bottom: 5px;
+}
+
+.Intro {
+  font-size: 20px;
+  font-weight: 200;
+  width: 600px;
+  line-height: 1.5;
+  margin-left: 5px;
+}
+
+/*CIRCLE DESIGNS */
+
+.circle_group_1 {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  flex-direction: row;
+  margin-bottom: 150px;
+  padding: 5x;
+  flex: 1;
+}
+
+.circle_group_2 {
+  position: absolute; /* by doing absolute we remove it from the normal flow and can place it anywhere */
+  top: 0;
+  right: 0;
+}
+
+.circle_group_2 {
+  top: 0;
+  margin-left: 0;
+  display: flex;
+  flex-direction: column;
+  flex-direction: row;
+  padding: 10px;
+  margin-bottom: 20px;
+  flex: 1;
+}
+
+.column1, .column2, .column3, .column4, .column5, .column6{
+  padding: 5px;
+}
+
+.circle {
+  width: 20px; /* Adjust the width and height to change the size of the circles */
+  height: 20px;
+  background-color: rgba(142, 127, 118, 0.5); /* Change the color of the circles */
+  border-radius: 50%; /* Makes the divs circular */
+  margin-bottom: 7px; /* Adjust the margin bottom to add spacing between circles */
+}
+
+/* Scroll-to-top-button */
+
+.button_area {
+  display: flex;
+  justify-content: center;
+}
+
+.scroll-top-btn {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  background-color:rgba(135, 152, 168, 0.5);  /* Blue-ish background color */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 44px;
+  cursor: pointer;
+  margin-top: 60px;
+}
+
+.scroll-top-btn img {
+  width: 30px;
+  height: 30px;
+}
