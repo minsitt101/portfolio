@@ -16,3 +16,19 @@ window.onscroll = function() {
     scrollBtn.style.display = "none";
   }
 };
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.style.animation = 'fade-up'; // Apply fade-up animation
+    } else {
+      entry.target.style.animation = 'fade-down'; // Apply fade-down animation
+    }
+  });
+});
+
+// Get all elements with fade-up or fade-down animations
+const animatedElements = document.querySelectorAll('.fade-up, .fade-down');
+
+// Observe each animated element
+animatedElements.forEach((el) => observer.observe(el));

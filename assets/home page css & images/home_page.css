@@ -2,7 +2,13 @@
 /*BACKGROUND*/
 
 body {
-  background: linear-gradient(to bottom right, rgba(222, 200, 183, 0.8), rgba(222, 218, 219, 1.0));
+  background: linear-gradient(to bottom left, rgba(222, 200, 183, 0.8), rgba(222, 218, 219, 1.0));
+  margin: 0;
+}
+
+.content_section {
+  background: #F5F5F5;
+  margin-top: 220px;
 }
 
 /*TOP NAV BAR CODE */
@@ -23,6 +29,7 @@ body {
 .navbar {
     display: flex;
     justify-content: center; /* Centers the flex items horizontally and makes sure the border box is in the center*/
+    animation: fade-down 1.6s;
   }
 
   
@@ -58,9 +65,9 @@ body {
   width: 250px; /* Adjust the width and height to your desired size */
   height: 250px;
   border: 1px solid white;
-  border-radius: 50%;
   padding: 20px;
-  margin-top: 30px;
+  margin-top: 60px;
+  animation: fade-down 0.5s;
 }
 
 .middle_section {
@@ -80,14 +87,24 @@ body {
 .MyName {
   font-size: 50px;
   margin-bottom: 5px;
+  margin-left: 15px;
+  animation: fade-up 0.5s;
+}
+
+.Major {
+  font-size: 18px;
+  font-weight: 200;
+  margin-left: 20px;
+  animation: fade-up 4s;
 }
 
 .Intro {
   font-size: 20px;
-  font-weight: 200;
+  font-weight: 300;
   width: 600px;
   line-height: 1.5;
-  margin-left: 5px;
+  margin-left: 20px;
+  animation: fade-up 1s;
 }
 
 /*CIRCLE DESIGNS */
@@ -98,14 +115,16 @@ body {
   flex-direction: column;
   flex-direction: row;
   margin-bottom: 150px;
-  padding: 5x;
+  padding: 10px;
   flex: 1;
+  animation: fade-up 0.5s;
 }
 
 .circle_group_2 {
   position: absolute; /* by doing absolute we remove it from the normal flow and can place it anywhere */
   top: 0;
   right: 0;
+  animation: fade-up 0.5s;
 }
 
 .circle_group_2 {
@@ -150,7 +169,141 @@ body {
   margin-top: 60px;
 }
 
+.scroll-top-btn:hover {
+   transform: translateY(-10px);
+   background-color: rgba(135, 152, 168);
+   transition: transform 0.5s ease
+
+}
+
 .scroll-top-btn img {
   width: 30px;
   height: 30px;
+}
+
+/*Project Overveview Title */
+
+.content_section {
+  display: flex;
+  flex-direction: row;
+  flex-direction: column;
+}
+
+.Project_Overview {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+
+.ProjectOverview {
+  font-family: "Work Sans";
+  font-size: 40px;
+  font-weight: 400;
+  border: 0.5px solid black; /* Sets a black border with 2px width around the <ul> element */
+  padding: 10px;
+  line-height: 10px;
+  display: flex;
+  justify-content: center;
+  width: 500px;
+}
+
+/* Snackpass Project Section */
+
+.Snackpass {
+  width: 100%;
+  display: flex;
+  /* flex-direction: row-reverse; if I want to inverse the picture and text */
+  justify-content: center;
+  align-items: center;
+  font-family: "Work Sans";
+}
+
+#Snackpass_project_text {
+  width: 600px; 
+}
+
+
+#Snackpass_showcase_picture img {
+  width: 350px; 
+  height: 350px; 
+  padding: 40px;
+  border-radius: 20%;
+}
+
+/*Botanical Garden Section*/
+
+.BotanicalGardens {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+  align-items: center;
+  font-family: "Work Sans";
+}
+
+#Botanical_showcase_picture img{
+  width: 350px; 
+  height: 350px; 
+  padding: 40px;
+  border-radius: 20%;
+}
+
+#Botanical_garden_project_text {
+  width: 500px; 
+}
+
+
+/*General Animations*/
+
+#Snackpass_showcase_picture img:hover,  #Botanical_showcase_picture img:hover {
+  transition: transform 0.3s ease;
+  transform: translateY(-10px);
+}
+
+/*General Content Fonts */
+
+.ProjectTitle {
+  font-weight: bold;
+  font-size: 30px;
+  padding: 0px;
+
+}
+
+.Summary {
+  font-size: 20px;
+  font-weight: 300px;
+}
+
+/* KEY FRAMES & ANIMATIONS */
+
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(30px) scale(0.9);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
+}
+
+@keyframes fade-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px) scale(0.9);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
+}
+
+.fade-up{
+  animation: fade-up 0.4s
+}
+
+.fade-down {
+  animation: fade-down 0.4s
 }
