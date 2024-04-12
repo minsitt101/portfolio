@@ -1,0 +1,55 @@
+
+body {
+    margin: 0;
+}
+
+.top_section {
+    margin: 0;
+    background: linear-gradient(to bottom, rgba(222, 200, 183, 0.8), rgba(222, 218, 219, 1.0));
+    height: -100px;
+}
+
+.content_section {
+    background: blue;
+}
+
+.Home, .Projects, .Resume {
+    list-style: none;
+    display: inline-block;
+}
+
+.Home a, .Projects a, .Resume a {
+    color: black; 
+    font-size: 20px;
+    font-weight: 300;
+    text-decoration: none;
+    font-family: "Work Sans"
+}
+
+.navbar {
+    display: flex;
+    justify-content: center; /* Centers the flex items horizontally and makes sure the border box is in the center*/
+  }
+
+  
+.navbar li {
+    margin: 10px;
+}
+
+.navbar ul li {
+    border-right: 0.5px solid black;
+    display: inline-block;
+    border-right: 1px solid black;
+    padding: 4px 40px;
+    position: relative;
+  }
+
+  .navbar ul li:last-child {
+    border-right: none;
+  }
+
+  .navbar ul {
+    border: 0.5px solid black; /* Sets a black border with 2px width around the <ul> element */
+    border-radius: 0px; /* Optional: Adds rounded corners to the border */
+    padding: 5px;
+  }

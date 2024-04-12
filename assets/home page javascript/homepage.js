@@ -19,16 +19,14 @@ window.onscroll = function() {
 
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      entry.target.style.animation = 'fade-up'; // Apply fade-up animation
-    } else {
-      entry.target.style.animation = 'fade-down'; // Apply fade-down animation
-    }
+    console.log(entry)
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+      } else {
+        entry.target.classList.remove('show');
+      }
   });
 });
 
-// Get all elements with fade-up or fade-down animations
-const animatedElements = document.querySelectorAll('.fade-up, .fade-down');
-
-// Observe each animated element
-animatedElements.forEach((el) => observer.observe(el));
+const hiddenElements = document.querySelectorAll('.hidden');
+hiddenElements.forEach((el) => observer.observe(el));
