@@ -5,6 +5,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <script defer src="assets/home page javascript/snackpass.js"></script>
   </head>
 <body>
@@ -13,13 +14,184 @@
           <nav class="navbar">
             <div class="navdiv"></div>
             <ul>
-              <li class="Home"><a href="#">HOME</a></li>
+              <li class="Home"><a href="Home Page.html">HOME</a></li>
               <li class="Projects"><a href="#">PROJECTS</a></li>
               <li class="Resume"><a href="#">RESUME</a></li>
             </ul>
           </nav>
       </div>
-    <div class = "content_section"> 
-        <div class ="project_details">HI</div>
     </div>
+    <div class = "Content-Section">
+      <div class = "landing-page">
+        <div class = "Snackpass_Title"> 
+          <div class ="Title">SNACKPASS</div>
+        </div>
+        <div class = "Snackpass_one-liner">
+          <p>A personal project focused on improving user satisfaction with Snackpass's reward system, 
+            while introducing and refining gamification features to amplify its value proposition!</p>
+        </div>
+        <div class = "High-Fi-Prototypes">
+          <div id = Prototypes> <img src = "assets/Snackpass css & images/highlighted prototypes.jpg"> </div>
+        </div>
+      </div>
+      <div class = "Context"> 
+        <p class = "ContextTitle">Context</p>
+        <p class = "ContextSummary">Snackpass is a social food-pick-up app aimed at university students.
+          Users order ahead for pickup, earn loyalty points for discounts, and can gift friends. 
+          The app includes group-ordering discounts, in-app discounts, and a Venmo-like feed. 
+          Its gamification feature, "Chicken Coop," rewards users with coins for gifting, 
+          which can be exchanged for accessories to dress up virtual pet chickens.</p>
+        <div class = "Snackpass-Pages">
+          <div class = "Snackpass-Pictures-1"> 
+            <div class = Picture1>
+               <img src = "assets/Snackpass css & images/homepage.jpeg">
+               <img src = "assets/Snackpass css & images/Chicken.jpeg"> 
+               <img src = "assets/Snackpass css & images/discounts.jpeg">
+               <img src = "assets/Snackpass css & images/Store Points.jpeg"> 
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class = "ProblemStatement">
+        <p class ="ProblemStatementTitle">Problem Statement</p>
+        <p class = "Quote">"Too many orders required to receive free rewards to incentivize me to take advantage of it.” - Surveyed Snackpass user</p>
+        <p class = "SummaryOfProblem">After three years of using Snackpass, I've only managed to claim free rewards once due to the unattainable and slow nature of the current reward system. 
+          Consequently, I've found myself using Snackpass less frequently since there's little motivation unless it's purely convenient. 
+          Additionally, the "Chicken Coop" gamification feature feels disconnected and lacks appeal for users uninterested in dressing up virtual chickens. 
+          To address these issues, I aimed to enhance satisfaction and accessibility by proposing features that help users obtain rewards faster and aimed to
+          adjust current and add new gamification elements to increase user engagement overall to set Snackpass apart from other food pick-up/delivery apps.
+          </p>
+      </div>
+      <div class = "Validation">
+        <p class = "ValidationTitle">
+          Validation
+        </p>
+        <p class = "ValidationSummary">
+          Before developing any higher-fidelity prototypes, I surveyed 50+ Snackpass users to validate pain-points and solutions I had in mind. 
+          The survey was primarily aimed at understanding user gifting behavior, reward system attainability and opinions on the chicken coop feature. 
+        </p>
+        <p class = "ValidationSummary">Below are some main statistics and comments regarding user gifting behavior and the reward system:</p>
+        <div class = "Statistics">
+            <p class = "StatisticsLine"><span class="StatHighlight"><strong style="color: #8E7f76;">58.1%</strong></span>
+              of users said they would want points from friends for a few specific stores they frequent. </p>
+            <p class = "StatisticsLine"><span class="StatHighlight"><strong style="color: #8E7f76;">66.7%</strong></span> 
+              of users said Snackpass only feels slightly social. </p>
+            <p class = "StatisticsLine"><span class="SentenceHighlight"><strong style="color: #8E7f76;">"Too many orders required</strong></span> to recieve free rewards to incetivize 
+              me to take advantage of it."</p>
+            <p class = "StatisticsLine"><span class="StatHighlight"><strong style="color: #8E7f76;">73.8%</strong></span> 
+              of users said they rarely use the Chicken Coop feature and see no benefit to it. </p>
+            <p class = "StatisticsLine">"The Chicken Coop feature <span class="SentenceHighlight"><strong style="color: #8E7f76;">feels out of place</strong></span> and there is nothing I care about 
+              to use the coins for."</p>
+      </div>
+        <div class = "Takeaways"> 
+          <p class = "TakeawayTransition">From these statistics I was able to get the following <strong style="color: black;">takeaways:</strong></p>
+          <ul class="bullet-list">
+            <li class="list-item">Users prefer earning points from <strong style="color: black;">specific stores</strong> and like making progress towards them.</li>
+            <li class="list-item">They want a more <strong style="color: black;">attainable rewards system.</strong></li>
+            <li class="list-item">Opportunities exist to use <strong style="color: black;">gamification features to improve engagement.</strong></li>
+            <li class="list-item">Update the Chicken Coop feature to be relevant to <strong style="color: black;">core functionality of the app: food-delivery and rewards.</strong></li>
+          </ul>
+        </div>
+    </div>
+      <div class = "SolutionsProcess">
+        <div class ="SolutionsIntro">
+          <p class = "SolutionsProcessTitle">
+            Solutions Process: Wireframes </p>
+          <p class = "SolutionsTextIntro">With the takeaways in mind I went on to wire-frame solutions that aimed to solve 
+            the pain-points I discovered. This lead me to three components of the project: <span class="SentenceHighlight"><strong style="color: #8E7f76;">Favorite Store Feature, Leaderboards, Redesgining Chicken Coop.</strong></span> </p>
+          </div>
+        <div class = "FavoriteStoreFeature">
+          <p class = "FavoriteStoreFeatureTitle">
+            Favorite Store Wireframes
+          </p>
+        <div class = "Favorite-Store-Wireframes"> 
+            <div class = FavStoreWireframes1>
+               <img src = "assets/Snackpass css & images/Screenshot 2024-04-17 at 12.52.11 AM.jpg">
+            </div>
+            <div class = FavStoreWireframes2>
+               <img src = "assets/Snackpass css & images/Screenshot 2024-04-17 at 12.52.35 AM (2).jpg"> 
+            </div>
+        </div>
+        <div class = "FavStoreExplaination">
+              <p class = "FavStoreText">
+                The idea behind this feature is to allow users to set-up in their profile a "Favorite Store" they would like to get points from (Wireframe #2).
+                This would then be communicated to all the user's friends during their chance to send a gift (Wireframe #3). The hope is to 
+                generate more efficient point gifting and allow users to get points for stores they care about. This would help make the rewards program more attainabl
+                and satisfying as users would be getting rewards for stores they enjoy.
+              </p>
+        </div>
+      </div>
+      <div class = "LeaderboardFeature">
+        <p class = "LeaderboardTitle">
+          Leaderboard Wireframes
+        </p>
+      <div class = "Leaderboard-Wireframes"> 
+          <div class = LeaderboardWireframes1>
+             <img src = "assets/Snackpass css & images/Leaderboard Version 1.jpg">
+          </div>
+          <div class = LeaderboardWireframes2>
+             <img src = "assets/Snackpass css & images/Leaderboard Version 2.jpg"> 
+          </div>
+      </div>
+      <div class = "LeaderboardExplaination">
+            <p class = "LeaderboardText">
+              Leaderboards is an idea that came to mind since its a gamification feature that makes people compare themselevs and be competitive. Users at the top ranking can also
+              feel a sense of accomplishment and recognition and thus would be motivated to keep thier ranks. It also is able to showcase information in an interesting way--for example, 
+              imagine seeing someone order 80 bubble tea drinks in a year! This feature is thus aiming to increase user engagement and social aspect of Snackpass by creating conversations
+              between users and providing them more incentives to engage with the app. </p>
+            <p class = "LeaderboardText">
+              For the design, I researched how leaderboards are structured in various apps,  particularly gaming apps, to understand the best way to present ranking information. 
+               Created two initial sketches and proceeded with designing the second one, as it was more concise and focused in showcasing the information from 
+               the first sketch such as rankings, categories, annd specific store the rankings are based by. I borrowed the concept from my first sketch of filtering
+               based on the user's friends or local.
+            </p>
+      </div>
+      <div class = "ChickencoopFeature">
+        <p class = "ChickencoopTitle">
+          Chicken Coop Readjustment
+        </p>
+      <div class = "Favorite-Store-Wireframes"> 
+          <div class = ChickencoopWireframes1>
+             <img src = "assets/Snackpass css & images/Mindmapping.jpg">
+          </div>
+      </div>
+      <div class = "ChickenCoopExplaination">
+            <p class = "ChickencoopText">
+              After conducting the user surveys, I decided to make a mind-map to plan out and brainstorm solutions to key pain-points of the Chicken Coop Feature. From this mindmap,
+              the main-solutions I came up with was: </p>
+            <p class = "ChickencoopText">1. Link the Favorite Store feature to Chicken Coop by providing extra progress to hatching chicks if a 
+              user gives the points to their friends favorite store</p>
+            <p class = "ChickencoopText">2. A new gift-card system called SnackCards that allows users to convert coins collected from chickens into free rewards and discounts</p>
+      </div>
+    </div>
+    </div>
+     </div>
+    <div class = "FinalResults">
+      <p class = "FinalResultsTitle">
+        Final Prototype Showcases
+      </p>
+      <p class = "FinalResultsText">With the wirefames and mind-maps completed I went ahead and designed the high-fidelity prototypes! Designs 
+        were made with accessibility in mind such as color-contrast, typography readiblity, reachibility, and more! 
+      </p>
+    </div>
+    <div class = "Reflection">
+      <p class = "ReflectionTitle">
+        Reflection 
+      </p>
+      <p class = "ReflectionText">
+        This was my first experience in making a personal project and taking control of understanding and designing a product to imrpove it! I had 
+        a great learning experience in teaching myself Figma and understanding all the nunances behind the software. I also reseach mobile app design techniques and accesibility concepts
+       to make sure that the designs I were making were as feasible as they could be. </p>
+      <p class = "ReflectionText">
+        An aspect of the project I would have done differently if I had time, is interview more business owners! Users like me are one-side of the coin,
+        so I would want to survey restaurant partners with Snackpass how the rewards system affects their business to see if an more effective middle-ground
+        can be achieved.
+      </p>
+      <p class = "ReflectionText">
+        Regardless, I am super proud of what I was able to achieve and my ability to learn new techniques and push myself out of my comfort zone.Since this was a personal
+        project, I designed all assets and aspects of the project on my own alongst managing my coursework. However, I ket pushing since I know the end-result of redesigning and thinking 
+        strategically on how to improve a product I use often.
+      </p>
+    </div>
+  </div>
 </body>

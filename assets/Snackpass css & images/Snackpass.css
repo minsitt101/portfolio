@@ -1,4 +1,6 @@
 
+/*BACKGROUND COLOR */
+
 body {
     margin: 0;
 }
@@ -9,9 +11,11 @@ body {
     height: -100px;
 }
 
-.content_section {
-    background: blue;
+.Content-Section {
+  background: #F5F5F5;
 }
+
+/*NAV BAR */
 
 .Home, .Projects, .Resume {
     list-style: none;
@@ -53,3 +57,298 @@ body {
     border-radius: 0px; /* Optional: Adds rounded corners to the border */
     padding: 5px;
   }
+
+  /*LANDING PAGE */
+
+  .landing-page {
+    font-family: "Work Sans";
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Snackpass_Title {
+    font-size: 50px;
+    padding: 10px;
+    font-weight: bold;
+  }
+
+  .Snackpass_one-liner {
+    font-size: 18px;
+    font-weight: 300;
+    width: 50%;
+    text-align: center;
+  }
+
+  .High-fi-prototypes {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #Prototypes img  {
+    width: 90%; 
+    height: auto; 
+    padding: 40px;
+    border-radius: 0%;
+    margin-left: 40px;
+  }
+
+  /* OVERVIEW SECTION */
+
+  .Context {
+    font-family: "Work Sans";
+    max-width: 1500px;
+  }
+
+  .ContextTitle {
+    font-family: "Work Sans";
+    font-weight: bold;
+    font-size: 40px;
+    margin-left: 200;
+    margin-top: 20;
+  }
+
+  .ContextSummary {
+    font-family: "Work Sans";
+    font-weight: 250;
+    font-size: 20px;
+    width: 70%;
+    margin-left: 200;
+    line-height: 1.5;
+  }
+
+
+.Snackpass-Pages {
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.Snackpass-Pictures-1 {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  flex-direction: row;
+  margin: 0;
+  padding: 5;
+  margin-left: 200px;
+}
+
+
+.Picture1 {
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.Picture1 img {
+  width: 200px; /* Ensure images don't exceed their container's width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 0; /* Remove border radius if not needed */
+  padding: 10px;
+}
+
+  /* PROBLEM STATEMENT SECTION */
+
+.ProblemStatement {
+  max-width: 1500px;
+}
+
+.ProblemStatementTitle {
+    font-family: "Work Sans";
+    font-weight: bold;
+    font-size: 40px;
+    margin-left: 200;
+    margin-top: 20;
+}
+
+.Quote {
+    font-family: "Work Sans";
+    font-weight: 300;
+    font-size: 30px;
+    width: 70%;
+    margin-left: 200;
+    margin-top: 20;
+   
+}
+
+.SummaryOfProblem {
+    font-family: "Work Sans";
+    font-weight: 250;
+    font-size: 20px;
+    width: 70%;
+    margin-left: 200;
+    line-height: 1.5;
+}
+
+  /* Validation Section */
+
+.Validation {
+  padding: 100px;
+}
+
+.Statistics {
+  padding: 5px;
+}
+
+.StatHighlight {
+  font-size: 30px;
+}
+
+.SentenceHighlight {
+  font-size: 20px;
+}
+
+.ValidationSummary,  .Takeaways{
+    font-family: "Work Sans";
+    font-weight: 250;
+    font-size: 20px;
+    width: 80%;
+    margin-left: 100;
+    line-height: 1.5;
+}
+
+.StatisticsLine {
+  font-family: "Work Sans";
+  font-weight: 250;
+  font-size: 20px;
+  width: 50%;
+  margin-left: 250;
+  line-height: 1.5;
+}
+
+.ValidationTitle {
+    font-family: "Work Sans";
+    font-weight: bold;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20;
+}
+
+.bullet-list {
+  list-style-type: disc; /* Use 'disc' for filled circles or 'circle' for empty circles */
+  margin-left: 20px; /* Adjust margin as needed */
+}
+.list-item {
+  margin-bottom: 10px; /* Adjust margin as needed */
+  padding-left: 20px; /* Adjust padding to increase space between bullets */
+}
+
+  /* Wireframe Showcase Section */
+
+  .SolutionsProcessTitle {
+    font-family: "Work Sans";
+    font-weight: bold;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20;
+}
+
+.SolutionsTextIntro{
+  font-family: "Work Sans";
+  font-weight: 250;
+  font-size: 20px;
+  width: 70%;
+  margin-left: 200;
+  line-height: 1.5;
+}
+
+
+/* Favorite Store, Leaderboards, Chickencoop Feature */
+
+.FavoriteStoreFeatureTitle, .LeaderboardTitle, .ChickencoopTitle {
+  font-family: "Work Sans";
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: 20;
+  margin-left: 200;
+}
+
+.Favorite-Store-Wireframes, .Leaderboard-Wireframes, .Chickencoop-Wireframes {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  flex-direction: row;
+  margin: 0;
+  padding: 5;
+  margin-left: 200px;
+}
+
+.FavStoreWireframes1 img, .LeaderboardWireframes1 img, .ChickencoopWireframes1 img {
+  max-width: 80%; /* Ensure images don't exceed their container's width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 0; /* Remove border radius if not needed */
+  padding: 10px;
+}
+
+.ChickencoopWireframes1 img {
+  max-width: 50%; /* Ensure images don't exceed their container's width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 0; /* Remove border radius if not needed */
+  padding: 10px;
+}
+
+.FavStoreWireframes2 img, .LeaderboardWireframes2 img {
+  max-width: 70%; /* Ensure images don't exceed their container's width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 0; /* Remove border radius if not needed */
+  padding: 10px;
+}
+
+.FavStoreText, .LeaderboardText, .ChickencoopText {
+  font-family: "Work Sans";
+  font-weight: 250;
+  font-size: 20px;
+  width: 70%;
+  margin-left: 200;
+  line-height: 1.5;
+}
+
+
+
+/* Final Results */
+
+.FinalResultsTitle {
+  font-family: "Work Sans";
+  font-weight: bold;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.FinalResultsText{
+font-family: "Work Sans";
+font-weight: 250;
+font-size: 20px;
+width: 70%;
+margin-left: 200;
+line-height: 1.5;
+}
+
+
+/* Reflection */
+
+.Reflection {
+  padding: 0;
+  margin-top: 200px;
+}
+
+.ReflectionTitle {
+  font-family: "Work Sans";
+  font-weight: bold;
+  font-size: 40px;
+  margin-top: 20;
+  margin-left: 200;
+}
+
+.ReflectionText{
+font-family: "Work Sans";
+font-weight: 250;
+font-size: 20px;
+width: 70%;
+margin-left: 200;
+line-height: 1.5;
+}
