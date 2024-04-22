@@ -1,11 +1,17 @@
 body {
-  background: linear-gradient(to bottom left, rgba(222, 200, 183, 0.8), rgba(222, 218, 219, 1.0));
+  background: linear-gradient(to bottom, rgba(222, 200, 183, 0.8), rgba(222, 218, 219, 1.0), rgba(245, 245, 245, 1.0));
   margin: 0;
 }
 
 .content_section {
   background: #F5F5F5;
   margin-top: 220px;
+}
+
+.BottomOfPage {
+  background: linear-gradient(to bottom, rgba(222, 200, 183, 0.8), rgba(222, 218, 219, 1.0));
+  height: 300px;
+  margin: 0;
 }
 
 /*TOP NAV BAR CODE */
@@ -82,8 +88,9 @@ body {
 
 .MyName {
   font-size: 50px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   margin-left: 15px;
+  margin-top: 10;
   animation: fade-up 0.5s;
 }
 
@@ -239,8 +246,8 @@ body {
 }
 
 #Botanical_showcase_picture img{
-  width: 350px; 
-  height: 350px; 
+  width: 400; 
+  height: auto; 
   padding: 40px;
   border-radius: 20%;
 }
@@ -259,12 +266,20 @@ body {
 
 /*General Content Fonts */
 
-.ProjectTitle {
+.BotanicalGardensTitle {
   font-weight: bold;
   font-size: 30px;
   padding: 0px;
-
+  color: #777937
 }
+
+.SnackpassTitle {
+  font-weight: bold;
+  font-size: 30px;
+  padding: 0px;
+  color: #04BCFC
+}
+
 
 .Summary {
   font-size: 20px;
@@ -310,4 +325,53 @@ body {
 
 .fade-down {
   animation: fade-down 0.4s;
+}
+
+/*BOTTOM PAGE SPACING  */
+
+.Description {
+  margin-bottom: 90px;
+}
+
+/*BOTTOM PAGE*/
+
+.LetsChat {
+  flex-wrap: wrap;
+  margin-top: 30;
+}
+
+.LetsExplore {
+  flex-wrap: wrap;
+  margin-top: 30;
+  
+}
+
+.LetsChatTitle, .ExploreTitle {
+  font-size: 30;
+  font-weight: 500;
+}
+
+.BottomOfPage  a {
+ text-decoration: underline;
+ color: inherit;
+}
+
+.BottomOfPage {
+  font-family: "Work Sans";
+  display: flex;
+  justify-content: column;
+  justify-content: row;
+  justify-content: space-evenly;
+  
+}
+
+.SmilingPic img {
+    position: relative;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    right: 0;
+    top: 20;
+    border: 1px solid white;
 }

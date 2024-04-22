@@ -6,10 +6,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script defer src="assets/home page javascript/snackpass.js"></script>
+    <script defer src="assets/Snackpass javascript/snackpass.js"></script>
   </head>
 <body>
-    <div class = "navigation_bar">
+  <div class = "navigation_bar">
         <div class="top_section">
           <nav class="navbar">
             <div class="navdiv"></div>
@@ -20,18 +20,23 @@
             </ul>
           </nav>
       </div>
-    </div>
-    <div class = "Content-Section">
+  </div>
+  <div class = "Content-Section">
       <div class = "landing-page">
-        <div class = "Snackpass_Title"> 
+        <div class = "Snackpass_Title hidden"> 
           <div class ="Title">SNACKPASS</div>
         </div>
-        <div class = "Snackpass_one-liner">
+        <div class = "Snackpass_one-liner hidden">
           <p>A personal project focused on improving user satisfaction with Snackpass's reward system, 
             while introducing and refining gamification features to amplify its value proposition!</p>
         </div>
-        <div class = "High-Fi-Prototypes">
+        <div class = "High-Fi-Prototypes hidden">
           <div id = Prototypes> <img src = "assets/Snackpass css & images/highlighted prototypes.jpg"> </div>
+        </div>
+        <div class ="button_area">
+          <div class="back_to_top_button">
+            <button onclick="scrollToTop()" class="scroll-top-btn"><img src = "assets/home page css & images/arrowhead-up (1).png"/></button>
+          </div>
         </div>
       </div>
       <div class = "Context"> 
@@ -62,7 +67,7 @@
           adjust current and add new gamification elements to increase user engagement overall to set Snackpass apart from other food pick-up/delivery apps.
           </p>
       </div>
-      <div class = "Validation">
+    <div class = "Validation">
         <p class = "ValidationTitle">
           Validation
         </p>
@@ -93,7 +98,7 @@
           </ul>
         </div>
     </div>
-      <div class = "SolutionsProcess">
+    <div class = "SolutionsProcess">
         <div class ="SolutionsIntro">
           <p class = "SolutionsProcessTitle">
             Solutions Process: Wireframes </p>
@@ -165,14 +170,20 @@
       </div>
     </div>
     </div>
-     </div>
+    </div>
     <div class = "FinalResults">
-      <p class = "FinalResultsTitle">
-        Final Prototype Showcases
-      </p>
-      <p class = "FinalResultsText">With the wirefames and mind-maps completed I went ahead and designed the high-fidelity prototypes! Designs 
-        were made with accessibility in mind such as color-contrast, typography readiblity, reachibility, and more! 
-      </p>
+      <div class ="FinalSectionTextStuff">
+        <p class = "FinalResultsTitle">
+          Final Prototype Showcases
+        </p>
+        <p class = "FinalResultsText">With the wirefames and mind-maps completed I went ahead and designed the high-fidelity prototypes! Designs 
+          were made with accessibility in mind such as color-contrast, typography readiblity, reachibility, and more! 
+        </p>
+      </div>
+      <div class = "Walkthroughs">
+         <video class ="Walkthrough1" src ="assets/Snackpass css & images/Walkthrough  1.mp4" width = 500 controls autoplay muted loop></video>
+         <video class = "Walkthroguh2" src ="assets/Snackpass css & images/Walkthrough  2.mp4" width = 500 controls autoplay muted loop></video>
+      </div>
     </div>
     <div class = "Reflection">
       <p class = "ReflectionTitle">
@@ -187,11 +198,27 @@
         so I would want to survey restaurant partners with Snackpass how the rewards system affects their business to see if an more effective middle-ground
         can be achieved.
       </p>
-      <p class = "ReflectionText">
+      <p class = "ReflectionTextLast">
         Regardless, I am super proud of what I was able to achieve and my ability to learn new techniques and push myself out of my comfort zone.Since this was a personal
         project, I designed all assets and aspects of the project on my own alongst managing my coursework. However, I ket pushing since I know the end-result of redesigning and thinking 
         strategically on how to improve a product I use often.
       </p>
     </div>
+    <div class = "BottomOfPage">
+      <div class = "SmilingPic">
+        <img src = "assets/Snackpass css & images/Screenshot 2024-04-21 at 11.50.25 AM.jpg">
+      </div>
+      <div class = "LetsChat">
+          <p class = "LetsChatTitle">Let's Chat!</p>
+          <p class = "Linkedin"><a href="https://www.linkedin.com/in/min-sitt-thu-aung/">LinkedIn</a></p>
+          <p class = "Email"><a href="mailto:minsittaung@berkeley.edu">Email</a></p>
+        </div>
+      <div class = "LetsExplore">
+          <p class = "ExploreTitle">Explore</p>
+          <p class = "Linkedin"><a href="#">Home</a></p>
+          <p class = "Email"><a href="#">Projects</a></p>
+          <p class = "Linkedin"><a href="#">Resume</a></p>
+        </div>
+  </div>
   </div>
 </body>

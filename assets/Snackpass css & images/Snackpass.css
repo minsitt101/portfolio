@@ -7,11 +7,17 @@ body {
 
 .top_section {
     margin: 0;
-    background: linear-gradient(to bottom, rgba(222, 200, 183, 0.8), rgba(222, 218, 219, 1.0));
-    height: -100px;
+    background: linear-gradient(to bottom, rgba(222, 200, 183, 0.8), rgba(222, 218, 219, 1.0), rgba(245, 245, 245, 1.0));
+}
+
+.BottomOfPage {
+  background: linear-gradient(to bottom, rgba(222, 200, 183, 0.8), rgba(222, 218, 219, 1.0));
+  height: 300px;
+  margin: 0;
 }
 
 .Content-Section {
+  margin: 0;
   background: #F5F5F5;
 }
 
@@ -221,8 +227,7 @@ body {
     font-family: "Work Sans";
     font-weight: bold;
     font-size: 40px;
-    display: flex;
-    justify-content: center;
+    margin-left: 100;
     margin-top: 20;
 }
 
@@ -241,9 +246,7 @@ body {
     font-family: "Work Sans";
     font-weight: bold;
     font-size: 40px;
-    display: flex;
-    justify-content: center;
-    margin-top: 20;
+    margin-left: 200;
 }
 
 .SolutionsTextIntro{
@@ -274,24 +277,25 @@ body {
   margin: 0;
   padding: 5;
   margin-left: 200px;
+  flex-wrap: wrap;
 }
 
 .FavStoreWireframes1 img, .LeaderboardWireframes1 img, .ChickencoopWireframes1 img {
-  max-width: 80%; /* Ensure images don't exceed their container's width */
+  max-width: 600; /* Ensure images don't exceed their container's width */
   height: auto; /* Maintain aspect ratio */
   border-radius: 0; /* Remove border radius if not needed */
   padding: 10px;
 }
 
 .ChickencoopWireframes1 img {
-  max-width: 50%; /* Ensure images don't exceed their container's width */
+  max-width: 500; /* Ensure images don't exceed their container's width */
   height: auto; /* Maintain aspect ratio */
   border-radius: 0; /* Remove border radius if not needed */
   padding: 10px;
 }
 
 .FavStoreWireframes2 img, .LeaderboardWireframes2 img {
-  max-width: 70%; /* Ensure images don't exceed their container's width */
+  max-width: 400; /* Ensure images don't exceed their container's width */
   height: auto; /* Maintain aspect ratio */
   border-radius: 0; /* Remove border radius if not needed */
   padding: 10px;
@@ -333,7 +337,7 @@ line-height: 1.5;
 
 .Reflection {
   padding: 0;
-  margin-top: 200px;
+  margin-top: 100px;
 }
 
 .ReflectionTitle {
@@ -344,11 +348,129 @@ line-height: 1.5;
   margin-left: 200;
 }
 
+.ReflectionTextLast{
+  font-family: "Work Sans";
+  font-weight: 250;
+  font-size: 20px;
+  width: 70%;
+  margin-left: 200;
+  margin-top: 20;
+  margin-bottom: 90;
+  padding: 5;
+  line-height: 1.5;
+  }
+
 .ReflectionText{
 font-family: "Work Sans";
 font-weight: 250;
 font-size: 20px;
 width: 70%;
 margin-left: 200;
+margin-top: 20;
+padding: 5;
 line-height: 1.5;
+}
+
+/* VIDEOS */ 
+
+.Walkthroughs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  flex-wrap: wrap;
+}
+
+.Walkthroughs video {
+  margin: 20 20px; /* Adjust the margin as needed to create space between the videos */
+}
+
+
+/* BUTTON SCROLL-TOP */
+
+.button_area {
+  display: flex;
+  justify-content: center;
+}
+
+.scroll-top-btn {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  background-color:rgba(135, 152, 168, 0.5);  /* Blue-ish background color */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 44px;
+  cursor: pointer;
+  margin-top: 60px;
+  z-index: 9999;
+}
+
+.scroll-top-btn:hover {
+   transform: translateY(-10px);
+   background-color: rgba(135, 152, 168);
+   transition: transform 0.5s ease
+
+}
+
+.scroll-top-btn img {
+  width: 30px;
+  height: 30px;
+}
+
+/* BOTTOM PAGE */
+
+.LetsChat {
+  flex-wrap: wrap;
+  margin-top: 30;
+}
+
+.LetsExplore {
+  flex-wrap: wrap;
+  margin-top: 30;
+  
+}
+
+.LetsChatTitle, .ExploreTitle {
+  font-size: 30;
+  font-weight: 500;
+}
+
+.BottomOfPage  a {
+ text-decoration: underline;
+ color: inherit;
+}
+
+.BottomOfPage {
+  font-family: "Work Sans";
+  display: flex;
+  justify-content: column;
+  justify-content: row;
+  justify-content: space-evenly;
+  
+}
+
+.SmilingPic img {
+    position: relative;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    right: 0;
+    top: 20;
+    border: 1px solid white;
+}
+
+
+/*Animations*/
+
+.hidden {
+  opacity:  0;
+  transform: translateY(30px);
+  transition: all 1.3s;
+}
+
+.show {
+  transform: translateY(0px);
+  opacity: 1;
 }
