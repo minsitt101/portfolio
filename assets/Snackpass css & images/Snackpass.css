@@ -31,7 +31,7 @@ body {
 .Home a, .Projects a, .Resume a {
     color: black; 
     font-size: 20px;
-    font-weight: 300;
+    font-weight: 400;
     text-decoration: none;
     font-family: "Work Sans"
 }
@@ -100,6 +100,70 @@ body {
     margin-left: 40px;
   }
 
+  /* PROJECT DETAILS SECTION */
+
+  .ProjectDetails {
+    display: flex;
+    flex-wrap: wrap;
+    width: 900px; /* specify units like px for width */
+    margin-left: 50px; /* specify units like px for margin */
+    flex-direction: colum;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: realtive;
+  }
+
+  .ProjectDetails {
+    font-size: 20;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between; /* Evenly space out the divs */
+    flex-wrap: wrap; /* Allow items to wrap onto the next line */
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+
+.Files {
+  margin-right: 10px;
+}
+
+#SlideDeck, #FigmaFile {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.Role,
+.Time,
+.ProjectType,
+.Software,
+.Skills,
+.Files {
+    flex: 0 0 calc(20% - 10px); /* Set the width of each div to 20% of the container width minus margin */
+    margin: 5px; /* Add margin to create space between the divs */
+}
+
+#ProjectDetailSection,
+#ProjectDetailDescription {
+    line-height: 1.7;
+    margin: 0; /* Remove default margin */
+}
+
+/* Media query for smaller viewports */
+@media screen and (max-width: 600px) {
+    .Role,
+    .Time,
+    .ProjectType,
+    .Software,
+    .Skills,
+    .Files {
+        flex: 0 0 calc(100% - 10px); /* Set the width of each div to 100% minus margin */
+    }
+}
+
+
+  .Time {
+    margin-left: 20;
+  }
   /* OVERVIEW SECTION */
 
   .Context {
@@ -117,7 +181,7 @@ body {
 
   .ContextSummary {
     font-family: "Work Sans";
-    font-weight: 250;
+    font-weight: 400;
     font-size: 20px;
     width: 70%;
     margin-left: 200;
@@ -180,7 +244,7 @@ body {
 
 .SummaryOfProblem {
     font-family: "Work Sans";
-    font-weight: 250;
+    font-weight: 400;
     font-size: 20px;
     width: 70%;
     margin-left: 200;
@@ -190,7 +254,6 @@ body {
   /* Validation Section */
 
 .Validation {
-  padding: 100px;
 }
 
 .Statistics {
@@ -207,16 +270,16 @@ body {
 
 .ValidationSummary,  .Takeaways{
     font-family: "Work Sans";
-    font-weight: 250;
+    font-weight: 400;
     font-size: 20px;
     width: 80%;
-    margin-left: 100;
+    margin-left: 200;
     line-height: 1.5;
 }
 
 .StatisticsLine {
   font-family: "Work Sans";
-  font-weight: 250;
+  font-weight: 400;
   font-size: 20px;
   width: 50%;
   margin-left: 250;
@@ -224,11 +287,11 @@ body {
 }
 
 .ValidationTitle {
-    font-family: "Work Sans";
-    font-weight: bold;
-    font-size: 40px;
-    margin-left: 100;
-    margin-top: 20;
+  font-family: "Work Sans";
+  font-weight: bold;
+  font-size: 40px;
+  margin-left: 200;
+  margin-top: 40;
 }
 
 .bullet-list {
@@ -242,7 +305,7 @@ body {
 
   /* Wireframe Showcase Section */
 
-  .SolutionsProcessTitle {
+.SolutionsProcessTitle {
     font-family: "Work Sans";
     font-weight: bold;
     font-size: 40px;
@@ -251,7 +314,7 @@ body {
 
 .SolutionsTextIntro{
   font-family: "Work Sans";
-  font-weight: 250;
+  font-weight: 400;
   font-size: 20px;
   width: 70%;
   margin-left: 200;
@@ -303,14 +366,34 @@ body {
 
 .FavStoreText, .LeaderboardText, .ChickencoopText {
   font-family: "Work Sans";
-  font-weight: 250;
+  font-weight: 400;
   font-size: 20px;
   width: 70%;
   margin-left: 200;
   line-height: 1.5;
 }
 
+.Favoritestore_Wireframe_1, .Favoritestore_Wireframe_2 {
+  font-family: "Work Sans";
+  font-weight: light;
+  display: flex;
+  justify-content: center;
+}
 
+.Favoritestore_Wireframe_1 {
+  margin-top: 40;
+}
+
+.Leaderboard_Wireframe_1, .Leaderboard_Wireframe_2 {
+  font-family: "Work Sans";
+  font-weight: light;
+  display: flex;
+  justify-content: center;
+}
+
+.Leaderboard_Wireframe_2 {
+  margin-top: 40;
+}
 
 /* Final Results */
 
@@ -319,13 +402,13 @@ body {
   font-weight: bold;
   font-size: 40px;
   display: flex;
-  justify-content: center;
   margin-top: 100px;
+  margin-left: 200;
 }
 
 .FinalResultsText{
 font-family: "Work Sans";
-font-weight: 250;
+font-weight: 400;
 font-size: 20px;
 width: 70%;
 margin-left: 200;
@@ -350,7 +433,7 @@ line-height: 1.5;
 
 .ReflectionTextLast{
   font-family: "Work Sans";
-  font-weight: 250;
+  font-weight: 400;
   font-size: 20px;
   width: 70%;
   margin-left: 200;
@@ -362,7 +445,7 @@ line-height: 1.5;
 
 .ReflectionText{
 font-family: "Work Sans";
-font-weight: 250;
+font-weight: 400;
 font-size: 20px;
 width: 70%;
 margin-left: 200;
@@ -473,4 +556,19 @@ line-height: 1.5;
 .show {
   transform: translateY(0px);
   opacity: 1;
+}
+
+
+
+@media screen and (max-width: 1200px) and (max-height: 11096.2px) {
+  
+
+  .ProjectDetails {
+      display: flex;
+      flex-direction: column;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 50%;
+      margin-left: 0;
+  }
 }
