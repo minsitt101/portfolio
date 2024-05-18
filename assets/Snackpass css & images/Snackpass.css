@@ -1,4 +1,7 @@
 
+/*SECTIONING */
+
+
 /*BACKGROUND COLOR */
 
 body {
@@ -23,46 +26,43 @@ body {
 
 /*NAV BAR */
 
-.Home, .Projects, .Resume {
-    list-style: none;
-    display: inline-block;
+.MinSittLogo img {
+  width: 120;
+  height: auto;
+  margin-top: 10;
+  margin-left: 20;
+  position: absolute;
 }
 
 .Home a, .Projects a, .Resume a {
-    color: black; 
-    font-size: 20px;
-    font-weight: 400;
-    text-decoration: none;
-    font-family: "Work Sans"
+  color: black; 
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+  font-family: "Work Sans"
 }
 
 .navbar {
-    display: flex;
-    justify-content: center; /* Centers the flex items horizontally and makes sure the border box is in the center*/
-  }
+  display: flex;
+  margin-left: 880px;
+}
 
-  
+
 .navbar li {
-    margin: 10px;
+  margin: 10px;
 }
 
 .navbar ul li {
-    border-right: 0.5px solid black;
-    display: inline-block;
-    border-right: 1px solid black;
-    padding: 4px 40px;
-    position: relative;
-  }
+  border-right: 0.5px solid black;
+  display: inline-block;
+  border-right: 1px solid black;
+  padding: 4px 30px;
+  position: relative;
+}
 
-  .navbar ul li:last-child {
-    border-right: none;
-  }
-
-  .navbar ul {
-    border: 0.5px solid black; /* Sets a black border with 2px width around the <ul> element */
-    border-radius: 0px; /* Optional: Adds rounded corners to the border */
-    padding: 5px;
-  }
+.navbar ul li:last-child {
+  border-right: none;
+}
 
   /*LANDING PAGE */
 
@@ -176,13 +176,13 @@ body {
     font-weight: bold;
     font-size: 40px;
     margin-left: 200;
-    margin-top: 20;
+    margin-top: 60;
   }
 
   .ContextSummary {
     font-family: "Work Sans";
-    font-weight: 400;
-    font-size: 20px;
+    font-weight: 350;
+    font-size: 17px;
     width: 70%;
     margin-left: 200;
     line-height: 1.5;
@@ -244,8 +244,8 @@ body {
 
 .SummaryOfProblem {
     font-family: "Work Sans";
-    font-weight: 400;
-    font-size: 20px;
+    font-weight: 350;
+    font-size: 17px;
     width: 70%;
     margin-left: 200;
     line-height: 1.5;
@@ -270,8 +270,8 @@ body {
 
 .ValidationSummary,  .Takeaways{
     font-family: "Work Sans";
-    font-weight: 400;
-    font-size: 20px;
+    font-weight: 350;
+    font-size: 17px;
     width: 80%;
     margin-left: 200;
     line-height: 1.5;
@@ -279,8 +279,8 @@ body {
 
 .StatisticsLine {
   font-family: "Work Sans";
-  font-weight: 400;
-  font-size: 20px;
+  font-weight: 350;
+  font-size: 17px;
   width: 50%;
   margin-left: 250;
   line-height: 1.5;
@@ -314,8 +314,8 @@ body {
 
 .SolutionsTextIntro{
   font-family: "Work Sans";
-  font-weight: 400;
-  font-size: 20px;
+  font-weight: 350;
+  font-size: 17px;
   width: 70%;
   margin-left: 200;
   line-height: 1.5;
@@ -330,6 +330,10 @@ body {
   font-size: 30px;
   margin-top: 20;
   margin-left: 200;
+}
+
+.LeaderboardTitle {
+  margin-top: 30;
 }
 
 .Favorite-Store-Wireframes, .Leaderboard-Wireframes, .Chickencoop-Wireframes {
@@ -366,11 +370,39 @@ body {
 
 .FavStoreText, .LeaderboardText, .ChickencoopText {
   font-family: "Work Sans";
-  font-weight: 400;
-  font-size: 20px;
+  font-weight: 350;
+  font-size: 17px;
   width: 70%;
   margin-left: 200;
   line-height: 1.5;
+}
+
+.UserFlowTitle {
+  font-family: "Work Sans";
+  font-weight: bold;
+  font-size: 17px;
+  display: flex;
+  justify-content: center;
+  padding: 10;
+  margin-top: 10;
+
+}
+
+.StrategicReasoning, .DesginJustification {
+  font-family: "Work Sans";
+  font-weight: bold;
+  color: #04BCFC;
+  font-size: 20px;
+  margin-left: 200;
+  line-height: 1.5;
+}
+
+.ReasoningForChickencoop {
+  margin-left: 250;
+  font-family: "Work Sans";
+  font-weight: 350;
+  font-size: 17px;
+  width: 70%;
 }
 
 .Favoritestore_Wireframe_1, .Favoritestore_Wireframe_2 {
@@ -395,6 +427,13 @@ body {
   margin-top: 40;
 }
 
+.High-Fi-Prototype-Fav-Store img, .High-Fi-Prototype-Leaderboards img {
+  max-width: 800; /* Ensure images don't exceed their container's width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 0; /* Remove border radius if not needed */
+  margin-left: 300;
+}
+
 /* Final Results */
 
 .FinalResultsTitle {
@@ -408,8 +447,8 @@ body {
 
 .FinalResultsText{
 font-family: "Work Sans";
-font-weight: 400;
-font-size: 20px;
+font-weight: 350;
+font-size: 17px;
 width: 70%;
 margin-left: 200;
 line-height: 1.5;
@@ -433,8 +472,8 @@ line-height: 1.5;
 
 .ReflectionTextLast{
   font-family: "Work Sans";
-  font-weight: 400;
-  font-size: 20px;
+  font-weight: 350;
+  font-size: 17px;
   width: 70%;
   margin-left: 200;
   margin-top: 20;
@@ -445,8 +484,8 @@ line-height: 1.5;
 
 .ReflectionText{
 font-family: "Work Sans";
-font-weight: 400;
-font-size: 20px;
+font-weight: 350;
+font-size: 17px;
 width: 70%;
 margin-left: 200;
 margin-top: 20;

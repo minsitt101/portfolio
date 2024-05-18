@@ -16,6 +16,14 @@ body {
 
 /*TOP NAV BAR CODE */
 
+.MinSittLogo img {
+  width: 120;
+  height: auto;
+  margin-top: 10;
+  margin-left: 20;
+  position: absolute;
+}
+
 .Home, .Projects, .Resume {
     list-style: none;
     display: inline-block;
@@ -23,15 +31,15 @@ body {
 
 .Home a, .Projects a, .Resume a {
     color: black; 
-    font-size: 20px;
-    font-weight: 300;
+    font-size: 15px;
+    font-weight: 500;
     text-decoration: none;
     font-family: "Work Sans"
 }
 
 .navbar {
     display: flex;
-    justify-content: center; /* Centers the flex items horizontally and makes sure the border box is in the center*/
+    margin-left: 880px;
   }
 
   
@@ -43,7 +51,7 @@ body {
     border-right: 0.5px solid black;
     display: inline-block;
     border-right: 1px solid black;
-    padding: 4px 40px;
+    padding: 4px 30px;
     position: relative;
   }
 
@@ -51,11 +59,7 @@ body {
     border-right: none;
   }
 
-  .navbar ul {
-    border: 0.5px solid black; /* Sets a black border with 2px width around the <ul> element */
-    border-radius: 0px; /* Optional: Adds rounded corners to the border */
-    padding: 5px;
-  }
+ 
   
 /*PROFILE PICTURE & INTRO CODE */
 
@@ -87,11 +91,14 @@ body {
 }
 
 .MyName {
-  font-size: 50px;
+  font-family: "Roboto Serif";
+  font-size: 70px;
+  font-weight: bold;
   margin-bottom: 10px;
   margin-left: 15px;
   margin-top: 10;
   animation: fade-up 0.5s;
+  color: #5A6A79
 }
 
 .Major {
