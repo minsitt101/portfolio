@@ -30,7 +30,7 @@ body {
   width: 120;
   height: auto;
   margin-top: 10;
-  margin-left: 20;
+  margin-left: 60;
   position: absolute;
 }
 
@@ -45,6 +45,7 @@ body {
 .navbar {
   display: flex;
   margin-left: 880px;
+
 }
 
 
@@ -186,6 +187,8 @@ body {
     width: 70%;
     margin-left: 200;
     line-height: 1.5;
+    display: flex;
+    flex-wrap: wrap;
   }
 
 
@@ -359,6 +362,7 @@ body {
   height: auto; /* Maintain aspect ratio */
   border-radius: 0; /* Remove border radius if not needed */
   padding: 10px;
+  margin-left: 200;
 }
 
 .FavStoreWireframes2 img, .LeaderboardWireframes2 img {
@@ -392,7 +396,7 @@ body {
   font-family: "Work Sans";
   font-weight: bold;
   color: #04BCFC;
-  font-size: 20px;
+  font-size: 17px;
   margin-left: 200;
   line-height: 1.5;
 }
@@ -428,10 +432,21 @@ body {
 }
 
 .High-Fi-Prototype-Fav-Store img, .High-Fi-Prototype-Leaderboards img {
-  max-width: 800; /* Ensure images don't exceed their container's width */
+  max-width: 50%; /* Ensure images don't exceed their container's width */
   height: auto; /* Maintain aspect ratio */
   border-radius: 0; /* Remove border radius if not needed */
-  margin-left: 300;
+  margin-left: 350;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.High-Fi-Prototype-Chickencoop img {
+  width: 50%; /* Ensure images don't exceed their container's width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 0; /* Remove border radius if not needed */
+  margin-left: 350;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 /* Final Results */
@@ -487,7 +502,7 @@ font-family: "Work Sans";
 font-weight: 350;
 font-size: 17px;
 width: 70%;
-margin-left: 200;
+margin-left: 100;
 margin-top: 20;
 padding: 5;
 line-height: 1.5;
@@ -609,5 +624,277 @@ line-height: 1.5;
       flex-wrap: wrap;
       width: 50%;
       margin-left: 0;
+  }
+}
+
+
+
+@media screen and (min-width: 770px) and (max-width: 1000px) {
+  .Context {
+    margin-right: 230;
+  }
+
+  .ProblemStatement {
+    margin-right: 200;
+  }
+
+  .Validation {
+    margin-right: 230;
+  }
+
+  .FavoriteStoreFeature {
+    margin-right: 230;
+  }
+
+  .ChickenCoopExplaination {
+    margin-left: 20;
+  }
+
+   .High-Fi-Prototype-Fav-Store, .High-Fi-Prototype-Leaderboards {
+    width: 1300px;
+    height: auto;
+   
+  }
+
+  .High-Fi-Prototype-Chickencoop {
+    width: 1000px;
+    height: auto;
+
+  }
+
+  .High-Fi-Prototype-Chickencoop img {
+    margin-left: 140;
+  }
+
+   .High-Fi-Prototype-Fav-Store img, .High-Fi-Prototype-Leaderboards img {
+    margin-left: 100;
+  }
+
+  .UserFlowTitle {
+    display: flex;
+    justify-content: center;
+  }
+
+  .ChickencoopWireframe {
+    margin-left: 0;
+    width: 80%;
+  }
+
+  .FavStoreWireframes1 img {
+    width: 140%;
+    height: auto;
+    margin-right: 130;
+  }
+
+  .FavStoreWireframes2 img {
+    width: 90%;
+    height: auto;
+  }
+
+  .LeaderboardWireframes1 img {
+    width: 70%;
+    height: auto;
+  }
+
+  .LeaderboardWireframes2 img {
+    width: 70%;
+    height: auto;
+  }
+
+  .LeaderboardFeature {
+    width: 90%;
+  }
+
+  .ChickenCoopExplaination {
+    width: 80%;
+    margin-left: 5;
+  }
+
+  .Reflection {
+    width: 80%;
+  }
+
+  .FinalResults {
+    width: 80%
+  }
+
+  .Walkthroughs {
+    margin-left: 150;
+  }
+
+  .SolutionsProcessTitle {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 770px) {
+    .ContextSummary {
+      margin-left: 120 !important; /* great lets use !important from now on */
+    }
+  }
+
+@media screen and (min-width: 320px) and (max-width: 500px) {
+  
+  .Snackpass_Title {
+    font-size: 40px;
+    padding: 10px;
+    font-weight: bold;
+    margin-right: 0 !important;
+    justify-content: center;
+  }
+
+  .Snackpass_one-liner {
+    font-size: 15px;
+    width: 85%;
+    margin-right: 0 !important;
+    justify-content: center;
+    margin-left: 0 !important;
+  }
+
+  #Prototypes img{
+    width: 100%;
+    margin-left: 0 !important;
+    padding: 0 !important;
+    justify-content: center;
+  }
+
+  .ProjectDetails {
+    font-size: 12px;
+    display: flex;
+    flex-direction: row;
+    margin: 0 !important;
+    padding: 10;
+    justify-content: center;
+  }
+
+  .Time {
+    margin-left: 0;
+  }
+
+  /* CONTEXT PAGE */
+
+  .ContextTitle, .ProblemStatementTitle, .ValidationTitle, .SolutionsProcessTitle,
+  .FavoriteStoreFeatureTitle, .LeaderboardTitle, .ReflectionTitle, .ChickencoopTitle, .FinalResultsTitle {
+    font-size: 30px;
+    width: 70%;
+    justify-content: center;
+    padding: 20;
+  }
+
+  .ReflectionTextLast{
+    font-size: 15px;
+    width: 70%;
+    justify-content: center;
+    margin-top: 20;
+    margin-right: 100;
+    margin-left: 62 !important;
+  }
+  
+  .Context, .ProblemStatement, .Validation, .SolutionsProcess, .FinalResults, .Reflection {
+    margin-top: 100;
+  }
+
+  .ContextSummary, .SummaryOfProblem, .ValidationSummary, .StatisticsLine, .Takeaways, 
+  .SolutionsTextIntro, .FavStoreText, .LeaderboardText, .ChickencoopText, 
+  .ReasoningForChickencoop, .ReflectionText, .FinalResultsText {
+    font-size: 15px;
+    width: 70%;
+    justify-content: center;
+    padding: 5;
+  }
+
+  .StrategicReasoning, .DesginJustification, .UserFlowTitle  {
+    font-size: 17px;
+    width: 70%;
+    justify-content: center;
+    padding: 5;
+  }
+
+  .UserFlowTitle {
+    padding: 10;
+  }
+
+  .ContextTitle, .ContextSummary, .Quote, .ProblemStatementTitle, .SummaryOfProblem, .ValidationSummary,
+  .ValidationTitle, .StatisticsLine, .Takeaways, .SolutionsTextIntro, .SolutionsProcessTitle, 
+  .FavoriteStoreFeatureTitle, .StrategicReasoning, .FavStoreText, .DesginJustification, .UserFlowTitle,
+  .LeaderboardTitle, .LeaderboardText, .ChickencoopText, .ReasoningForChickencoop, .ReflectionTitle, 
+  .ReflectionText, .ChickencoopTitle, .FinalResultsTitle, .FinalResultsText {
+    margin: 0 auto;
+  }
+
+  .Snackpass-Pictures-1 {
+    margin: 0 auto;
+    width: 50%;
+    justify-content: center;
+  }
+
+  .Snackpass-Pictures-1 img {
+    width: 150px;
+    display: flex;
+  }
+
+  .Quote {
+    font-size: 20px;
+    padding: 5;
+  }
+
+  .Favorite-Store-Wireframes, .Leaderboard-Wireframes, .Chickencoop-Wireframes {
+    margin: 0;
+  }
+
+  .FavStoreWireframes1 img, .LeaderboardWireframes1 img, .ChickencoopWireframes1 img{
+    max-width: 80%;
+    height: auto;
+    margin-left: 35;
+  }
+
+  .FavStoreWireframes2 img, .LeaderboardWireframes2 img {
+    max-width: 70%;
+    height: auto;
+    margin-left: 55;
+  }
+
+  .High-Fi-Prototype-Fav-Store img, .High-Fi-Prototype-Leaderboards img {
+    max-width: 95%;
+    height: auto;
+    margin-left: 0;
+    padding: 10
+  }
+
+  .High-Fi-Prototype-Chickencoop img {
+    width: 400px;
+    height: auto;
+    margin-left: 20;
+    padding: 10
+  }
+
+  .Walkthrough1, .Walkthroguh2 {
+    width: 90%;
+    height: auto;
+    justify-content: center;
+  }
+
+  .Relfection {
+    margin-top: 40;
+  }
+
+  .SmilingPic img {
+    width: 150px;
+    height: 150px;
+    padding: 2cqmin;
+    left: 10;
+    border: 1px solid white;
+  }
+
+  .LetsChat, .LetsExplore {
+    padding: 20;
+  }
+
+  .LetsChatTitle, .ExploreTitle {
+    font-size: 20;
+  }
+
+  .BottomOfPage {
+    height: 40%
   }
 }
