@@ -8,8 +8,9 @@ body {
     margin: 0;
 }
 
-.top_section {
+.navigation_bar {
     margin: 0;
+    height: 20%;
     background: linear-gradient(to bottom, rgba(222, 200, 183, 0.8), rgba(222, 218, 219, 1.0), rgba(245, 245, 245, 1.0));
 }
 
@@ -44,24 +45,28 @@ body {
 
 .navbar {
   display: flex;
-  margin-left: 880px;
-
+  justify-content: flex-end; /* Align items to the right */
+  position: absolute; /* Positioning the navbar */
+  top: 10; /* Position it at the top */
+  right: 0; /* Position it at the right */
+  width: 100%; /* Full width */
 }
 
+.navbar ul {
+  display: flex; /* Make the <ul> a flex container */
+  list-style-type: none; /* Remove default list style */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
 
 .navbar li {
   margin: 10px;
-}
-
-.navbar ul li {
-  border-right: 0.5px solid black;
-  display: inline-block;
-  border-right: 1px solid black;
   padding: 4px 30px;
   position: relative;
+  border-right: 1px solid black;
 }
 
-.navbar ul li:last-child {
+.navbar li:last-child {
   border-right: none;
 }
 
@@ -176,8 +181,9 @@ body {
     font-family: "Work Sans";
     font-weight: bold;
     font-size: 40px;
+    justify-content: center;
+    width: 90%;
     margin-left: 200;
-    margin-top: 60;
   }
 
   .ContextSummary {
@@ -275,7 +281,7 @@ body {
     font-family: "Work Sans";
     font-weight: 350;
     font-size: 17px;
-    width: 80%;
+    width: 75%;
     margin-left: 200;
     line-height: 1.5;
 }
@@ -475,6 +481,7 @@ line-height: 1.5;
 .Reflection {
   padding: 0;
   margin-top: 100px;
+  margin-bottom: 60px;
 }
 
 .ReflectionTitle {
@@ -497,12 +504,12 @@ line-height: 1.5;
   line-height: 1.5;
   }
 
-.ReflectionText{
+.ReflectionText {
 font-family: "Work Sans";
 font-weight: 350;
 font-size: 17px;
 width: 70%;
-margin-left: 100;
+margin-left: 200;
 margin-top: 20;
 padding: 5;
 line-height: 1.5;
@@ -630,111 +637,167 @@ line-height: 1.5;
 
 
 @media screen and (min-width: 770px) and (max-width: 1000px) {
-  .Context {
-    margin-right: 230;
-  }
 
-  .ProblemStatement {
-    margin-right: 200;
-  }
-
-  .Validation {
-    margin-right: 230;
-  }
-
-  .FavoriteStoreFeature {
-    margin-right: 230;
-  }
-
-  .ChickenCoopExplaination {
-    margin-left: 20;
-  }
-
-   .High-Fi-Prototype-Fav-Store, .High-Fi-Prototype-Leaderboards {
-    width: 1300px;
+  .MinSittLogo img {
+    width: 100;
     height: auto;
-   
+    margin-top: 10;
+    margin-left: 60;
+    position: absolute;
   }
 
-  .High-Fi-Prototype-Chickencoop {
-    width: 1000px;
-    height: auto;
-
+  .Snackpass_Title {
+    font-size: 40px;
+    padding: 10px;
+    font-weight: bold;
+    margin-right: 0 !important;
+    justify-content: center;
+    margin-top: 0;
   }
 
-  .High-Fi-Prototype-Chickencoop img {
-    margin-left: 140;
+  .Snackpass_one-liner {
+    font-size: 15px;
+    width: 85%;
+    margin-right: 0 !important;
+    justify-content: center;
+    margin-left: 0 !important;
   }
 
-   .High-Fi-Prototype-Fav-Store img, .High-Fi-Prototype-Leaderboards img {
-    margin-left: 100;
-  }
-
-  .UserFlowTitle {
-    display: flex;
+  #Prototypes img{
+    width: 100%;
+    margin-left: 0 !important;
+    padding: 0 !important;
     justify-content: center;
   }
 
-  .ChickencoopWireframe {
-    margin-left: 0;
-    width: 80%;
+  .ProjectDetails {
+    font-size: 17px;
+    display: flex;
+    flex-direction: row;
+    margin: 0 !important;
+    padding: 10;
+    justify-content: center;
   }
 
-  .FavStoreWireframes1 img {
-    width: 140%;
-    height: auto;
-    margin-right: 130;
+  .ContextTitle, .ProblemStatementTitle, .ValidationTitle, .SolutionsProcessTitle,
+  .FavoriteStoreFeatureTitle, .LeaderboardTitle, .ReflectionTitle, .ChickencoopTitle, .FinalResultsTitle {
+    font-size: 30px;
+    width: 70%;
+    justify-content: center;
+    padding: 30;
   }
 
-  .FavStoreWireframes2 img {
-    width: 90%;
-    height: auto;
+  .ReflectionTextLast {
+    font-size: 15px;
+    width: 70%;
+    justify-content: center;
+    padding: 5;
+  }
+  
+  .Context, .ProblemStatement, .Validation, .SolutionsProcess, .FinalResults, .Reflection {
+    margin-top: 100;
   }
 
-  .LeaderboardWireframes1 img {
+  .ContextSummary, .SummaryOfProblem, .ValidationSummary, .StatisticsLine, .Takeaways, 
+  .SolutionsTextIntro, .FavStoreText, .LeaderboardText, .ChickencoopText, 
+  .ReasoningForChickencoop, .ReflectionText, .FinalResultsText {
+    font-size: 16px;
+    width: 70%;
+    justify-content: center;
+    padding: 5;
+  }
+
+  .StrategicReasoning, .DesginJustification, .UserFlowTitle  {
+    font-size: 18px;
+    width: 70%;
+    justify-content: center;
+    padding: 5;
+  }
+
+  .UserFlowTitle {
+    padding: 10;
+  }
+
+  .ContextTitle, .ContextSummary, .Quote, .ProblemStatementTitle, .SummaryOfProblem, .ValidationSummary,
+  .ValidationTitle, .StatisticsLine, .Takeaways, .SolutionsTextIntro, .SolutionsProcessTitle, 
+  .FavoriteStoreFeatureTitle, .StrategicReasoning, .FavStoreText, .DesginJustification, .UserFlowTitle,
+  .LeaderboardTitle, .LeaderboardText, .ChickencoopText, .ReasoningForChickencoop, .ReflectionTitle, 
+  .ReflectionText, .ChickencoopTitle, .FinalResultsTitle, .FinalResultsText, .ReflectionTextLast{
+    margin: 0 auto;
+  }
+
+  .Snackpass-Pictures-1 {
     width: 70%;
     height: auto;
+    margin-left: 100;
+    justify-content: center;
   }
-
-  .LeaderboardWireframes2 img {
-    width: 70%;
-    height: auto;
-  }
-
-  .LeaderboardFeature {
-    width: 90%;
-  }
-
-  .ChickenCoopExplaination {
-    width: 80%;
-    margin-left: 5;
+ 
+  .Quote {
+    font-size: 22px;
+    padding: 5;
   }
 
   .Reflection {
-    width: 80%;
+    margin-bottom: 30;
+    margin-top: 20;
   }
 
-  .FinalResults {
-    width: 80%
+  
+  .Favorite-Store-Wireframes, .Leaderboard-Wireframes, .Chickencoop-Wireframes {
+    margin: 0;
   }
 
-  .Walkthroughs {
-    margin-left: 150;
+  .FavStoreWireframes1 img, .LeaderboardWireframes1 img, .ChickencoopWireframes1 img{
+    max-width: 60%;
+    height: auto;
+    margin-left: 120;
   }
 
-  .SolutionsProcessTitle {
-    width: 70%;
+  .FavStoreWireframes2 img, .LeaderboardWireframes2 img {
+    max-width: 60%;
+    height: auto;
+    margin-left: 145;
   }
-}
+
+  .High-Fi-Prototype-Fav-Store img, .High-Fi-Prototype-Leaderboards img {
+    max-width: 90%;
+    height: auto;
+    margin-left: 10;
+    padding: 10
+  }
+
+  .High-Fi-Prototype-Chickencoop img {
+    width: 60%;
+    height: auto;
+    margin-left: 120;
+    padding: 10
+  }
+
+  .Walkthroughs video {
+    width: 50%;
+    height: auto;
+    justify-content: center;
+    margin-left: 150 !important;
+  }
+  
+
+  .navdiv {
+    margin: 0;
+  }
+  }
+
 
 @media screen and (min-width: 500px) and (max-width: 770px) {
-    .ContextSummary {
-      margin-left: 120 !important; /* great lets use !important from now on */
-    }
+    
+  .MinSittLogo img {
+    width: 100;
+    height: auto;
+    margin-top: 10;
+    margin-left: 60;
+    position: absolute;
   }
 
-@media screen and (min-width: 320px) and (max-width: 500px) {
-  
   .Snackpass_Title {
     font-size: 40px;
     padding: 10px;
@@ -759,7 +822,7 @@ line-height: 1.5;
   }
 
   .ProjectDetails {
-    font-size: 12px;
+    font-size: 14px;
     display: flex;
     flex-direction: row;
     margin: 0 !important;
@@ -771,8 +834,6 @@ line-height: 1.5;
     margin-left: 0;
   }
 
-  /* CONTEXT PAGE */
-
   .ContextTitle, .ProblemStatementTitle, .ValidationTitle, .SolutionsProcessTitle,
   .FavoriteStoreFeatureTitle, .LeaderboardTitle, .ReflectionTitle, .ChickencoopTitle, .FinalResultsTitle {
     font-size: 30px;
@@ -781,16 +842,14 @@ line-height: 1.5;
     padding: 20;
   }
 
-  .ReflectionTextLast{
+  .ReflectionTextLast {
     font-size: 15px;
     width: 70%;
     justify-content: center;
-    margin-top: 20;
-    margin-right: 100;
-    margin-left: 62 !important;
+    padding: 5;
   }
   
-  .Context, .ProblemStatement, .Validation, .SolutionsProcess, .FinalResults, .Reflection {
+  .Context, .ProblemStatement, .Validation, .SolutionsProcess, .FinalResults {
     margin-top: 100;
   }
 
@@ -818,7 +877,177 @@ line-height: 1.5;
   .ValidationTitle, .StatisticsLine, .Takeaways, .SolutionsTextIntro, .SolutionsProcessTitle, 
   .FavoriteStoreFeatureTitle, .StrategicReasoning, .FavStoreText, .DesginJustification, .UserFlowTitle,
   .LeaderboardTitle, .LeaderboardText, .ChickencoopText, .ReasoningForChickencoop, .ReflectionTitle, 
-  .ReflectionText, .ChickencoopTitle, .FinalResultsTitle, .FinalResultsText {
+  .ReflectionText, .ChickencoopTitle, .FinalResultsTitle, .FinalResultsText, .ReflectionTextLast{
+    margin: 0 auto;
+  }
+
+  .Snackpass-Pictures-1 {
+    margin: 0 auto;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .Snackpass-Pictures-1 img {
+    width: 200px;
+    display: flex;
+  }
+
+  .Quote {
+    font-size: 20px;
+    padding: 5;
+  }
+
+  .Favorite-Store-Wireframes, .Leaderboard-Wireframes, .Chickencoop-Wireframes {
+    margin: 0;
+  }
+
+  .FavStoreWireframes1 img, .LeaderboardWireframes1 img, .ChickencoopWireframes1 img{
+    max-width: 80%;
+    height: auto;
+    margin-left: 35;
+  }
+
+  .FavStoreWireframes2 img, .LeaderboardWireframes2 img {
+    max-width: 70%;
+    height: auto;
+    margin-left: 55;
+  }
+
+  .High-Fi-Prototype-Fav-Store img, .High-Fi-Prototype-Leaderboards img {
+    max-width: 95%;
+    height: auto;
+    margin-left: 0;
+    padding: 10
+  }
+
+  .High-Fi-Prototype-Chickencoop img {
+    width: 80%;
+    height: auto;
+    margin-left: 50;
+    padding: 10
+  }
+
+  .Walkthroughs video {
+    width: 60%;
+    height: auto;
+    justify-content: center;
+    margin-left: 150 !important;
+  }
+  
+
+  .Relfection {
+    margin-top: 20;
+    margin-bottom: 60;
+  }
+
+  .SmilingPic img {
+    width: 150px;
+    height: 150px;
+    padding: 2cqmin;
+    left: 10;
+    border: 1px solid white;
+  }
+
+  .LetsChat, .LetsExplore {
+    font-size: 13;
+    padding: 13;
+  }
+
+  .LetsChatTitle, .ExploreTitle {
+    font-size: 15;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 500px) {
+  
+  .MinSittLogo img {
+    width: 100;
+    height: auto;
+    margin-top: 10;
+    margin-left: 60;
+    position: absolute;
+  }
+
+  .Snackpass_Title {
+    font-size: 40px;
+    padding: 10px;
+    font-weight: bold;
+    margin-right: 0 !important;
+    justify-content: center;
+  }
+
+  .Snackpass_one-liner {
+    font-size: 15px;
+    width: 85%;
+    margin-right: 0 !important;
+    justify-content: center;
+    margin-left: 0 !important;
+  }
+
+  #Prototypes img{
+    width: 100%;
+    margin-left: 0 !important;
+    padding: 0 !important;
+    justify-content: center;
+  }
+
+  .ProjectDetails {
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    margin: 0 !important;
+    padding: 10;
+    justify-content: center;
+  }
+
+  .Time {
+    margin-left: 0;
+  }
+
+  .ContextTitle, .ProblemStatementTitle, .ValidationTitle, .SolutionsProcessTitle,
+  .FavoriteStoreFeatureTitle, .LeaderboardTitle, .ReflectionTitle, .ChickencoopTitle, .FinalResultsTitle {
+    font-size: 30px;
+    width: 70%;
+    justify-content: center;
+    padding: 20;
+  }
+
+  .ReflectionTextLast {
+    font-size: 15px;
+    width: 70%;
+    justify-content: center;
+    padding: 5;
+  }
+  
+  .Context, .ProblemStatement, .Validation, .SolutionsProcess, .FinalResults {
+    margin-top: 100;
+  }
+
+  .ContextSummary, .SummaryOfProblem, .ValidationSummary, .StatisticsLine, .Takeaways, 
+  .SolutionsTextIntro, .FavStoreText, .LeaderboardText, .ChickencoopText, 
+  .ReasoningForChickencoop, .ReflectionText, .FinalResultsText {
+    font-size: 15px;
+    width: 70%;
+    justify-content: center;
+    padding: 5;
+  }
+
+  .StrategicReasoning, .DesginJustification, .UserFlowTitle  {
+    font-size: 17px;
+    width: 70%;
+    justify-content: center;
+    padding: 5;
+  }
+
+  .UserFlowTitle {
+    padding: 10;
+  }
+
+  .ContextTitle, .ContextSummary, .Quote, .ProblemStatementTitle, .SummaryOfProblem, .ValidationSummary,
+  .ValidationTitle, .StatisticsLine, .Takeaways, .SolutionsTextIntro, .SolutionsProcessTitle, 
+  .FavoriteStoreFeatureTitle, .StrategicReasoning, .FavStoreText, .DesginJustification, .UserFlowTitle,
+  .LeaderboardTitle, .LeaderboardText, .ChickencoopText, .ReasoningForChickencoop, .ReflectionTitle, 
+  .ReflectionText, .ChickencoopTitle, .FinalResultsTitle, .FinalResultsText, .ReflectionTextLast{
     margin: 0 auto;
   }
 
@@ -862,9 +1091,9 @@ line-height: 1.5;
   }
 
   .High-Fi-Prototype-Chickencoop img {
-    width: 400px;
+    width: 330px;
     height: auto;
-    margin-left: 20;
+    margin-left: 5;
     padding: 10
   }
 
@@ -875,7 +1104,8 @@ line-height: 1.5;
   }
 
   .Relfection {
-    margin-top: 40;
+    margin-top: 20;
+    margin-bottom: 60 !important;
   }
 
   .SmilingPic img {
@@ -887,14 +1117,11 @@ line-height: 1.5;
   }
 
   .LetsChat, .LetsExplore {
-    padding: 20;
+    font-size: 13;
+    padding: 13;
   }
 
   .LetsChatTitle, .ExploreTitle {
-    font-size: 20;
-  }
-
-  .BottomOfPage {
-    height: 40%
+    font-size: 15;
   }
 }
