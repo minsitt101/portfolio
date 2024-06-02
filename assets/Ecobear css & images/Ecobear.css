@@ -84,7 +84,7 @@ body {
     align-items: center;
   }
 
-  .Snackpass_Title {
+  .Ecobear_Title {
     font-size: 50px;
     padding: 10px;
     font-weight: bold;
@@ -137,7 +137,7 @@ body {
   margin-right: 10px;
 }
 
-#SlideDeck, #FigmaFile {
+ #FigmaFile {
   text-decoration: none;
   display: inline-block;
 }
@@ -201,6 +201,18 @@ body {
     flex-wrap: wrap;
   }
 
+  .DesignathonPrompt {
+    font-family: "Work Sans";
+    font-weight: 400;
+    font-size: 20px;
+    width: 70%;
+    margin-left: 200;
+    line-height: 1.5;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+
 
 .Snackpass-Pages {
   align-items: center;
@@ -233,11 +245,11 @@ body {
 
   /* PROBLEM STATEMENT SECTION */
 
-.ProblemStatement {
+.PreliminaryResearch_Conceptualization {
   max-width: 1500px;
 }
 
-.ProblemStatementTitle {
+.PreliminaryResearch_Conceptualization_Title {
     font-family: "Work Sans";
     font-weight: bold;
     font-size: 40px;
@@ -245,17 +257,8 @@ body {
     margin-top: 20;
 }
 
-.Quote {
-    font-family: "Work Sans";
-    font-weight: 300;
-    font-size: 30px;
-    width: 70%;
-    margin-left: 200;
-    margin-top: 20;
-   
-}
 
-.SummaryOfProblem {
+.SustainableLivingText, .EmergingTechnologyText, .MissionStatementText {
     font-family: "Work Sans";
     font-weight: 350;
     font-size: 17px;
@@ -264,33 +267,8 @@ body {
     line-height: 1.5;
 }
 
-  /* Validation Section */
 
-.Validation {
-}
-
-.Statistics {
-  padding: 5px;
-}
-
-.StatHighlight {
-  font-size: 30px;
-}
-
-.SentenceHighlight {
-  font-size: 20px;
-}
-
-.ValidationSummary,  .Takeaways{
-    font-family: "Work Sans";
-    font-weight: 350;
-    font-size: 17px;
-    width: 75%;
-    margin-left: 200;
-    line-height: 1.5;
-}
-
-.StatisticsLine {
+ .PsychologyResearch {
   font-family: "Work Sans";
   font-weight: 350;
   font-size: 17px;
@@ -299,13 +277,7 @@ body {
   line-height: 1.5;
 }
 
-.ValidationTitle {
-  font-family: "Work Sans";
-  font-weight: bold;
-  font-size: 40px;
-  margin-left: 200;
-  margin-top: 40;
-}
+
 
 .bullet-list {
   list-style-type: disc; /* Use 'disc' for filled circles or 'circle' for empty circles */
@@ -316,96 +288,11 @@ body {
   padding-left: 20px; /* Adjust padding to increase space between bullets */
 }
 
-  /* Wireframe Showcase Section */
 
-.SolutionsProcessTitle {
-    font-family: "Work Sans";
-    font-weight: bold;
-    font-size: 40px;
-    margin-left: 200;
-}
-
-.SolutionsTextIntro{
-  font-family: "Work Sans";
-  font-weight: 350;
-  font-size: 17px;
-  width: 70%;
-  margin-left: 200;
-  line-height: 1.5;
-}
-
-
-/* Favorite Store, Leaderboards, Chickencoop Feature */
-
-.FavoriteStoreFeatureTitle, .LeaderboardTitle, .ChickencoopTitle {
+.SustainableLivingTitle, .EmergingTechnologyTitle, .MissionStatementTitle {
   font-family: "Work Sans";
   font-weight: bold;
-  font-size: 30px;
-  margin-top: 20;
-  margin-left: 200;
-}
-
-.LeaderboardTitle {
-  margin-top: 30;
-}
-
-.Favorite-Store-Wireframes, .Leaderboard-Wireframes, .Chickencoop-Wireframes {
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  flex-direction: row;
-  margin: 0;
-  padding: 5;
-  margin-left: 200px;
-  flex-wrap: wrap;
-}
-
-.FavStoreWireframes1 img, .LeaderboardWireframes1 img, .ChickencoopWireframes1 img {
-  max-width: 600; /* Ensure images don't exceed their container's width */
-  height: auto; /* Maintain aspect ratio */
-  border-radius: 0; /* Remove border radius if not needed */
-  padding: 10px;
-}
-
-.ChickencoopWireframes1 img {
-  max-width: 500; /* Ensure images don't exceed their container's width */
-  height: auto; /* Maintain aspect ratio */
-  border-radius: 0; /* Remove border radius if not needed */
-  padding: 10px;
-  margin-left: 200;
-}
-
-.FavStoreWireframes2 img, .LeaderboardWireframes2 img {
-  max-width: 400; /* Ensure images don't exceed their container's width */
-  height: auto; /* Maintain aspect ratio */
-  border-radius: 0; /* Remove border radius if not needed */
-  padding: 10px;
-}
-
-.FavStoreText, .LeaderboardText, .ChickencoopText {
-  font-family: "Work Sans";
-  font-weight: 350;
-  font-size: 17px;
-  width: 70%;
-  margin-left: 200;
-  line-height: 1.5;
-}
-
-.UserFlowTitle {
-  font-family: "Work Sans";
-  font-weight: bold;
-  font-size: 17px;
-  display: flex;
-  justify-content: center;
-  padding: 10;
-  margin-top: 10;
-
-}
-
-.StrategicReasoning, .DesginJustification {
-  font-family: "Work Sans";
-  font-weight: bold;
-  color: #04BCFC;
+  color: #89ab9e;
   font-size: 17px;
   margin-left: 200;
   line-height: 1.5;
@@ -479,35 +366,6 @@ margin-left: 200;
 line-height: 1.5;
 }
 
-
-/* Reflection */
-
-.Reflection {
-  padding: 0;
-  margin-top: 100px;
-  margin-bottom: 60px;
-}
-
-.ReflectionTitle {
-  font-family: "Work Sans";
-  font-weight: bold;
-  font-size: 40px;
-  margin-top: 20;
-  margin-left: 200;
-}
-
-.ReflectionTextLast{
-  font-family: "Work Sans";
-  font-weight: 350;
-  font-size: 17px;
-  width: 70%;
-  margin-left: 200;
-  margin-top: 20;
-  margin-bottom: 90;
-  padding: 5;
-  line-height: 1.5;
-  }
-
 .ReflectionText {
 font-family: "Work Sans";
 font-weight: 350;
@@ -518,21 +376,6 @@ margin-top: 20;
 padding: 5;
 line-height: 1.5;
 }
-
-/* VIDEOS */ 
-
-.Walkthroughs {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  flex-wrap: wrap;
-}
-
-.Walkthroughs video {
-  margin: 20 20px; /* Adjust the margin as needed to create space between the videos */
-}
-
 
 /* BUTTON SCROLL-TOP */
 
@@ -650,7 +493,7 @@ line-height: 1.5;
     position: absolute;
   }
 
-  .Snackpass_Title {
+  .Ecobear_Title {
     font-size: 40px;
     padding: 10px;
     font-weight: bold;
@@ -683,7 +526,7 @@ line-height: 1.5;
     justify-content: center;
   }
 
-  .ContextTitle, .ProblemStatementTitle, .ValidationTitle, .SolutionsProcessTitle,
+  .ContextTitle, .PreliminaryResearch_Conceptualization_Title, .ValidationTitle, .SolutionsProcessTitle,
   .FavoriteStoreFeatureTitle, .LeaderboardTitle, .ReflectionTitle, .ChickencoopTitle, .FinalResultsTitle {
     font-size: 30px;
     width: 70%;
@@ -698,11 +541,11 @@ line-height: 1.5;
     padding: 5;
   }
   
-  .Context, .ProblemStatement, .Validation, .SolutionsProcess, .FinalResults, .Reflection {
+  .Context, .PreliminaryResearch_Conceptualization, .Validation, .SolutionsProcess, .FinalResults, .Reflection {
     margin-top: 100;
   }
 
-  .ContextSummary, .SummaryOfProblem, .ValidationSummary, .StatisticsLine, .Takeaways, 
+  .ContextSummary, .SustainableLivingText, .EmergingTechnologyText, .MissionStatementText, .ValidationSummary, .StatisticsLine, .PsychologyResearch, .Takeaways, 
   .SolutionsTextIntro, .FavStoreText, .LeaderboardText, .ChickencoopText, 
   .ReasoningForChickencoop, .ReflectionText, .FinalResultsText {
     font-size: 16px;
@@ -711,7 +554,7 @@ line-height: 1.5;
     padding: 5;
   }
 
-  .StrategicReasoning, .DesginJustification, .UserFlowTitle  {
+   .DesginJustification, .UserFlowTitle{
     font-size: 18px;
     width: 70%;
     justify-content: center;
@@ -722,9 +565,10 @@ line-height: 1.5;
     padding: 10;
   }
 
-  .ContextTitle, .ContextSummary, .Quote, .ProblemStatementTitle, .SummaryOfProblem, .ValidationSummary,
-  .ValidationTitle, .StatisticsLine, .Takeaways, .SolutionsTextIntro, .SolutionsProcessTitle, 
-  .FavoriteStoreFeatureTitle, .StrategicReasoning, .FavStoreText, .DesginJustification, .UserFlowTitle,
+  .ContextTitle, .ContextSummary, .Quote, .PreliminaryResearch_Conceptualization_Title, .SummaryOfProblem, .ValidationSummary,
+  .ValidationTitle, .StatisticsLine, .PsychologyResearch, .Takeaways, .SolutionsTextIntro, .SolutionsProcessTitle, 
+  .FavoriteStoreFeatureTitle, .SustainableLivingText, .EmergingTechnologyText, .MissionStatementText,
+   .FavStoreText, .DesginJustification, .UserFlowTitle,
   .LeaderboardTitle, .LeaderboardText, .ChickencoopText, .ReasoningForChickencoop, .ReflectionTitle, 
   .ReflectionText, .ChickencoopTitle, .FinalResultsTitle, .FinalResultsText, .ReflectionTextLast{
     margin: 0 auto;
@@ -802,7 +646,7 @@ line-height: 1.5;
     position: absolute;
   }
 
-  .Snackpass_Title {
+  .Ecobear_Title {
     font-size: 40px;
     padding: 10px;
     font-weight: bold;
@@ -838,7 +682,7 @@ line-height: 1.5;
     margin-left: 0;
   }
 
-  .ContextTitle, .ProblemStatementTitle, .ValidationTitle, .SolutionsProcessTitle,
+  .ContextTitle, .PreliminaryResearch_Conceptualization_Title, .ValidationTitle, .SolutionsProcessTitle,
   .FavoriteStoreFeatureTitle, .LeaderboardTitle, .ReflectionTitle, .ChickencoopTitle, .FinalResultsTitle {
     font-size: 30px;
     width: 70%;
@@ -853,11 +697,12 @@ line-height: 1.5;
     padding: 5;
   }
   
-  .Context, .ProblemStatement, .Validation, .SolutionsProcess, .FinalResults {
+  .Context, .PreliminaryResearch_Conceptualization, .Validation, .SolutionsProcess, .FinalResults {
     margin-top: 100;
   }
 
-  .ContextSummary, .SummaryOfProblem, .ValidationSummary, .StatisticsLine, .Takeaways, 
+  .ContextSummary, .SustainableLivingText, .EmergingTechnologyText, .MissionStatementText,
+   .ValidationSummary, .StatisticsLine, .PsychologyResearch, .Takeaways, 
   .SolutionsTextIntro, .FavStoreText, .LeaderboardText, .ChickencoopText, 
   .ReasoningForChickencoop, .ReflectionText, .FinalResultsText {
     font-size: 15px;
@@ -866,7 +711,7 @@ line-height: 1.5;
     padding: 5;
   }
 
-  .StrategicReasoning, .DesginJustification, .UserFlowTitle  {
+  .SustainableLivingTitle, .EmergingTechnologyTitle, .MissionStatementTitle   {
     font-size: 17px;
     width: 70%;
     justify-content: center;
@@ -877,9 +722,10 @@ line-height: 1.5;
     padding: 10;
   }
 
-  .ContextTitle, .ContextSummary, .Quote, .ProblemStatementTitle, .SummaryOfProblem, .ValidationSummary,
-  .ValidationTitle, .StatisticsLine, .Takeaways, .SolutionsTextIntro, .SolutionsProcessTitle, 
-  .FavoriteStoreFeatureTitle, .StrategicReasoning, .FavStoreText, .DesginJustification, .UserFlowTitle,
+  .ContextTitle, .ContextSummary, .Quote, .PreliminaryResearch_Conceptualization_Title, .SustainableLivingText, 
+  .EmergingTechnologyText, .MissionStatementText,
+   .StatisticsLine, .PsychologyResearch .Takeaways, .SolutionsTextIntro, .SolutionsProcessTitle, 
+  .FavoriteStoreFeatureTitle, .SustainableLivingTitle, .EmergingTechnologyTitle, .MissionStatementTitle, .FavStoreText, .DesginJustification, .UserFlowTitle,
   .LeaderboardTitle, .LeaderboardText, .ChickencoopText, .ReasoningForChickencoop, .ReflectionTitle, 
   .ReflectionText, .ChickencoopTitle, .FinalResultsTitle, .FinalResultsText, .ReflectionTextLast{
     margin: 0 auto;
@@ -978,7 +824,7 @@ line-height: 1.5;
     position: absolute;
   }
 
-  .Snackpass_Title {
+  .Ecobear_Title {
     font-size: 40px;
     padding: 10px;
     font-weight: bold;
@@ -1014,7 +860,7 @@ line-height: 1.5;
     margin-left: 0;
   }
 
-  .ContextTitle, .ProblemStatementTitle, .ValidationTitle, .SolutionsProcessTitle,
+  .ContextTitle, .PreliminaryResearch_Conceptualization_Title, .ValidationTitle, .SolutionsProcessTitle,
   .FavoriteStoreFeatureTitle, .LeaderboardTitle, .ReflectionTitle, .ChickencoopTitle, .FinalResultsTitle {
     font-size: 30px;
     width: 70%;
@@ -1029,11 +875,12 @@ line-height: 1.5;
     padding: 5;
   }
   
-  .Context, .ProblemStatement, .Validation, .SolutionsProcess, .FinalResults {
+  .Context, .PreliminaryResearch_Conceptualization, .Validation, .SolutionsProcess, .FinalResults {
     margin-top: 100;
   }
 
-  .ContextSummary, .SummaryOfProblem, .ValidationSummary, .StatisticsLine, .Takeaways, 
+  .ContextSummary, .SustainableLivingText, .EmergingTechnologyText, .MissionStatementText,
+  .ValidationSummary, .StatisticsLine, .Takeaways, 
   .SolutionsTextIntro, .FavStoreText, .LeaderboardText, .ChickencoopText, 
   .ReasoningForChickencoop, .ReflectionText, .FinalResultsText {
     font-size: 15px;
@@ -1042,7 +889,7 @@ line-height: 1.5;
     padding: 5;
   }
 
-  .StrategicReasoning, .DesginJustification, .UserFlowTitle  {
+  .SustainableLivingTitle, .DesginJustification, .UserFlowTitle, .EmergingTechnologyTitle, .MissionStatementTitle  {
     font-size: 17px;
     width: 70%;
     justify-content: center;
@@ -1053,9 +900,10 @@ line-height: 1.5;
     padding: 10;
   }
 
-  .ContextTitle, .ContextSummary, .Quote, .ProblemStatementTitle, .SummaryOfProblem, .ValidationSummary,
+  .ContextTitle, .ContextSummary, .Quote, .PreliminaryResearch_Conceptualization_Title, .SustainableLivingText,
+   .ValidationSummary, .EmergingTechnologyText, .MissionStatementText,
   .ValidationTitle, .StatisticsLine, .Takeaways, .SolutionsTextIntro, .SolutionsProcessTitle, 
-  .FavoriteStoreFeatureTitle, .StrategicReasoning, .FavStoreText, .DesginJustification, .UserFlowTitle,
+  .FavoriteStoreFeatureTitle, .SustainableLivingTitle, .EmergingTechnologyTitle, .MissionStatementTitle, .FavStoreText, .DesginJustification, .UserFlowTitle,
   .LeaderboardTitle, .LeaderboardText, .ChickencoopText, .ReasoningForChickencoop, .ReflectionTitle, 
   .ReflectionText, .ChickencoopTitle, .FinalResultsTitle, .FinalResultsText, .ReflectionTextLast{
     margin: 0 auto;

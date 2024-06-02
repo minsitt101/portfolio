@@ -1,0 +1,489 @@
+
+/*BACKGROUND COLOR */
+
+body {
+    margin: 0;
+    background: linear-gradient(to bottom, rgba(222, 200, 183, 0.8), rgba(222, 218, 219, 1.0), rgba(245, 245, 245, 1.0), rgba(222, 200, 183, 0.8));
+}
+
+.navigation_bar {
+    margin: 0;
+    height: 20%;
+    
+}
+
+.BottomOfPage {
+  background: linear-gradient(to bottom, rgba(222, 200, 183, 0.8), rgba(222, 218, 219, 1.0));
+  height: 300px;
+  margin: 0;
+}
+
+.Content-Section {
+  margin: 0;
+  background: #F5F5F5;
+}
+
+/*NAV BAR */
+.MinSittLogo img {
+  width: 120px; /* Add 'px' for proper CSS syntax */
+  height: auto; /* Add 'px' for proper CSS syntax */
+  margin-left: 60px; /* Add 'px' for proper CSS syntax */
+  position: fixed;
+  z-index: 2000;
+}
+
+.Home a, .Projects a, .Resume a {
+  color: black;
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+  font-family: "Work Sans";
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-end; /* Align items to the right */
+  position: fixed; /* Fixed positioning */
+  top: 0; /* Position it at the top */
+  right: 0; /* Position it at the right */
+  width: 100%; /* Full width */ /* Set a background color to avoid transparency issues */
+  z-index: 1000; /* Ensure the navbar stays on top of other elements */
+  padding: 10px; /* Add some padding */
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.navbar ul {
+  display: flex; /* Make the <ul> a flex container */
+  list-style-type: none; /* Remove default list style */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+.navbar li {
+  margin: 10px;
+  padding: 4px 30px;
+  position: relative;
+  border-right: 1px solid black;
+}
+
+.navbar li:last-child {
+  border-right: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: black;
+}
+
+/* Product and Design Project Section Title */
+
+.ProductDesignProjects, .BusinessProjects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+  padding: 20px;
+}
+
+.SectionTitle {
+  font-size: 35px;
+  margin-bottom: 50px;
+  text-align: center;
+  font-family: "Work Sans";
+  font-weight: 200;
+  padding: 10
+}
+
+.DesignProject1, .DesignProject2, .DesignProject3, .DesignProject4, .BusProject1, .BusProject2,
+.BusProject3, .BusProject4 {
+  display: flex;
+  align-items: center;
+  gap: 30px; /* Adjust the gap value as needed for spacing */
+  position: relative;
+  top: 50%;
+  left: 40%;
+  padding: 20;
+}
+
+
+#DesignProjectPicture img, #BusProjectPicture img {
+  max-width: 150px; /* Adjust the max-width as needed */
+  height: auto;
+  border-radius: 50%;
+}
+
+#DesignProjectPictureEcobear img {
+  max-width: 150px; /* Adjust the max-width as needed */
+  height: auto;
+}
+
+.BusProjectPictureCalRecycle img {
+  max-width: 150px; /* Adjust the max-width as needed */
+  height: auto;
+  border-radius: 50%;
+}
+
+.BusProjectPictureASRB img {
+  max-width: 150px; /* Adjust the max-width as needed */
+  height: 150px;
+  border-radius: 50%;
+}
+
+.BusProjectPictureVuori img {
+  max-width: 150px; /* Adjust the max-width as needed */
+  height: auto;
+  border-radius: 50%;
+}
+
+#ProjectDescription {
+  max-width: 500px; /* Adjust the max-width as needed */
+  justify-content: center;
+  
+}
+
+.ProjectTitle {
+  font-size: 25px;
+  font-weight: 500;
+  margin: 0 0 10px 0;
+  font-family: "Roboto Serif";
+  width: 70%;
+}
+
+.Description {
+  font-size: 16px;
+  width: 70%;
+  line-height: 1.5;
+  margin: 0;
+  font-family: "Work Sans";
+  font-weight: 270;
+}
+
+.Skills {
+  font-size: 14px;
+  width: 70%;
+  line-height: 1.5;
+  margin: 0;
+  font-family: "Work Sans";
+  font-weight: 250;
+  margin-bottom: 10;
+}
+
+.DateOfProject  {
+  font-size: 16px;
+  width: 70%;
+  line-height: 1.5;
+  margin: 0;
+  font-family: "Work Sans";
+  font-weight: 400;
+  margin-top: 10;
+  margin-bottom: 10;
+}
+
+
+/*BOTTOM PAGE*/
+
+.LetsChat {
+  flex-wrap: wrap;
+  margin-top: 30;
+}
+
+.LetsExplore {
+  flex-wrap: wrap;
+  margin-top: 30;
+  
+}
+
+.LetsChatTitle, .ExploreTitle {
+  font-size: 30;
+  font-weight: 500;
+}
+
+.BottomOfPage  a {
+ text-decoration: underline;
+ color: inherit;
+}
+
+.BottomOfPage {
+  font-family: "Work Sans";
+  display: flex;
+  justify-content: column;
+  justify-content: row;
+  justify-content: space-evenly;
+  
+}
+
+.SmilingPic img {
+    position: relative;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    right: 0;
+    top: 20;
+    border: 1px solid white;
+}
+
+/* ANIMAIONS */
+
+
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(30px) scale(0.9);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
+}
+
+@keyframes fade-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px) scale(0.9);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
+}
+
+.hidden {
+  opacity:  0;
+  transform: translateY(30px);
+  transition: all 1.3s;
+}
+
+.show {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+#DesignProjectPicture img:hover, .BusProjectPictureVuori img:hover, .BusProjectPictureCalRecycle img:hover, 
+#BusProjectPicture img:hover, .BusProjectPictureASRB img:hover {
+  transition: transform 0.3s ease;
+  transform: translateY(-10px);
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 750px) and (max-width: 889px) {
+
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  
+  .nav-menu {
+    position: fixed;
+  }
+
+  .ProjectTitle, .Date, .Skills, .Description {
+    width: 420px;
+  }
+
+  .DesignProject1, .DesignProject2, .DesignProject3, .DesignProject4 {
+    left: 35%;
+  }
+}
+
+@media screen and (min-width: 630px) and (max-width: 750px) {
+
+  .ProjectTitle, .Date, .Skills, .Description {
+    width: 300px;
+  }
+
+  #DesignProjectPicture img, .BusProjectPictureVuori img, .BusProjectPictureCalRecycle img, 
+  #BusProjectPicture img {
+    width: 200px;
+  }
+
+  .BusProjectPictureASRB img {
+    width: 175px;
+    height: 175px;
+  }
+
+
+  .DesignProject1, .DesignProject2, .DesignProject3, .DesignProject4, .BusProject1, .BusProject2,
+  .BusProject3, .BusProject4  {
+    left: 30%;
+  }
+
+  .ProjectTitle {
+    font-size: 20;
+  }
+  
+  .DateOfProject {
+    font-size: 14 ;
+  }
+
+  .Skills {
+    font-size: 13;
+  }
+
+  .Description {
+    font-size: 14;
+  }
+
+  .SmilingPic img {
+    width: 150px;
+    height: 150px;
+    padding: 2cqmin;
+    left: 10;
+    border: 1px solid white;
+  }
+
+  .LetsChat, .LetsExplore {
+    font-size: 13;
+    padding: 13;
+  }
+
+  .LetsChatTitle, .ExploreTitle {
+    font-size: 30;
+  }
+
+  .BottomOfPage {
+    height: 250;
+  }
+
+}
+
+@media screen and (min-width: 450px) and (max-width: 629px) {
+
+  .ProjectTitle, .Date, .Skills, .Description {
+    width: 300px;
+  }
+
+  #DesignProjectPicture img, .BusProjectPictureVuori img, .BusProjectPictureCalRecycle img, 
+ #BusProjectPicture img {
+    width: 100px;
+  }
+
+  .BusProjectPictureASRB img {
+    width: 100px;
+    height: 100px;
+  }
+
+
+  .DesignProject1, .DesignProject2, .DesignProject3, .DesignProject4, .BusProject1, .BusProject2,
+  .BusProject3, .BusProject4 {
+    left: 25%;
+  }
+  
+  .ProjectTitle {
+    font-size: 20;
+  }
+  
+  .DateOfProject {
+    font-size: 13 ;
+  }
+
+  .Skills {
+    font-size: 12;
+  }
+
+  .Description {
+    font-size: 13;
+  }
+
+  .SmilingPic img {
+    width: 150px;
+    height: 150px;
+    padding: 2cqmin;
+    left: 10;
+    border: 1px solid white;
+  }
+
+  .LetsChat, .LetsExplore {
+    font-size: 13;
+    padding: 13;
+  }
+
+  .LetsChatTitle, .ExploreTitle {
+    font-size: 15;
+  }
+
+  .BottomOfPage {
+    height: 250;
+  }
+
+}
+
+@media screen and (min-width: 300px) and (max-width: 450px) {
+
+  .ProjectTitle, .Date, .Skills, .Description {
+    width: 200px;
+  }
+
+  #DesignProjectPicture img, .BusProjectPictureVuori img, .BusProjectPictureCalRecycle img, 
+   #BusProjectPicture img {
+    width: 75px;
+  }
+
+  .BusProjectPictureASRB img {
+    width: 75px;
+    height: 75px;
+  }
+
+  .DesignProject1, .DesignProject2, .DesignProject3, .DesignProject4, .BusProject1, .BusProject2,
+  .BusProject3, .BusProject4 {
+    left: 25%;
+  }
+  
+  .ProjectTitle {
+    font-size: 20;
+  }
+  
+  .DateOfProject {
+    font-size: 13 ;
+  }
+
+  .Skills {
+    font-size: 12;
+  }
+
+  .Description {
+    font-size: 13;
+  }
+
+  /* BOTTOM PAGE */
+  .SmilingPic img {
+    width: 100px;
+    height: 100px;
+    padding: 2cqmin;
+    left: 10;
+    border: 1px solid white;
+  }
+
+  .LetsChat, .LetsExplore {
+    font-size: 13;
+    padding: 13;
+  }
+
+  .LetsChatTitle, .ExploreTitle {
+    font-size: 15;
+  }
+
+  .BottomOfPage {
+    height: 250px;
+  }
+
+}
