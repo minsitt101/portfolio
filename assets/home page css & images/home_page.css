@@ -66,6 +66,21 @@ body {
   border-right: none;
 }
  
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.hamburger span {
+  height: 2px;
+  width: 25px;
+  background: black;
+  margin: 4px 0;
+  transition: 0.4s;
+}
   
 /*PROFILE PICTURE & INTRO CODE */
 
@@ -581,14 +596,14 @@ body {
   }
 
   #Snackpass_showcase_picture img, #Ecobear_showcase_picture img {
-    width: 250px; 
-    height: 250px; 
+    width: 350px; 
+    height: 350px; 
     padding: 40px;
     border-radius: 20%;
   }
   
   #Botanical_showcase_picture img{
-    width: 250px; 
+    width: 350px; 
     height: auto; 
     padding: 40px;
     border-radius: 20%;
@@ -684,19 +699,22 @@ body {
   }
 
   #Snackpass_showcase_picture img, #Ecobear_showcase_picture img {
-    width: 250px; 
-    height: 250px; 
+    width: 300px; 
+    height: 300px; 
     padding: 40px;
     border-radius: 20%;
   }
   
   #Botanical_showcase_picture img {
-    width: 250px; 
+    width: 300px; 
     height: auto; 
     padding: 40px;
     border-radius: 20%;
   }
   
+  .ReflectionText :last-child {
+    margin-bottom: 100;
+  }
 
   .SmilingPic img {
     width: 90px;
@@ -717,7 +735,9 @@ body {
   }
 
   .BottomOfPage {
-    height: 250;
+    height: 150;
   }
+
+  
 
 }

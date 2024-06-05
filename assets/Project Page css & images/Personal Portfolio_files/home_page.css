@@ -111,7 +111,7 @@ body {
 
 .Major {
   font-size: 18px;
-  font-weight: 200;
+  font-weight: 300;
   margin-left: 20px;
   animation: fade-up 2s;
 }
@@ -226,9 +226,9 @@ body {
   width: 500px;
 }
 
-/* Snackpass Project Section */
+/* Snackpass Project Section and Ecobear */
 
-.Snackpass {
+.Snackpass, .Ecobear {
   width: 100%;
   display: flex;
   /* flex-direction: row-reverse; if I want to inverse the picture and text */
@@ -237,16 +237,16 @@ body {
   font-family: "Work Sans";
 }
 
-.SnackpassTitle {
+.SnackpassTitle, .EcobearTitle {
   font-family: "Roboto Serif";
 }
 
-#Snackpass_project_text {
+#Snackpass_project_text, #Ecobear_project_text {
   width: 600px; 
 }
 
 
-#Snackpass_showcase_picture img {
+#Snackpass_showcase_picture img, #Ecobear_showcase_picture img {
   width: 350px; 
   height: 350px; 
   padding: 40px;
@@ -282,7 +282,8 @@ body {
 
 /*General Animations*/
 
-#Snackpass_showcase_picture img:hover,  #Botanical_showcase_picture img:hover {
+#Snackpass_showcase_picture img:hover,  #Botanical_showcase_picture img:hover, 
+#Ecobear_showcase_picture img:hover {
   transition: transform 0.3s ease;
   transform: translateY(-10px);
 }
@@ -301,6 +302,13 @@ body {
   font-size: 30px;
   padding: 0px;
   color: #04BCFC
+}
+
+.EcobearTitle {
+  font-weight: bold;
+  font-size: 30px;
+  padding: 0px;
+  color: #89ab9e;
 }
 
 
@@ -405,7 +413,7 @@ body {
   }
 
 
-  #Botanical_garden_project_text, #Snackpass_project_text {
+  #Botanical_garden_project_text, #Snackpass_project_text, #Ecobear_project_text {
   width: 400;
 }
    
@@ -429,7 +437,7 @@ body {
   }
   
 
-  #Botanical_garden_project_text, #Snackpass_project_text {
+  #Botanical_garden_project_text, #Snackpass_project_text, #Ecobear_project_text {
   width: 350;
 }
 }
@@ -446,12 +454,6 @@ body {
     width: 550px;
     margin-top: 0;
   }
-  
-  .Major {
-    font-size: 20px;
-    font-weight: 300;
-  }
-
 
   #profile-pic img {
     width: 200px;
@@ -465,11 +467,11 @@ body {
   }
   
 
-  #Botanical_garden_project_text, #Snackpass_project_text {
+  #Botanical_garden_project_text, #Snackpass_project_text, #Ecobear_project_text {
   width: 300;
 }
 
-.SnackpassTitle, .BotanicalGardensTitle {
+.SnackpassTitle, .BotanicalGardensTitle, .EcobearTitle {
   font-size: 23px;
 }
 
@@ -484,7 +486,7 @@ body {
 
 .Major {
   width: 500px;
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 300;
 }
 
@@ -494,7 +496,7 @@ body {
   align-items: center;
 }
 
-#Snackpass_showcase_picture img {
+#Snackpass_showcase_picture img, #Ecobear_showcase_picture img {
   width: 300px; 
   height: 300px; 
   padding: 40px;
@@ -510,7 +512,7 @@ body {
 
 }
 
-@media screen and (min-width: 550px) and (max-width: 700px) {
+@media screen and (min-width: 500px) and (max-width: 700px) {
 
 
   .MyName {
@@ -526,7 +528,7 @@ body {
   }
 
   .Intro {
-    width: 250px;
+    width: 350px;
     font-size: 15px;
   }
 
@@ -549,18 +551,18 @@ body {
     align-items: center;
   }
 
-  .Snackpass, .BotanicalGardens {
+  .Snackpass, .BotanicalGardens, .Ecobear {
     display: flex !important;
     flex-direction: column !important;
     align-items: center !important;
   }
 
-  #Snackpass_project_text, #Botanical_garden_project_text  {
+  #Snackpass_project_text, #Botanical_garden_project_text, #Ecobear_project_text  {
     width: 300px;
   }
 
   
-.SnackpassTitle, .BotanicalGardensTitle {
+.SnackpassTitle, .BotanicalGardensTitle, .EcobearTitle {
   font-size: 25px;
 }
 
@@ -578,25 +580,46 @@ body {
     width: 300px;
   }
 
-  #Snackpass_showcase_picture img {
-    width: 250px; 
-    height: 250px; 
+  #Snackpass_showcase_picture img, #Ecobear_showcase_picture img {
+    width: 350px; 
+    height: 350px; 
     padding: 40px;
     border-radius: 20%;
   }
   
   #Botanical_showcase_picture img{
-    width: 250px; 
+    width: 350px; 
     height: auto; 
     padding: 40px;
     border-radius: 20%;
   }
   
 
+  .SmilingPic img {
+    width: 150px;
+    height: 150px;
+    padding: 2cqmin;
+    left: 10;
+    border: 1px solid white;
+  }
+
+  .LetsChat, .LetsExplore {
+    font-size: 13;
+    padding: 13;
+  }
+
+  .LetsChatTitle, .ExploreTitle {
+    font-size: 15;
+  }
+
+  .BottomOfPage {
+    height: 250;
+  }
+
 }
 
 
-@media screen and (min-width: 320px) and (max-width: 550px) {
+@media screen and (min-width: 320px) and (max-width: 500px) {
 
 
   .MyName {
@@ -631,18 +654,18 @@ body {
     align-items: center;
   }
 
-  .Snackpass, .BotanicalGardens {
+  .Snackpass, .BotanicalGardens, .Ecobear {
     display: flex !important;
     flex-direction: column !important;
     align-items: center !important;
   }
 
-  #Snackpass_project_text, #Botanical_garden_project_text  {
+  #Snackpass_project_text, #Botanical_garden_project_text, #Ecobear_project_text  {
     width: 300px;
   }
 
   
-.SnackpassTitle, .BotanicalGardensTitle {
+.SnackpassTitle, .BotanicalGardensTitle, .EcobearTitle {
   font-size: 20px;
 }
 
@@ -660,19 +683,44 @@ body {
     width: 300px;
   }
 
-  #Snackpass_showcase_picture img {
-    width: 250px; 
-    height: 250px; 
+  #Snackpass_showcase_picture img, #Ecobear_showcase_picture img {
+    width: 300px; 
+    height: 300px; 
     padding: 40px;
     border-radius: 20%;
   }
   
-  #Botanical_showcase_picture img{
-    width: 250px; 
+  #Botanical_showcase_picture img {
+    width: 300px; 
     height: auto; 
     padding: 40px;
     border-radius: 20%;
   }
   
+  .ReflectionText :last-child {
+    margin-bottom: 100;
+  }
+
+  .SmilingPic img {
+    width: 90px;
+    height: 90px;
+    padding: 2cqmin;
+    left: 10;
+    border: 1px solid white;
+    margin-top: 20px;
+  }
+
+  .LetsChat, .LetsExplore {
+    font-size: 13;
+    padding: 13;
+  }
+
+  .LetsChatTitle, .ExploreTitle {
+    font-size: 15;
+  }
+
+  .BottomOfPage {
+    height: 150;
+  }
 
 }

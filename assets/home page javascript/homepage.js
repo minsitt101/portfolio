@@ -30,3 +30,14 @@ const observer = new IntersectionObserver((entries) => {
 
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el));
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    const hamburger = document.getElementById("hamburger");
+    const navMenu = document.querySelector(".navbar ul");
+
+    hamburger.addEventListener("click", function() {
+      navMenu.classList.toggle("active");
+    });
+  });

@@ -1,8 +1,26 @@
 
-/*SECTIONING */
+/*CENTERING */
+
+.High-Fi-Prototype, .Leaderboard-Wireframes, .High-Fi-Prototype-Fav-Store, 
+.High-Fi-Prototype-Leaderboards, .High-Fi-Prototype-Chickencoop, .Walkthroughs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+.UserFlowImage, .UserFlowsMap, .LoFiImage, .MascotImage, .ResultsImages, .HomePagePrototypes, .HomePageSubtitle,
+.ShoppingPrototypes, .ShoppingSubtitle, .AffirmationVideo, .AffirmationSubtitle, .AIChatboxPrototypes, 
+.ImpactPagePrototype, .EcobearLogo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 
 /*BACKGROUND COLOR */
+
 
 body {
     margin: 0;
@@ -442,19 +460,17 @@ body {
 }
 
 .High-Fi-Prototype-Fav-Store img, .High-Fi-Prototype-Leaderboards img {
-  max-width: 50%; /* Ensure images don't exceed their container's width */
+  width: 800; /* Ensure images don't exceed their container's width */
   height: auto; /* Maintain aspect ratio */
   border-radius: 0; /* Remove border radius if not needed */
-  margin-left: 350;
   flex-wrap: wrap;
   justify-content: center;
 }
 
 .High-Fi-Prototype-Chickencoop img {
-  width: 50%; /* Ensure images don't exceed their container's width */
+  width: 600; /* Ensure images don't exceed their container's width */
   height: auto; /* Maintain aspect ratio */
   border-radius: 0; /* Remove border radius if not needed */
-  margin-left: 350;
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -527,10 +543,7 @@ line-height: 1.5;
   align-items: center;
   padding: 10px;
   flex-wrap: wrap;
-}
-
-.Walkthroughs video {
-  margin: 20 20px; /* Adjust the margin as needed to create space between the videos */
+  margin-top: 20;
 }
 
 
@@ -571,17 +584,20 @@ line-height: 1.5;
 .LetsChat {
   flex-wrap: wrap;
   margin-top: 30;
+  
 }
 
 .LetsExplore {
   flex-wrap: wrap;
   margin-top: 30;
+
   
 }
 
 .LetsChatTitle, .ExploreTitle {
   font-size: 30;
   font-weight: 500;
+  font-family: "Roboto Serif";
 }
 
 .BottomOfPage  a {
@@ -767,14 +783,12 @@ line-height: 1.5;
   .High-Fi-Prototype-Fav-Store img, .High-Fi-Prototype-Leaderboards img {
     max-width: 90%;
     height: auto;
-    margin-left: 10;
     padding: 10
   }
 
   .High-Fi-Prototype-Chickencoop img {
     width: 60%;
     height: auto;
-    margin-left: 120;
     padding: 10
   }
 
@@ -962,9 +976,8 @@ line-height: 1.5;
   }
 
   .BottomOfPage {
-    height: 250;
+    height: 200;
   }
-  
   
 }
 
@@ -1101,7 +1114,7 @@ line-height: 1.5;
   }
 
   .High-Fi-Prototype-Chickencoop img {
-    width: 330px;
+    width: 70%;
     height: auto;
     margin-left: 5;
     padding: 10
@@ -1119,11 +1132,12 @@ line-height: 1.5;
   }
 
   .SmilingPic img {
-    width: 150px;
-    height: 150px;
+    width: 90px;
+    height: 90px;
     padding: 2cqmin;
     left: 10;
     border: 1px solid white;
+    margin-top: 20px;
   }
 
   .LetsChat, .LetsExplore {
@@ -1136,6 +1150,6 @@ line-height: 1.5;
   }
 
   .BottomOfPage {
-    height: 250;
+    height: 200;
   }
 }

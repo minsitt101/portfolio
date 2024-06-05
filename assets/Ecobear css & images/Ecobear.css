@@ -26,6 +26,7 @@ body {
   background: #F5F5F5;
 }
 
+
 /*NAV BAR */
 
 .MinSittLogo img {
@@ -90,7 +91,7 @@ body {
     font-weight: bold;
   }
 
-  .Snackpass_one-liner {
+  .Ecobear_one-liner {
     font-size: 18px;
     font-weight: 300;
     width: 50%;
@@ -261,7 +262,7 @@ body {
 
 .SustainableLivingText, .EmergingTechnologyText, .MissionStatementText, .MissionStatementFull, 
 .KeyFunctionalityText, .UserFlowLofiText, .MascotSectionText, .ReflectionText, .ResultsSectionText, 
-.High-Fi-Intro, .HomePageSubtitle, .ShoppingSubtitle, .AffirmationSubtitle {
+.High-Fi-Intro, .HomePageSubtitle, .ShoppingSubtitle, .AffirmationSubtitle, .ImpactSubtitle {
     font-family: "Work Sans";
     font-weight: 350;
     font-size: 17px;
@@ -345,32 +346,41 @@ body {
   padding: 10px;
 }
 
-.Reflection {
-  margin-bottom: 100px;
-}
 
 .HomePagePrototypes img, .ImpactPagePrototype img {
-  width: 20%; /* Ensure images don't exceed their container's width */
+  width: 250; /* Ensure images don't exceed their container's width */
   height: auto; /* Maintain aspect ratio */
   border-radius: 0; /* Remove border radius if not needed */
 }
 
 .ShoppingPrototypes img {
-  width: 90%; /* Ensure images don't exceed their container's width */
+  width: 950; /* Ensure images don't exceed their container's width */
   height: auto; /* Maintain aspect ratio */
   border-radius: 0; /* Remove border radius if not needed */
 }
 
-.AIChatboxPrototypes img, .EcobearLogo img {
-  width: 70%; /* Ensure images don't exceed their container's width */
+.AIChatboxPrototypes img {
+  width: 800; /* Ensure images don't exceed their container's width */
   height: auto; /* Maintain aspect ratio */
   border-radius: 0; /* Remove border radius if not needed */
 }
 
 .EcobearLogo img {
-  width: 30%; /* Ensure images don't exceed their container's width */
+  width: 300; /* Ensure images don't exceed their container's width */
   height: auto; /* Maintain aspect ratio */
   border-radius: 0; /* Remove border radius if not needed */
+}
+
+.AffirmationVideo video {
+  width: 250;
+  height: auto;
+  justify-content: center;
+}
+
+.Reflection {
+  padding: 0;
+  margin-top: 100px;
+  margin-bottom: 60px;
 }
 
 /* BUTTON SCROLL-TOP */
@@ -410,17 +420,20 @@ body {
 .LetsChat {
   flex-wrap: wrap;
   margin-top: 30;
+  
 }
 
 .LetsExplore {
   flex-wrap: wrap;
   margin-top: 30;
+
   
 }
 
 .LetsChatTitle, .ExploreTitle {
   font-size: 30;
   font-weight: 500;
+  font-family: "Roboto Serif";
 }
 
 .BottomOfPage  a {
@@ -470,11 +483,7 @@ body {
   flex-wrap: wrap;
 }
 
-
-.Walkthrough1 video {
-  width: 50%;
-}
-
+ 
 
 @media screen and (max-width: 1200px) and (max-height: 11096.2px) {
   
@@ -498,7 +507,7 @@ body {
     height: auto;
     margin-top: 10;
     margin-left: 60;
-    position: absolute;
+    position: fixed;
   }
 
   .Ecobear_Title {
@@ -510,7 +519,7 @@ body {
     margin-top: 0;
   }
 
-  .Snackpass_one-liner {
+  .Ecobear_one-liner {
     font-size: 15px;
     width: 85%;
     margin-right: 0 !important;
@@ -534,21 +543,39 @@ body {
     justify-content: center;
   }
 
-  .ContextTitle, .KeyFunctionalityTitle, .PreliminaryResearch_Conceptualization_Title {
+  .ContextTitle, .KeyFunctionalityTitle, .PreliminaryResearch_Conceptualization_Title, .UserFlowLofiTitle, .MascotSectionTitle,
+  .High-Fi-Title, .ResultsTitle, .ReflectionTitle {
     font-size: 30px;
+    width: 70%;
+    justify-content: center;
+    padding: 10;
+  }
+
+  .HomePageSectionTitle, .ShoppingScreenSectionTitle, .AffirmationScreenTitle, .ImpactPageTitle, 
+  .AIChatboxTitle {
+    font-size: 25px;
     width: 70%;
     justify-content: center;
     padding: 30;
   }
 
   
-  .Context, .PreliminaryResearch_Conceptualization {
+  .Context, .PreliminaryResearch_Conceptualization, .KeyFunctionalityTitle, .UserFlowLofiSection, .MascotSection, 
+  .High-FiPrototypeSection {
     margin-top: 100;
   }
 
-  .ContextSummary, .SustainableLivingText, .EmergingTechnologyText, .MissionStatementText, .KeyFunctionalityText,
-   .MissionStatementFull {
+  .ContextSummary, .SustainableLivingText, .EmergingTechnologyText, .MissionStatementText, .MissionStatementFull, 
+  .KeyFunctionalityText, .UserFlowLofiText, .MascotSectionText, .ReflectionText, .ResultsSectionText, 
+  .High-Fi-Intro, .HomePageSubtitle, .ShoppingSubtitle, .AffirmationSubtitle, .ImpactSubtitle, .FunctionalityList {
     font-size: 16px;
+    width: 70%;
+    justify-content: center;
+    padding: 5;
+  }
+
+  .MissionStatementFull {
+    font-size: 17.5px;
     width: 70%;
     justify-content: center;
     padding: 5;
@@ -573,39 +600,44 @@ body {
 
   .SustainableLivingTitle, .EmergingTechnologyTitle, .MissionStatementTitle, .ContextTitle, .KeyFunctionalityTitle, .ContextSummary, .DesignathonPrompt, .PreliminaryResearch_Conceptualization_Title, 
   .PsychologyResearch, .FunctionalityList, .SustainableLivingText, .EmergingTechnologyText, 
-  .MissionStatementText, .KeyFunctionalityText, .MissionStatementFull {
+  .MissionStatementText, .KeyFunctionalityText, .MissionStatementFull, .UserFlowLofiTitle, .MascotSectionTitle,
+  .High-Fi-Title, .ResultsTitle, .ReflectionTitle, .HomePageSectionTitle, .ShoppingScreenSectionTitle, .AffirmationScreenTitle, .ImpactPageTitle, 
+  .AIChatboxTitle, .ContextSummary, .SustainableLivingText, .EmergingTechnologyText, .MissionStatementText, .MissionStatementFull, 
+  .KeyFunctionalityText, .UserFlowLofiText, .MascotSectionText, .ReflectionText, .ResultsSectionText, 
+  .High-Fi-Intro, .HomePageSubtitle, .ShoppingSubtitle, .AffirmationSubtitle, .ImpactSubtitle{
     margin: 0 auto;
   }
-
-  .Snackpass-Pictures-1 {
-    width: 70%;
-    height: auto;
-    margin-left: 100;
-    justify-content: center;
-  }
- 
-  .Quote {
-    font-size: 22px;
-    padding: 5;
-  }
-
-  .Reflection {
-    margin-bottom: 30;
-    margin-top: 20;
-  }
-
-  
-  .Favorite-Store-Wireframes, .Leaderboard-Wireframes, .Chickencoop-Wireframes {
-    margin: 0;
-  }
-
 
 
   .navdiv {
     margin: 0;
   }
+
+  .AffirmationVideo video {
+    width: 300;
+    height: auto;
+    justify-content: center;
   }
 
+ .ImpactPagePrototype img, .HomePagePrototypes img {
+    width: 250;
+    height: auto;
+    margin-left: 10;
+    padding: 10
+  }
+
+  .AIChatboxPrototypes img {
+    width: 800;
+  }
+
+  .ShoppingPrototypes img {
+    width: 950;
+  }
+
+  }
+
+
+/*************************************** */
 
 @media screen and (min-width: 500px) and (max-width: 770px) {
     
@@ -614,8 +646,9 @@ body {
     height: auto;
     margin-top: 10;
     margin-left: 60;
-    position: absolute;
+    position: fixed;
   }
+
 
   .Ecobear_Title {
     font-size: 40px;
@@ -625,7 +658,7 @@ body {
     justify-content: center;
   }
 
-  .Snackpass_one-liner {
+  .Ecobear_one-liner {
     font-size: 15px;
     width: 85%;
     margin-right: 0 !important;
@@ -653,114 +686,100 @@ body {
     margin-left: 0;
   }
 
-  .ContextTitle,  .KeyFunctionalityTitle, .PreliminaryResearch_Conceptualization_Title, .ValidationTitle, .SolutionsProcessTitle,
-  .FavoriteStoreFeatureTitle, .LeaderboardTitle, .ReflectionTitle, .ChickencoopTitle, .FinalResultsTitle {
+  .ContextTitle, .KeyFunctionalityTitle, .PreliminaryResearch_Conceptualization_Title, .UserFlowLofiTitle, .MascotSectionTitle,
+  .High-Fi-Title, .ResultsTitle, .ReflectionTitle {
     font-size: 30px;
     width: 70%;
     justify-content: center;
-    padding: 20;
-  }
-
-  .ReflectionTextLast {
-    font-size: 15px;
-    width: 70%;
-    justify-content: center;
-    padding: 5;
+    padding: 0;
   }
   
-  .Context, .PreliminaryResearch_Conceptualization, .Validation, .SolutionsProcess, .FinalResults {
+ 
+  .Context, .PreliminaryResearch_Conceptualization, .KeyFunctionality, .UserFlowLofiSection, .MascotSection, 
+  .High-FiPrototypeSection, .Results, .Reflection {
     margin-top: 100;
   }
 
-  .ContextSummary, .SustainableLivingText, .EmergingTechnologyText, .MissionStatementText, 
-  .MissionStatementFull, .KeyFunctionalityText,
-   .ValidationSummary, .StatisticsLine, .PsychologyResearch, .FunctionalityList, .Takeaways, 
-  .SolutionsTextIntro, .FavStoreText, .LeaderboardText, .ChickencoopText, 
-  .ReasoningForChickencoop, .ReflectionText, .FinalResultsText, .DesignathonPrompt {
-    font-size: 15px;
+  .ContextSummary, .SustainableLivingText, .EmergingTechnologyText, .MissionStatementText, .MissionStatementFull, 
+  .KeyFunctionalityText, .UserFlowLofiText, .MascotSectionText, .ReflectionText, .ResultsSectionText, 
+  .High-Fi-Intro, .HomePageSubtitle, .ShoppingSubtitle, .AffirmationSubtitle, .ImpactSubtitle, .FunctionalityList, 
+  .PsychologyResearch {
+    font-size: 16px;
     width: 70%;
     justify-content: center;
     padding: 5;
   }
 
-  .SustainableLivingTitle, .EmergingTechnologyTitle, .MissionStatementTitle   {
-    font-size: 17px;
+  .MissionStatementFull {
+    font-size: 17.5px;
     width: 70%;
     justify-content: center;
     padding: 5;
+  }
+
+  .DesignathonPrompt  {
+    font-size: 20px;
+    width: 70%;
+    justify-content: center;
+    padding: 5;
+  }
+
+  .HomePageSectionTitle, .ShoppingScreenSectionTitle, .AffirmationScreenTitle, .ImpactPageTitle, 
+  .AIChatboxTitle {
+    font-size: 25px;
+    width: 70%;
+    justify-content: center;
+    padding: 30;
+  }
+
+   .SustainableLivingTitle, .EmergingTechnologyTitle, .MissionStatementTitle {
+    font-size: 18px;
+    width: 70%;
+    padding: 15;
   }
 
   .UserFlowTitle {
     padding: 10;
   }
-
-  .ContextTitle, .KeyFunctionalityTitle, .ContextSummary, .Quote, .PreliminaryResearch_Conceptualization_Title, .SustainableLivingText, 
-  .EmergingTechnologyText, .MissionStatementText, .MissionStatementFull, .DesignathonPrompt, .KeyFunctionalityText,
-   .StatisticsLine, .PsychologyResearch, .FunctionalityList, .Takeaways, .SolutionsTextIntro, .SolutionsProcessTitle, 
-  .FavoriteStoreFeatureTitle, .SustainableLivingTitle, .EmergingTechnologyTitle, .MissionStatementTitle, .FavStoreText, .DesginJustification, .UserFlowTitle,
-  .LeaderboardTitle, .LeaderboardText, .ChickencoopText, .ReasoningForChickencoop, .ReflectionTitle, 
-  .ReflectionText, .ChickencoopTitle, .FinalResultsTitle, .FinalResultsText, .ReflectionTextLast {
+  
+  .SustainableLivingTitle, .EmergingTechnologyTitle, .MissionStatementTitle, .ContextTitle, .KeyFunctionalityTitle, 
+  .ContextSummary, .DesignathonPrompt, .PreliminaryResearch_Conceptualization_Title, 
+  .PsychologyResearch, .FunctionalityList, .SustainableLivingText, .EmergingTechnologyText, 
+  .MissionStatementText, .KeyFunctionalityText, .MissionStatementFull, .UserFlowLofiTitle, .MascotSectionTitle,
+  .High-Fi-Title, .ResultsTitle, .ReflectionTitle, .HomePageSectionTitle, .ShoppingScreenSectionTitle, .AffirmationScreenTitle,
+   .ImpactPageTitle, .AIChatboxTitle, .ContextSummary, .SustainableLivingText, .EmergingTechnologyText, .MissionStatementText, .MissionStatementFull, 
+  .KeyFunctionalityText, .UserFlowLofiText, .MascotSectionText, .ReflectionText, .ResultsSectionText, 
+  .High-Fi-Intro, .HomePageSubtitle, .ShoppingSubtitle, .AffirmationSubtitle, .ImpactSubtitle {
     margin: 0 auto;
   }
 
-  .Snackpass-Pictures-1 {
-    margin: 0 auto;
-    width: 100%;
-    justify-content: center;
-  }
 
-  .Snackpass-Pictures-1 img {
-    width: 200px;
-    display: flex;
-  }
 
-  .Quote {
-    font-size: 20px;
-    padding: 5;
-  }
-
-  .Favorite-Store-Wireframes, .Leaderboard-Wireframes, .Chickencoop-Wireframes {
+  .navdiv {
     margin: 0;
   }
 
-  .FavStoreWireframes1 img, .LeaderboardWireframes1 img, .ChickencoopWireframes1 img{
-    max-width: 80%;
-    height: auto;
-    margin-left: 35;
-  }
-
-  .FavStoreWireframes2 img, .LeaderboardWireframes2 img {
-    max-width: 70%;
-    height: auto;
-    margin-left: 55;
-  }
-
-  .High-Fi-Prototype-Fav-Store img, .High-Fi-Prototype-Leaderboards img {
-    max-width: 95%;
-    height: auto;
-    margin-left: 0;
-    padding: 10
-  }
-
-  .High-Fi-Prototype-Chickencoop img {
-    width: 80%;
-    height: auto;
-    margin-left: 50;
-    padding: 10
-  }
-
-  .Walkthroughs video {
-    width: 60%;
+  .AffirmationVideo video {
+    width: 300;
     height: auto;
     justify-content: center;
-    margin-left: 150 !important;
   }
-  
 
-  .Relfection {
-    margin-top: 20;
-    margin-bottom: 60;
+ .ImpactPagePrototype img, .HomePagePrototypes img {
+    width: 250;
+    height: auto;
+    margin-left: 10;
+    padding: 10
   }
+
+  .AIChatboxPrototypes img {
+    width: 700;
+  }
+
+  .ShoppingPrototypes img {
+    width: 500;
+  }
+
 
   .SmilingPic img {
     width: 150px;
@@ -780,7 +799,7 @@ body {
   }
 
   .BottomOfPage {
-    height: 250;
+    height: 200;
   }
 
 }
@@ -792,7 +811,7 @@ body {
     height: auto;
     margin-top: 10;
     margin-left: 60;
-    position: absolute;
+    position: fixed;
   }
 
   .Ecobear_Title {
@@ -803,7 +822,7 @@ body {
     justify-content: center;
   }
 
-  .Snackpass_one-liner {
+  .Ecobear_one-liner {
     font-size: 15px;
     width: 85%;
     margin-right: 0 !important;
@@ -831,120 +850,111 @@ body {
     margin-left: 0;
   }
 
-  .ContextTitle, .KeyFunctionalityTitle, .PreliminaryResearch_Conceptualization_Title, .ValidationTitle, .SolutionsProcessTitle,
-  .FavoriteStoreFeatureTitle, .LeaderboardTitle, .ReflectionTitle, .ChickencoopTitle, .FinalResultsTitle {
+  .ContextTitle, .KeyFunctionalityTitle, .PreliminaryResearch_Conceptualization_Title, .UserFlowLofiTitle, .MascotSectionTitle,
+  .High-Fi-Title, .ResultsTitle, .ReflectionTitle {
     font-size: 30px;
     width: 70%;
     justify-content: center;
-    padding: 20;
-  }
-
-  .ReflectionTextLast {
-    font-size: 15px;
-    width: 70%;
-    justify-content: center;
-    padding: 5;
+    padding: 0;
   }
   
-  .Context, .PreliminaryResearch_Conceptualization, .Validation, .SolutionsProcess, .FinalResults {
+ 
+  .Context, .PreliminaryResearch_Conceptualization, .KeyFunctionality, .UserFlowLofiSection, .MascotSection, 
+  .High-FiPrototypeSection, .Results, .Reflection {
     margin-top: 100;
   }
 
-  .ContextSummary, .SustainableLivingText, .EmergingTechnologyText, .MissionStatementText, .KeyFunctionalityText, .MissionStatementFull,
-  .ValidationSummary, .StatisticsLine, .Takeaways, .PsychologyResearch, .FunctionalityList,
-  .SolutionsTextIntro, .FavStoreText, .LeaderboardText, .ChickencoopText, 
-  .ReasoningForChickencoop, .ReflectionText, .FinalResultsText {
+  .ContextSummary, .SustainableLivingText, .EmergingTechnologyText, .MissionStatementText, .MissionStatementFull, 
+  .KeyFunctionalityText, .UserFlowLofiText, .MascotSectionText, .ReflectionText, .ResultsSectionText, 
+  .High-Fi-Intro, .HomePageSubtitle, .ShoppingSubtitle, .AffirmationSubtitle, .ImpactSubtitle, .FunctionalityList,
+   .PsychologyResearch {
     font-size: 15px;
     width: 70%;
     justify-content: center;
     padding: 5;
   }
 
-  .SustainableLivingTitle, .DesginJustification, .UserFlowTitle, .EmergingTechnologyTitle, .MissionStatementTitle  {
+  .MissionStatementFull {
+    font-size: 16x;
+    width: 70%;
+    justify-content: center;
+    padding: 5;
+  }
+
+  .DesignathonPrompt  {
     font-size: 17px;
     width: 70%;
     justify-content: center;
     padding: 5;
   }
 
+  .HomePageSectionTitle, .ShoppingScreenSectionTitle, .AffirmationScreenTitle, .ImpactPageTitle, 
+  .AIChatboxTitle {
+    font-size: 25px;
+    width: 70%;
+    justify-content: center;
+    padding: 30;
+  }
+
+   .SustainableLivingTitle, .EmergingTechnologyTitle, .MissionStatementTitle {
+    font-size: 18px;
+    width: 70%;
+    padding: 15;
+  }
+
+  .UserFlowImage {
+    width: 100%;
+  }
+
   .UserFlowTitle {
     padding: 10;
   }
-
-  .ContextTitle, .KeyFunctionalityTitle, .ContextSummary, .Quote, .PreliminaryResearch_Conceptualization_Title, .SustainableLivingText,
-   .ValidationSummary, .EmergingTechnologyText, .MissionStatementText, .KeyFunctionalityText, .MissionStatementFull,
-  .ValidationTitle, .StatisticsLine, .PsychologyResearch, .FunctionalityList, .Takeaways, .SolutionsTextIntro, .SolutionsProcessTitle, 
-  .FavoriteStoreFeatureTitle, .SustainableLivingTitle, .EmergingTechnologyTitle, .MissionStatementTitle, .FavStoreText, .DesginJustification, .UserFlowTitle,
-  .LeaderboardTitle, .LeaderboardText, .ChickencoopText, .ReasoningForChickencoop, .ReflectionTitle, 
-  .ReflectionText, .ChickencoopTitle, .FinalResultsTitle, .FinalResultsText, .ReflectionTextLast, .DesignathonPrompt {
+  
+  .SustainableLivingTitle, .EmergingTechnologyTitle, .MissionStatementTitle, .ContextTitle, .KeyFunctionalityTitle, 
+  .ContextSummary, .DesignathonPrompt, .PreliminaryResearch_Conceptualization_Title, 
+  .PsychologyResearch, .FunctionalityList, .SustainableLivingText, .EmergingTechnologyText, 
+  .MissionStatementText, .KeyFunctionalityText, .MissionStatementFull, .UserFlowLofiTitle, .MascotSectionTitle,
+  .High-Fi-Title, .ResultsTitle, .ReflectionTitle, .HomePageSectionTitle, .ShoppingScreenSectionTitle, .AffirmationScreenTitle,
+   .ImpactPageTitle, .AIChatboxTitle, .ContextSummary, .SustainableLivingText, .EmergingTechnologyText, .MissionStatementText, .MissionStatementFull, 
+  .KeyFunctionalityText, .UserFlowLofiText, .MascotSectionText, .ReflectionText, .ResultsSectionText, 
+  .High-Fi-Intro, .HomePageSubtitle, .ShoppingSubtitle, .AffirmationSubtitle, .ImpactSubtitle {
     margin: 0 auto;
   }
 
-  .Snackpass-Pictures-1 {
-    margin: 0 auto;
-    width: 50%;
-    justify-content: center;
-  }
 
-  .Snackpass-Pictures-1 img {
-    width: 150px;
-    display: flex;
-  }
 
-  .Quote {
-    font-size: 20px;
-    padding: 5;
-  }
-
-  .Favorite-Store-Wireframes, .Leaderboard-Wireframes, .Chickencoop-Wireframes {
+  .navdiv {
     margin: 0;
   }
 
-  .FavStoreWireframes1 img, .LeaderboardWireframes1 img, .ChickencoopWireframes1 img{
-    max-width: 80%;
-    height: auto;
-    margin-left: 35;
-  }
-
-  .FavStoreWireframes2 img, .LeaderboardWireframes2 img {
-    max-width: 70%;
-    height: auto;
-    margin-left: 55;
-  }
-
-  .High-Fi-Prototype-Fav-Store img, .High-Fi-Prototype-Leaderboards img {
-    max-width: 95%;
-    height: auto;
-    margin-left: 0;
-    padding: 10
-  }
-
-  .High-Fi-Prototype-Chickencoop img {
-    width: 330px;
-    height: auto;
-    margin-left: 5;
-    padding: 10
-  }
-
-  .Walkthrough1, .Walkthroguh2 {
-    width: 400;
+  .AffirmationVideo video {
+    width: 200;
     height: auto;
     justify-content: center;
   }
 
-  
+ .ImpactPagePrototype img, .HomePagePrototypes img {
+    width: 200;
+    height: auto;
+    margin-left: 10;
+    padding: 10
+  }
 
-  .Relfection {
-    margin-top: 20;
-    margin-bottom: 60 !important;
+  .AIChatboxPrototypes img {
+    width: 450;
+  }
+
+  .ShoppingPrototypes img {
+    width: 350;
   }
 
   .SmilingPic img {
-    width: 150px;
-    height: 150px;
+    width: 90px;
+    height: 90px;
     padding: 2cqmin;
     left: 10;
     border: 1px solid white;
+    margin-top: 20px;
   }
 
   .LetsChat, .LetsExplore {
@@ -957,6 +967,14 @@ body {
   }
 
   .BottomOfPage {
-    height: 250;
+    height: 200;
   }
+
+  .EcobearLogo img {
+    width: 300px; /* Ensure images don't exceed their container's width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 0; /* Remove border radius if not needed */
+  }
+  
+  
 }
