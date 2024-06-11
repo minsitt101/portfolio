@@ -1,0 +1,819 @@
+body {
+    margin: 0;
+}
+
+.navigation_bar {
+  margin: 0;
+  height: 20%;
+  background: linear-gradient(to bottom, rgba(222, 200, 183, 0.8), rgba(222, 218, 219, 1.0), rgba(245, 245, 245, 1.0));
+}
+
+.BottomOfPage {
+background: linear-gradient(to bottom, rgba(222, 200, 183, 0.8), rgba(222, 218, 219, 1.0));
+height: 300px;
+margin: 0;
+}
+
+.Content-Section {
+margin: 0;
+background: #F5F5F5;
+}
+
+
+.Reflection {
+  padding: 0;
+  margin-top: 100px;
+  margin-bottom: 60px;
+}
+
+/* LANDING PAGE */
+
+.MinSittLogo img {
+  width: 120px; /* Add 'px' for proper CSS syntax */
+  height: auto; /* Add 'px' for proper CSS syntax */
+  margin-left: 30px; /* Add 'px' for proper CSS syntax */
+}
+
+.MinSittLogo img {
+  transition: opacity 0.3s ease; /* Add transition effect */
+}
+
+.MinSittLogo:hover img {
+  opacity: 0.7; /* Reduce opacity on hover */
+}
+
+.Home a, .Projects a, .Resume a {
+  color: black;
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+  font-family: "Work Sans";
+}
+
+.navigation_bar {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.6);
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  padding: 10px;
+  height: 50;
+}
+
+.top_section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+.navbar ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  margin: 10px;
+  padding: 4px 30px;
+  position: relative;
+  border-right: 1px solid black;
+}
+
+.navbar li:last-child {
+  border-right: none;
+}
+
+.navbar a:hover {
+  color: #8E7f76;
+}
+
+.navbar li a {
+  text-decoration: none;
+  color: black;
+}
+
+.landing-page {
+  font-family: "Work Sans";
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.WebsitePage_one-liner {
+  font-size: 18px;
+  font-weight: 300;
+  width: 50%;
+  text-align: center;
+}
+
+.High-fi-prototypes {
+  display: flex;
+  flex-direction: row;
+}
+
+#Prototypes img  {
+  width: 600; 
+  height: auto; 
+  padding: 40px;
+  border-radius: 0%;
+  margin-left: 40px;
+}
+
+.WebsiteLogo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.WebsiteLogo img {
+    width: 300; /* Ensure images don't exceed their container's width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 0; /* Remove border radius if not needed */
+}
+
+/* BUTTON SCROLL-TOP */
+
+.button_area {
+  display: flex;
+  justify-content: center;
+}
+
+.scroll-top-btn {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  background-color:rgba(135, 152, 168, 0.5);  /* Blue-ish background color */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 44px;
+  cursor: pointer;
+  margin-top: 60px;
+  z-index: 9999;
+}
+
+.scroll-top-btn:hover {
+   transform: translateY(-10px);
+   background-color: rgba(135, 152, 168);
+   transition: transform 0.5s ease
+
+}
+
+.scroll-top-btn img {
+  width: 30px;
+  height: 30px;
+}
+
+/* CONTEXT SECTION */
+
+.Context {
+  font-family: "Work Sans";
+  max-width: 1500px;
+}
+
+.ContextTitle {
+  font-family: "Work Sans";
+  font-weight: bold;
+  font-size: 40px;
+  justify-content: center;
+  width: 90%;
+  margin-left: 200;
+}
+
+.ContextSummary, .DesignathonPrompt {
+  font-family: "Work Sans";
+  font-weight: 350;
+  font-size: 17px;
+  width: 70%;
+  margin-left: 200;
+  line-height: 1.5;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*TITLES*/
+
+.GoalsTitle, .WireframesTitle, .ColorSchemesTitle, .AccessibilityTitle, .UserExperienceTitle, 
+.DesignLogoTitle, .ReflectionTitle, .MidFiTitle {
+  font-family: "Work Sans";
+    font-weight: bold;
+    font-size: 40px;
+    margin-left: 200;
+    margin-top: 100;
+} 
+
+/* Hamburger menu styles */
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  margin-right: 40px;
+  margin-top: 0px;
+}
+
+.menu-icon-line {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 4px 0;
+}
+
+/* Media query for small screens */
+@media (max-width: 800px) {
+  .navbar ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: rgba(255, 255, 255, 1.0);
+    position: absolute;
+    top: 60px; /* Adjust according to your layout */
+    right: 0;
+    margin-left: 1000px;
+    border-top: 1px solid black;
+       
+  }
+
+  .navbar ul.show {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: flex;
+  }
+}
+
+/*TEXT FOR SECTIONS */
+
+.GoalsSummary, .WireframesSummary, .ColorSchemesSummary, .UserExperienceSummary, .DesignLogoSummary, .AccessibilitySummary, 
+.ReflectionSummary, .ReflectionText, .MidFiText {
+    font-family: "Work Sans";
+    font-weight: 350;
+    font-size: 17px;
+    width: 70%;
+    margin-left: 200;
+    line-height: 1.5;
+}
+
+.ReflectionBullet, .MidFiBullet {
+  font-family: "Work Sans";
+  font-weight: 350;
+  font-size: 17px;
+  width: 50%;
+  margin-left: 250;
+  line-height: 1.5;
+  padding: 5;
+}
+
+.PageSubtitile {
+  font-family: "Work Sans";
+  font-weight: bold;
+  font-size: 18px;
+  margin-left: 200;
+  line-height: 1.5;
+}
+
+/* BOTTOM OF PAGE */
+
+
+.LetsChat {
+  flex-wrap: wrap;
+  margin-top: 30;
+  
+}
+
+.LetsExplore {
+  flex-wrap: wrap;
+  margin-top: 30;
+
+  
+}
+
+.LetsChatTitle, .ExploreTitle {
+  font-size: 30;
+  font-weight: 500;
+  font-family: "Roboto Serif";
+}
+
+.BottomOfPage  a {
+ text-decoration: underline;
+ color: inherit;
+}
+
+.BottomOfPage {
+  font-family: "Work Sans";
+  display: flex;
+  justify-content: column;
+  justify-content: row;
+  justify-content: space-evenly;
+  
+}
+
+.SmilingPic img {
+    position: relative;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    right: 0;
+    top: 20;
+    border: 1px solid white;
+}
+
+/* IMAGES */
+
+.Lo-Fi-Wireframes, .HomePagePrototype1, .HomePagePrototype2, .HomePagePrototype3, .ColorSchemeImage,
+.ProjectPagePrototype, .LogoImage {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.HomePagePrototype1, .HomePagePrototype2, .HomePagePrototype3,  .ColorSchemeImage,
+.ProjectPagePrototype, .LogoImage {
+  margin-top: 40;
+  margin-bottom: 40;
+}
+
+.Lo-Fi-Wireframes img {
+  width: 800; /* Ensure images don't exceed their container's width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 0; /* Remove border radius if not needed */
+}
+
+.HomePagePrototype1 img {
+  width: 400; /* Ensure images don't exceed their container's width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 0; /* Remove border radius if not needed */
+}
+
+.HomePagePrototype2 img {
+  width: 400; /* Ensure images don't exceed their container's width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 0;
+  margin-right: 50; /* Remove border radius if not needed */
+}
+
+.HomePagePrototype3 img {
+  width: 450; /* Ensure images don't exceed their container's width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 0;
+  margin-right: 50; /* Remove border radius if not needed */
+}
+
+.ColorSchemeImage img {
+  width: 450; /* Ensure images don't exceed their container's width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 0;
+  margin-right: 50; /* Remove border radius if not needed */
+}
+
+.ProjectPagePrototype img {
+  width: 800; /* Ensure images don't exceed their container's width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 0;
+}
+
+.LogoImage img {
+  width: 300; /* Ensure images don't exceed their container's width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 0;
+}
+
+/* MEDIA QUERIES */
+
+
+
+@media screen and (min-width: 770px) and (max-width: 1024px) {
+
+  .MinSittLogo img {
+      width: 120px; /* Add 'px' for proper CSS syntax */
+      height: auto; /* Add 'px' for proper CSS syntax */
+      margin-left: 30px; /* Add 'px' for proper CSS syntax */
+  }
+
+
+  .WebsitePage_one-liner {
+    font-size: 15px;
+    width: 85%;
+    margin-right: 0 !important;
+    justify-content: center;
+    margin-left: 0 !important;
+  }
+
+  #Prototypes img{
+    width: 100%;
+    margin-left: 0 !important;
+    padding: 0 !important;
+    justify-content: center;
+  }
+
+
+  .ContextTitle, .GoalsTitle, .WireframesTitle, .ColorSchemesTitle, .AccessibilityTitle, .UserExperienceTitle, 
+  .DesignLogoTitle, .ReflectionTitle, .MidFiTitle {
+    font-size: 30px;
+    width: 70%;
+    justify-content: center;
+    padding: 10;
+  }
+
+
+  .GoalsSummary, .WireframesSummary, .ColorSchemesSummary, .UserExperienceSummary, .DesignLogoSummary, .AccessibilitySummary, 
+.ReflectionSummary, .ReflectionText, .MidFiText, .ContextSummary, .MidFiBullet, .ReflectionBullet {
+    font-size: 16px;
+    width: 70%;
+    justify-content: center;
+    padding: 5;
+  }
+
+  .PageSubtitile {
+    font-size: 18px;
+    width: 70%;
+    padding: 5;
+  }
+
+  .ContextTitle, .ContextSummary, .GoalsTitle, .WireframesTitle, .ColorSchemesTitle, .AccessibilityTitle, .UserExperienceTitle, 
+  .DesignLogoTitle, .ReflectionTitle, .MidFiTitle, .GoalsSummary, .WireframesSummary, .ColorSchemesSummary, .UserExperienceSummary, 
+  .DesignLogoSummary, .AccessibilitySummary, .ReflectionSummary, .ReflectionText, .MidFiText,  .PageSubtitile, .MidFiBullet, .ReflectionBullet {
+    margin: 0 auto;
+  }
+
+
+  .navdiv {
+    margin: 0;
+  }
+
+
+  .Lo-Fi-Wireframes img {
+    width: 600; /* Ensure images don't exceed their container's width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 0; /* Remove border radius if not needed */
+  }
+  
+  .HomePagePrototype1 img {
+    width: 400; /* Ensure images don't exceed their container's width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 0; /* Remove border radius if not needed */
+  }
+  
+  .HomePagePrototype2 img {
+    width: 400; /* Ensure images don't exceed their container's width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 0;
+    margin-right: 50; /* Remove border radius if not needed */
+  }
+  
+  .HomePagePrototype3 img {
+    width: 450; /* Ensure images don't exceed their container's width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 0;
+    margin-right: 50; /* Remove border radius if not needed */
+  }
+  
+  .ColorSchemeImage img {
+    width: 350; /* Ensure images don't exceed their container's width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 0;
+    margin-right: 50; /* Remove border radius if not needed */
+  }
+  
+  .ProjectPagePrototype img {
+    width: 600; /* Ensure images don't exceed their container's width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 0;
+  }
+  
+  .LogoImage img {
+    width: 200; /* Ensure images don't exceed their container's width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 0;
+  }
+
+  }
+
+
+/*************************************** */
+
+@media screen and (min-width: 500px) and (max-width: 770px) {
+    
+  .MinSittLogo img {
+    width: 120px; /* Add 'px' for proper CSS syntax */
+    height: auto; /* Add 'px' for proper CSS syntax */
+    margin-left: 30px; /* Add 'px' for proper CSS syntax */
+}
+
+  .WebsitePage_one-liner {
+    font-size: 15px;
+    width: 85%;
+    margin-right: 0 !important;
+    justify-content: center;
+    margin-left: 0 !important;
+  }
+
+  #Prototypes img{
+    width: 100%;
+    margin-left: 0 !important;
+    padding: 0 !important;
+    justify-content: center;
+  }
+
+  .ProjectDetails {
+    font-size: 14px;
+    padding: 10;
+  }
+
+  .Context, .Goals, .WireframesSection, .ColorSchemeSection, .DesignLogoSection, .Mid-Fidelity-Wireframes, .AccessibilitySection, .UserExperienceSection, .Reflection {
+    margin-top: 100;
+  }
+
+  .ContextTitle, .GoalsTitle, .WireframesTitle, .ColorSchemesTitle, .AccessibilityTitle, .UserExperienceTitle, 
+  .DesignLogoTitle, .ReflectionTitle, .MidFiTitle {
+    font-size: 30px;
+    width: 70%;
+    justify-content: center;
+    padding: 0;
+  }
+
+
+  .GoalsSummary, .WireframesSummary, .ColorSchemesSummary, .UserExperienceSummary, .DesignLogoSummary, .AccessibilitySummary, 
+.ReflectionSummary, .ReflectionText, .MidFiText, .ContextSummary, .MidFiBullet, .ReflectionBullet {
+  font-size: 16px;
+  width: 70%;
+  justify-content: center;
+  padding: 5;
+  }
+
+  .PageSubtitile {
+    font-size: 18px;
+    width: 70%;
+    padding: 5;
+  }
+
+  .ContextTitle, .ContextSummary, .GoalsTitle, .WireframesTitle, .ColorSchemesTitle, .AccessibilityTitle, .UserExperienceTitle, 
+  .DesignLogoTitle, .ReflectionTitle, .MidFiTitle, .GoalsSummary, .WireframesSummary, .ColorSchemesSummary, .UserExperienceSummary, 
+  .DesignLogoSummary, .AccessibilitySummary, .ReflectionSummary, .ReflectionText, .MidFiText,  .PageSubtitile, .MidFiBullet, .ReflectionBullet {
+    margin: 0 auto;
+  }
+
+
+  .navdiv {
+    margin: 0;
+  }
+
+
+  .Lo-Fi-Wireframes img {
+    width: 400px; /* Ensure images don't exceed their container's width */
+    height: 200px; /* Maintain aspect ratio */
+    border-radius: 0; /* Remove border radius if not needed */
+    margin-top: 50;
+  }
+  
+  .HomePagePrototype1 img {
+    width: 300; /* Ensure images don't exceed their container's width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 0; /* Remove border radius if not needed */
+  }
+  
+  .HomePagePrototype2 img {
+    width: 300; /* Ensure images don't exceed their container's width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 0;
+    margin-right: 50; /* Remove border radius if not needed */
+  }
+  
+  .HomePagePrototype3 img {
+    width: 300; /* Ensure images don't exceed their container's width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 0;
+    margin-right: 50; /* Remove border radius if not needed */
+  }
+  
+  .ColorSchemeImage img {
+    width: 350; /* Ensure images don't exceed their container's width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 0;
+    margin-right: 50; /* Remove border radius if not needed */
+  }
+  
+  .ProjectPagePrototype img {
+    width: 510; /* Ensure images don't exceed their container's width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 0;
+  }
+  
+  .LogoImage img {
+    width: 200; /* Ensure images don't exceed their container's width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 0;
+  }
+
+
+  .SmilingPic img {
+    width: 150px;
+    height: 150px;
+    padding: 2cqmin;
+    left: 10;
+    border: 1px solid white;
+  }
+
+  .LetsChat, .LetsExplore {
+    font-size: 13;
+    padding: 13;
+  }
+
+  .LetsChatTitle, .ExploreTitle {
+    font-size: 15;
+  }
+
+  .BottomOfPage {
+    height: 200;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 500px) {
+  
+  .MinSittLogo img {
+    width: 120px; /* Add 'px' for proper CSS syntax */
+    height: auto; /* Add 'px' for proper CSS syntax */
+    margin-left: 30px; /* Add 'px' for proper CSS syntax */
+}
+
+  .Ecobear_Title {
+    font-size: 40px;
+    padding: 10px;
+    font-weight: bold;
+    margin-right: 0 !important;
+    justify-content: center;
+  }
+
+  .Ecobear_one-liner {
+    font-size: 15px;
+    width: 85%;
+    margin-right: 0 !important;
+    justify-content: center;
+    margin-left: 0 !important;
+  }
+
+  #Prototypes img{
+    width: 100%;
+    margin-left: 0 !important;
+    padding: 0 !important;
+    justify-content: center;
+  }
+
+  .ProjectDetails {
+    font-size: 14px;
+    padding: 10;
+  }
+
+  .PageSubtitile {
+    font-size: 15px;
+    width: 70%;
+    padding: 5;
+  }
+ 
+  .Context, .Goals, .WireframesSection, .ColorSchemeSection, .DesignLogoSection, .Mid-Fidelity-Wireframes, .AccessibilitySection, .UserExperienceSection, .Reflection {
+    margin-top: 100;
+  }
+
+  .ContextTitle, .GoalsTitle, .WireframesTitle, .ColorSchemesTitle, .AccessibilityTitle, .UserExperienceTitle, 
+  .DesignLogoTitle, .ReflectionTitle, .MidFiTitle {
+    font-size: 30px;
+    width: 70%;
+    justify-content: center;
+    padding: 0;
+  }
+  
+ 
+  .Context, .PreliminaryResearch_Conceptualization, .KeyFunctionality, .UserFlowLofiSection, .MascotSection, 
+  .High-FiPrototypeSection, .Results, .Reflection {
+    margin-top: 100;
+  }
+
+  .GoalsSummary, .WireframesSummary, .ColorSchemesSummary, .UserExperienceSummary, .DesignLogoSummary, .AccessibilitySummary, 
+  .ReflectionSummary, .ReflectionText, .MidFiText, .ContextSummary, .MidFiBullet, .ReflectionBullet {
+    font-size: 15px;
+    width: 70%;
+    justify-content: center;
+    padding: 5;
+  }
+
+  .ContextTitle, .ContextSummary, .GoalsTitle, .WireframesTitle, .ColorSchemesTitle, .AccessibilityTitle, .UserExperienceTitle, 
+  .DesignLogoTitle, .ReflectionTitle, .MidFiTitle, .GoalsSummary, .WireframesSummary, .ColorSchemesSummary, .UserExperienceSummary, 
+  .DesignLogoSummary, .AccessibilitySummary, .ReflectionSummary, .ReflectionText, .MidFiText,  .PageSubtitile, .MidFiBullet, .ReflectionBullet {
+    margin: 0 auto;
+  }
+
+  .navdiv {
+    margin: 0;
+  }
+
+
+  .Lo-Fi-Wireframes img {
+    width: 100% /* Maintain aspect ratio */
+    height: auto;
+    border-radius: 0; /* Remove border radius if not needed */
+    margin-top: 50;
+  }
+  
+  .HomePagePrototype1 img {
+    width: 100%; /* Ensure images don't exceed their container's width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 0; /* Remove border radius if not needed */
+  }
+  
+  .HomePagePrototype2 img {
+    width: 100%; /* Ensure images don't exceed their container's width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 0;
+    margin-right: 50; /* Remove border radius if not needed */
+  }
+  
+  .HomePagePrototype3 img {
+    width: 100%; /* Ensure images don't exceed their container's width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 0;
+    margin-right: 50; /* Remove border radius if not needed */
+  }
+  
+  .ColorSchemeImage img {
+    width: 100%; /* Ensure images don't exceed their container's width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 0;
+    margin-right: 50; /* Remove border radius if not needed */
+  }
+  
+  .ProjectPagePrototype img {
+    width: 100%; /* Ensure images don't exceed their container's width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 0;
+  }
+  
+  .LogoImage img {
+    width: 200; /* Ensure images don't exceed their container's width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 0;
+  }
+
+
+  .SmilingPic img {
+    width: 90px;
+    height: 90px;
+    padding: 2cqmin;
+    left: 10;
+    border: 1px solid white;
+    margin-top: 20px;
+  }
+
+  .LetsChat, .LetsExplore {
+    font-size: 13;
+    padding: 13;
+  }
+
+  .LetsChatTitle, .ExploreTitle {
+    font-size: 15;
+  }
+
+  .BottomOfPage {
+    height: 200;
+  }
+
+  .EcobearLogo img {
+    width: 300px; /* Ensure images don't exceed their container's width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 0; /* Remove border radius if not needed */
+  }
+  
+  
+}
+
+
+/* ANIMATIONS */
+
+
+.hidden {
+  opacity:  0;
+  transform: translateY(30px);
+  transition: all 1.3s;
+}
+
+.show {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+.s {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  flex-wrap: wrap;
+}
+
+

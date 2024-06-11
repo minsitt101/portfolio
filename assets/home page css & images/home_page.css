@@ -21,12 +21,10 @@ body {
 /*TOP NAV BAR CODE */
 
 .MinSittLogo img {
-  width: 120px; /* Add 'px' for proper CSS syntax */
-  height: auto; /* Add 'px' for proper CSS syntax */
-  margin-left: 60px; /* Add 'px' for proper CSS syntax */
-  position: fixed;
-  z-index: 2000;
-}
+    width: 120px; /* Add 'px' for proper CSS syntax */
+    height: auto; /* Add 'px' for proper CSS syntax */
+    margin-left: 30px; /* Add 'px' for proper CSS syntax */
+  }
 
 .Home a, .Projects a, .Resume a {
   color: black;
@@ -36,23 +34,33 @@ body {
   font-family: "Work Sans";
 }
 
+.navigation_bar {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.6);
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  padding: 10px;
+  height: 50;
+}
+
+.top_section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
 .navbar {
   display: flex;
-  justify-content: flex-end; /* Align items to the right */
-  position: fixed; /* Fixed positioning */
-  top: 0; /* Position it at the top */
-  right: 0; /* Position it at the right */
-  width: 100%; /* Full width */ /* Set a background color to avoid transparency issues */
-  z-index: 1000; /* Ensure the navbar stays on top of other elements */
-  padding: 10px; /* Add some padding */
-  background: rgba(255, 255, 255, 0.6);
+  align-items: center;
 }
 
 .navbar ul {
-  display: flex; /* Make the <ul> a flex container */
-  list-style-type: none; /* Remove default list style */
-  margin: 0; /* Remove default margin */
-  padding: 0; /* Remove default padding */
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .navbar li {
@@ -65,23 +73,53 @@ body {
 .navbar li:last-child {
   border-right: none;
 }
- 
 
-.hamburger {
+.navbar li a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Hamburger menu styles */
+.menu-icon {
   display: none;
   flex-direction: column;
   cursor: pointer;
-  padding: 10px;
+  margin-right: 40px;
+  margin-top: 0px;
 }
 
-.hamburger span {
-  height: 2px;
+.menu-icon-line {
   width: 25px;
-  background: black;
+  height: 3px;
+  background-color: black;
   margin: 4px 0;
-  transition: 0.4s;
 }
-  
+
+/* Media query for small screens */
+@media (max-width: 800px) {
+  .navbar ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: rgba(255, 255, 255, 1.0);
+    position: absolute;
+    top: 60px; /* Adjust according to your layout */
+    right: 0;
+    margin-left: 1000px;
+    border-top: 1px solid black;
+    font-size: 5px;
+  }
+
+  .navbar ul.show {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: flex;
+  }
+}
+
+
 /*PROFILE PICTURE & INTRO CODE */
 
 #profile-pic img{
@@ -140,48 +178,6 @@ body {
   animation: fade-up 1s;
 }
 
-/*CIRCLE DESIGNS */
-
-.circle_group_1 {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  flex-direction: row;
-  margin-bottom: 150px;
-  padding: 10px;
-  flex: 1;
-  animation: fade-up 0.5s;
-}
-
-.circle_group_2 {
-  position: absolute; /* by doing absolute we remove it from the normal flow and can place it anywhere */
-  top: 0;
-  right: 0;
-  animation: fade-up 0.5s;
-}
-
-.circle_group_2 {
-  top: 0;
-  margin-left: 0;
-  display: flex;
-  flex-direction: column;
-  flex-direction: row;
-  padding: 10px;
-  margin-bottom: 20px;
-  flex: 1;
-}
-
-.column1, .column2, .column3, .column4, .column5, .column6{
-  padding: 5px;
-}
-
-.circle {
-  width: 20px; /* Adjust the width and height to change the size of the circles */
-  height: 20px;
-  background-color: rgba(142, 127, 118, 0.5); /* Change the color of the circles */
-  border-radius: 50%; /* Makes the divs circular */
-  margin-bottom: 7px; /* Adjust the margin bottom to add spacing between circles */
-}
 
 /* Scroll-to-top-button */
 
@@ -230,10 +226,9 @@ body {
 }
 
 .ProjectOverview {
-  font-family: "Roboto Serif";
+  font-family: "Work Sans";
   font-size: 40px;
-  font-weight: 400;
-  border: 0.5px solid black; /* Sets a black border with 2px width around the <ul> element */
+  font-weight: 200; /* Sets a black border with 2px width around the <ul> element */
   padding: 10px;
   line-height: 10px;
   display: flex;
@@ -258,6 +253,8 @@ body {
 
 #Snackpass_project_text, #Ecobear_project_text {
   width: 600px; 
+  font-weight: 300;
+  line-height: 2.0;
 }
 
 
@@ -268,9 +265,9 @@ body {
   border-radius: 20%;
 }
 
-/*Botanical Garden Section*/
+/* PortfolioWebsite Section*/
 
-.BotanicalGardens {
+.PortfolioWebsite {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -279,25 +276,27 @@ body {
   font-family: "Work Sans";
 }
 
-.BotanicalGardensTitle {
+.PortfolioWebsiteTitle {
   font-family: "Roboto Serif";
 }
 
-#Botanical_showcase_picture img{
+#PortfolioWebsite_showcase_picture img {
   width: 350; 
   height: auto; 
   padding: 40px;
   border-radius: 20%;
 }
 
-#Botanical_garden_project_text {
+#PortfolioWebsite_project_text {
   width: 600px; 
+  font-weight: 300;
+  line-height: 2.0;
 }
 
 
 /*General Animations*/
 
-#Snackpass_showcase_picture img:hover,  #Botanical_showcase_picture img:hover, 
+#Snackpass_showcase_picture img:hover,  #PortfolioWebsite_showcase_picture img:hover, 
 #Ecobear_showcase_picture img:hover {
   transition: transform 0.3s ease;
   transform: translateY(-10px);
@@ -305,11 +304,11 @@ body {
 
 /*General Content Fonts */
 
-.BotanicalGardensTitle {
+.PortfolioWebsiteTitle {
   font-weight: bold;
   font-size: 30px;
   padding: 0px;
-  color: #777937
+  color: #8798AE
 }
 
 .SnackpassTitle {
@@ -327,8 +326,8 @@ body {
 }
 
 
-.Summary {
-  font-size: 20px;
+.Description {
+  font-size: 18px;
   font-weight: 300px;
 }
 
@@ -422,13 +421,19 @@ body {
 }
 
 @media screen and (min-width: 896px) and (max-width: 1030px) {
+  .MinSittLogo img {
+    width: 120px; /* Add 'px' for proper CSS syntax */
+    height: auto; /* Add 'px' for proper CSS syntax */
+    margin-left: 30px; /* Add 'px' for proper CSS syntax */
+}
+
 
   .Intro {
     width: 500px;
   }
 
 
-  #Botanical_garden_project_text, #Snackpass_project_text, #Ecobear_project_text {
+  #PortfolioWebsite_project_text, #Snackpass_project_text, #Ecobear_project_text {
   width: 400;
 }
    
@@ -452,12 +457,18 @@ body {
   }
   
 
-  #Botanical_garden_project_text, #Snackpass_project_text, #Ecobear_project_text {
+  #PortfolioWebsite_project_text, #Snackpass_project_text, #Ecobear_project_text {
   width: 350;
 }
 }
    
 @media screen and (min-width: 700px) and (max-width: 800px) {
+
+  .MinSittLogo img {
+    width: 120px; /* Add 'px' for proper CSS syntax */
+    height: auto; /* Add 'px' for proper CSS syntax */
+    margin-left: 30px; /* Add 'px' for proper CSS syntax */
+}
 
   .Intro {
     width: 400px;
@@ -482,21 +493,22 @@ body {
   }
   
 
-  #Botanical_garden_project_text, #Snackpass_project_text, #Ecobear_project_text {
+  #PortfolioWebsite_project_text, #Snackpass_project_text, #Ecobear_project_text {
   width: 300;
 }
 
-.SnackpassTitle, .BotanicalGardensTitle, .EcobearTitle {
+.SnackpassTitle, .PortfolioWebsiteTitle, .EcobearTitle {
   font-size: 23px;
 }
 
-.Summary {
-  font-size: 15px;
-}
 
 .Role, .Description , .Time {
-  font-size: 13px;
+  font-size: 15px;
 
+}
+
+.Description {
+  font-size: 15px;
 }
 
 .Major {
@@ -518,7 +530,7 @@ body {
   border-radius: 20%;
 }
 
-#Botanical_showcase_picture img{
+#PortfolioWebsite_showcase_picture img{
   width: 300px; 
   height: auto; 
   padding: 40px;
@@ -529,22 +541,28 @@ body {
 
 @media screen and (min-width: 500px) and (max-width: 700px) {
 
+  .MinSittLogo img {
+    width: 120px; /* Add 'px' for proper CSS syntax */
+    height: auto; /* Add 'px' for proper CSS syntax */
+    margin-left: 30px; /* Add 'px' for proper CSS syntax */
+}
+
 
   .MyName {
-    width: 350px;
-    font-size: 35px;
+    width: 400px;
+    font-size: 40px;
     margin-top: 0;
   }
   
   .Major {
-    width: 250px;
+    width: 400px;
     font-size: 13px;
     font-weight: 300;
   }
 
   .Intro {
-    width: 350px;
-    font-size: 15px;
+    width: 400px;
+    font-size: 17px;
   }
 
   #profile-pic {
@@ -552,8 +570,8 @@ body {
   }
 
   #profile-pic img {
-    width: 130px;
-    height: 130px;
+    width: 150px;
+    height: 150px;
   }
 
   .Landing_Page {
@@ -566,32 +584,31 @@ body {
     align-items: center;
   }
 
-  .Snackpass, .BotanicalGardens, .Ecobear {
+  .Snackpass, .PortfolioWebsite, .Ecobear {
     display: flex !important;
     flex-direction: column !important;
     align-items: center !important;
   }
 
-  #Snackpass_project_text, #Botanical_garden_project_text, #Ecobear_project_text  {
+  #Snackpass_project_text, #PortfolioWebsite_project_text, #Ecobear_project_text  {
     width: 300px;
   }
 
   
-.SnackpassTitle, .BotanicalGardensTitle, .EcobearTitle {
+.SnackpassTitle, .PortfolioWebsiteTitle, .EcobearTitle {
   font-size: 25px;
 }
 
-.Summary {
+.Role, .Time {
   font-size: 15px;
 }
 
-.Role, .Description , .Time {
-  font-size: 13px;
-
+.Description {
+  font-size: 15px;
 }
 
   .ProjectOverview {
-    font-size: 25px;
+    font-size: 30px;
     width: 300px;
   }
 
@@ -602,7 +619,7 @@ body {
     border-radius: 20%;
   }
   
-  #Botanical_showcase_picture img{
+  #PortfolioWebsite_showcase_picture img{
     width: 350px; 
     height: auto; 
     padding: 40px;
@@ -636,6 +653,11 @@ body {
 
 @media screen and (min-width: 320px) and (max-width: 500px) {
 
+  .MinSittLogo img {
+    width: 120px; /* Add 'px' for proper CSS syntax */
+    height: auto; /* Add 'px' for proper CSS syntax */
+    margin-left: 30px; /* Add 'px' for proper CSS syntax */
+}
 
   .MyName {
     width: 320px;
@@ -659,8 +681,8 @@ body {
   }
 
   #profile-pic img {
-    width: 130px;
-    height: 130px;
+    width: 150px;
+    height: 150px;
   }
 
   .middle_section {
@@ -669,32 +691,34 @@ body {
     align-items: center;
   }
 
-  .Snackpass, .BotanicalGardens, .Ecobear {
+  .Snackpass, .PortfolioWebsite, .Ecobear {
     display: flex !important;
     flex-direction: column !important;
     align-items: center !important;
   }
 
-  #Snackpass_project_text, #Botanical_garden_project_text, #Ecobear_project_text  {
+  #Snackpass_project_text, #PortfolioWebsite_project_text, #Ecobear_project_text  {
     width: 300px;
   }
 
   
-.SnackpassTitle, .BotanicalGardensTitle, .EcobearTitle {
+.SnackpassTitle, .PortfolioWebsiteTitle, .EcobearTitle {
   font-size: 20px;
 }
 
-.Summary {
-  font-size: 13px;
+
+
+.Role,  .Time {
+  font-size: 14px;
 }
 
-.Role, .Description , .Time {
-  font-size: 12px;
-
+.Description {
+  font-size: 14px;
 }
+
 
   .ProjectOverview {
-    font-size: 20px;
+    font-size: 25px;
     width: 300px;
   }
 
@@ -705,7 +729,7 @@ body {
     border-radius: 20%;
   }
   
-  #Botanical_showcase_picture img {
+  #PortfolioWesbite_showcase_picture img {
     width: 300px; 
     height: auto; 
     padding: 40px;

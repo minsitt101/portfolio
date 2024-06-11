@@ -24,12 +24,21 @@ body {
 }
 
 /*NAV BAR */
+/* LANDING PAGE */
+
 .MinSittLogo img {
   width: 120px; /* Add 'px' for proper CSS syntax */
   height: auto; /* Add 'px' for proper CSS syntax */
-  margin-left: 60px; /* Add 'px' for proper CSS syntax */
-  position: fixed;
-  z-index: 2000;
+  margin-left: 30px; /* Add 'px' for proper CSS syntax */
+}
+
+.MinSittLogo img {
+  transition: opacity 0.3s ease; /* Add transition effect */
+}
+
+.MinSittLogo:hover img {
+  opacity: 0.7; /* Reduce opacity on hover */
+  cursor: pointer;
 }
 
 .Home a, .Projects a, .Resume a {
@@ -40,23 +49,33 @@ body {
   font-family: "Work Sans";
 }
 
+.navigation_bar {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.6);
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  padding: 10px;
+  height: 50;
+}
+
+.top_section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
 .navbar {
   display: flex;
-  justify-content: flex-end; /* Align items to the right */
-  position: fixed; /* Fixed positioning */
-  top: 0; /* Position it at the top */
-  right: 0; /* Position it at the right */
-  width: 100%; /* Full width */ /* Set a background color to avoid transparency issues */
-  z-index: 1000; /* Ensure the navbar stays on top of other elements */
-  padding: 10px; /* Add some padding */
-  background: rgba(255, 255, 255, 0.6);
+  align-items: center;
 }
 
 .navbar ul {
-  display: flex; /* Make the <ul> a flex container */
-  list-style-type: none; /* Remove default list style */
-  margin: 0; /* Remove default margin */
-  padding: 0; /* Remove default padding */
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .navbar li {
@@ -66,18 +85,59 @@ body {
   border-right: 1px solid black;
 }
 
+.navbar a:hover {
+  color: #8E7f76;
+}
+
 .navbar li:last-child {
   border-right: none;
 }
 
-.bar {
-  display: block;
+.navbar li a {
+  text-decoration: none;
+  color: black;
+}
+
+
+
+/* Hamburger menu styles */
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  margin-right: 40px;
+  margin-top: 0px;
+}
+
+.menu-icon-line {
   width: 25px;
   height: 3px;
-  margin: 5px auto;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    background-color: black;
+  background-color: black;
+  margin: 4px 0;
+}
+
+/* Media query for small screens */
+@media (max-width: 800px) {
+  .navbar ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: rgba(255, 255, 255, 1.0);
+    position: absolute;
+    top: 60px; /* Adjust according to your layout */
+    right: 0;
+    margin-left: 1000px;
+    border-top: 1px solid black;
+       
+  }
+
+  .navbar ul.show {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: flex;
+  }
 }
 
 /* Product and Design Project Section Title */
@@ -90,8 +150,10 @@ body {
   padding: 20px;
 }
 
+
 .SectionTitle {
   font-size: 35px;
+  margin-top: 100px;
   margin-bottom: 50px;
   text-align: center;
   font-family: "Work Sans";
@@ -101,14 +163,14 @@ body {
 
 .SectionSubtitle {
   font-size: 17px;
-  margin-bottom: 50px;
+  margin: 0 auto;
+  width: 60%;
   text-align: center;
   font-family: "Work Sans";
   font-weight: 300;
   padding: 10;
-  line-height: 1.5;
-  margin-left: 200;
-  margin-right: 200;
+  line-height: 2.0;
+  
 }
 
 .DesignProject1, .DesignProject2, .DesignProject3, .DesignProject4, .BusProject1, .BusProject2,
@@ -160,13 +222,30 @@ body {
   width: 70%;
 }
 
-.Description {
+.Description{
   font-size: 16px;
   width: 70%;
   line-height: 1.5;
-  margin: 0;
   font-family: "Work Sans";
   font-weight: 270;
+}
+
+.Deliverables {
+  font-size: 14px;
+  width: 80%;
+  line-height: 1.5;
+  margin-top: 10;
+  font-family: "Work Sans";
+  font-weight: 270;
+}
+
+.DeliverablesTitle {
+  font-size: 14px;
+  width: 70%;
+  line-height: 1.5;
+  margin-top: 10;
+  font-family: "Work Sans";
+  font-weight: 600;
 }
 
 .Skills {
@@ -314,22 +393,6 @@ body {
 
 @media screen and (min-width: 750px) and (max-width: 889px) {
 
-  .hamburger {
-    display: block;
-  }
-
-  .hamburger.active .bar:nth-child(2) {
-    opacity: 0;
-  }
-
-  .hamburger.active .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
-  }
-
-  .hamburger.active .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
-  }
-  
   .nav-menu {
     position: fixed;
   }
@@ -344,8 +407,8 @@ body {
 
   .SectionSubtitle {
     font-size: 15;
-    margin: 40;
-    margin: 40;
+    margin: 0 auto;
+    width: 52%;
   }
 
 }
@@ -411,8 +474,8 @@ body {
 
   .SectionSubtitle {
     font-size: 15;
-    margin: 40;
-    margin: 40;
+    margin: 0 auto;
+    width: 52%;
   }
 
 }

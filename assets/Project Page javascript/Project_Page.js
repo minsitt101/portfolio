@@ -30,3 +30,13 @@ const observer = new IntersectionObserver((entries) => {
 
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el));
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  const menuIcon = document.getElementById('menu-icon');
+  const navbarMenu = document.getElementById('navbar-menu');
+
+  menuIcon.addEventListener('click', function () {
+    navbarMenu.classList.toggle('show');
+  });
+});
