@@ -42,7 +42,7 @@ background: #F5F5F5;
   opacity: 0.7; /* Reduce opacity on hover */
 }
 
-.Home a, .Projects a, .Resume a {
+.Home a, .Projects a, .About a {
   color: black;
   font-size: 15px;
   font-weight: 500;
@@ -137,6 +137,7 @@ background: #F5F5F5;
     width: 300; /* Ensure images don't exceed their container's width */
     height: auto; /* Maintain aspect ratio */
     border-radius: 0; /* Remove border radius if not needed */
+    margin-top: 100;
 }
 
 /* BUTTON SCROLL-TOP */
@@ -282,6 +283,11 @@ background: #F5F5F5;
 /* BOTTOM OF PAGE */
 
 
+.HomeBottom a:hover, .AboutBottom a:hover, .ProjectsBottom a:hover, .Linkedin a:hover, .Email a:hover {
+  color: #8E7f76;
+}
+
+
 .LetsChat {
   flex-wrap: wrap;
   margin-top: 30;
@@ -408,7 +414,7 @@ align-items: center;
   }
 
   #Prototypes img{
-    width: 100%;
+    width: 600;
     margin-left: 0 !important;
     padding: 0 !important;
     justify-content: center;
@@ -517,7 +523,7 @@ align-items: center;
   }
 
   #Prototypes img{
-    width: 100%;
+    width: 500;
     margin-left: 0 !important;
     padding: 0 !important;
     justify-content: center;
@@ -636,7 +642,7 @@ align-items: center;
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 500px) {
+@media screen and (min-width: 300px) and (max-width: 500px) {
   
   .MinSittLogo img {
     width: 120px; /* Add 'px' for proper CSS syntax */

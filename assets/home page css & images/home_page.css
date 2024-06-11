@@ -26,7 +26,11 @@ body {
     margin-left: 30px; /* Add 'px' for proper CSS syntax */
   }
 
-.Home a, .Projects a, .Resume a {
+  .MinSittLogo:hover img {
+    opacity: 0.7; /* Reduce opacity on hover */
+  }
+
+.Home a, .Projects a, .About a {
   color: black;
   font-size: 15px;
   font-weight: 500;
@@ -54,6 +58,10 @@ body {
 .navbar {
   display: flex;
   align-items: center;
+}
+
+.navbar a:hover {
+  color: #8E7f76;
 }
 
 .navbar ul {
@@ -628,11 +636,12 @@ body {
   
 
   .SmilingPic img {
-    width: 150px;
-    height: 150px;
+    width: 90px;
+    height: 90px;
     padding: 2cqmin;
     left: 10;
     border: 1px solid white;
+    margin-top: 20px;
   }
 
   .LetsChat, .LetsExplore {
@@ -645,13 +654,19 @@ body {
   }
 
   .BottomOfPage {
-    height: 250;
+    height: 200;
+  }
+
+  .EcobearLogo img {
+    width: 300px; /* Ensure images don't exceed their container's width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 0; /* Remove border radius if not needed */
   }
 
 }
 
 
-@media screen and (min-width: 320px) and (max-width: 500px) {
+@media screen and (min-width: 300px) and (max-width: 500px) {
 
   .MinSittLogo img {
     width: 120px; /* Add 'px' for proper CSS syntax */
@@ -759,9 +774,14 @@ body {
   }
 
   .BottomOfPage {
-    height: 150;
+    height: 200;
   }
 
+  .EcobearLogo img {
+    width: 300px; /* Ensure images don't exceed their container's width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 0; /* Remove border radius if not needed */
+  }
   
 
 }

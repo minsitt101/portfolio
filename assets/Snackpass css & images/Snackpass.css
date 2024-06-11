@@ -60,7 +60,7 @@ body {
 }
 
 
-.Home a, .Projects a, .Resume a {
+.Home a, .Projects a, .About a {
   color: black;
   font-size: 15px;
   font-weight: 500;
@@ -171,6 +171,7 @@ body {
     font-size: 50px;
     padding: 10px;
     font-weight: bold;
+    margin-top: 100;
   }
 
   .Snackpass_one-liner {
@@ -670,6 +671,10 @@ line-height: 1.5;
  color: inherit;
 }
 
+.HomeBottom a:hover, .AboutBottom a:hover, .ProjectsBottom a:hover, .Linkedin a:hover, .Email a:hover {
+  color: #8E7f76;
+}
+
 .BottomOfPage {
   font-family: "Work Sans";
   display: flex;
@@ -1047,7 +1052,7 @@ line-height: 1.5;
   
 }
 
-@media screen and (min-width: 320px) and (max-width: 500px) {
+@media screen and (min-width: 300px) and (max-width: 500px) {
   
   .MinSittLogo img {
     width: 120px; /* Add 'px' for proper CSS syntax */

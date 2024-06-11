@@ -50,7 +50,7 @@ body {
   cursor: pointer;
 }
 
-.Home a, .Projects a, .Resume a {
+.Home a, .Projects a, .About a {
   color: black;
   font-size: 15px;
   font-weight: 500;
@@ -388,6 +388,9 @@ body {
   align-items: center;
 }
 
+.EcobearLogo {
+  margin-top: 100;
+}
 
 
 .UserFlowImage img, .MascotImage img, .ResultsImages img {
@@ -541,7 +544,7 @@ body {
 .hidden {
   opacity:  0;
   transform: translateY(30px);
-  transition: all 1.3s;
+  transition: all 1s;
 }
 
 .show {
@@ -879,7 +882,7 @@ body {
 
 }
 
-@media screen and (min-width: 320px) and (max-width: 500px) {
+@media screen and (min-width: 300px) and (max-width: 500px) {
   
   .MinSittLogo img {
     width: 120px; /* Add 'px' for proper CSS syntax */

@@ -41,7 +41,7 @@ body {
   cursor: pointer;
 }
 
-.Home a, .Projects a, .Resume a {
+.Home a, .Projects a, .About a {
   color: black;
   font-size: 15px;
   font-weight: 500;
@@ -275,6 +275,10 @@ body {
 .LetsChat {
   flex-wrap: wrap;
   margin-top: 30;
+}
+
+.HomeBottom a:hover, .AboutBottom a:hover, .ProjectsBottom a:hover, .Linkedin a:hover, .Email a:hover {
+  color: #8E7f76;
 }
 
 .LetsExplore {
