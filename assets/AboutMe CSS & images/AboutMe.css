@@ -11,7 +11,7 @@ body {
 }
 
 .Content-Section {
-  margin-top: 0;
+  margin-top: 50;
   height: 850;
 }
 
@@ -177,7 +177,7 @@ body {
   .AboutMeSummary {
     font-family: "Work Sans";
     font-weight: 350;
-    font-size: 17px;
+    font-size: 14px;
     line-height: 2.0;
     animation: fade-down 2s;
   }
@@ -292,15 +292,53 @@ body {
 
 /* MEDIA QUERIES */
 
-@media screen and (min-width: 630px) and (max-width: 900px) {
+@media screen and (min-width: 709px) and (max-width: 900px) {
   
   .Content-Section {
-  margin-top: 150;
+  margin-top: 120;
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
   justify-content: space-evenly;
-  height: 1000px;
+  height: 1200px;
+}
+
+.HiddenTitle {
+  display: block;
+  animation: fade-up 2s;
+}
+
+.AboutMeTitle {
+  display: none;
+}
+
+.Pictures img {
+  height: auto;
+  margin-bottom: 0 !important;
+}
+
+.Pictures {
+  height: auto;
+  margin-bottom: 0 !important;
+}
+
+.Text {
+  margin-bottom: 100;
+  max-width: 70% !important;
+  margin-left: 0;
+}
+
+}
+
+@media screen and (min-width: 630px) and (max-width: 709px) {
+  
+  .Content-Section {
+  margin-top: 200;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 1200px;
 }
 
 .HiddenTitle {
@@ -333,7 +371,7 @@ body {
 @media screen and (min-width: 550px) and (max-width: 630px) {
   
   .Content-Section {
-  margin-top: 200;
+  margin-top: 430;
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
@@ -370,15 +408,15 @@ body {
 
 }
 
-@media screen and (min-width: 400px) and (max-width: 550px) {
+@media screen and (min-width: 445px) and (max-width: 550px) {
   
   .Content-Section {
-  margin-top: 100;
+  margin-top: 200;
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
   justify-content: space-evenly;
-  height: 1000px;
+  height: 1200px;
 }
 
 .HiddenTitle {
@@ -392,7 +430,7 @@ body {
 }
 
 .AboutMeSummary {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .Pictures img {
@@ -443,7 +481,7 @@ body {
 
 }
 
-@media screen and (min-width: 300px) and (max-width: 400px) {
+@media screen and (min-width: 369px) and (max-width: 445px) {
   
   .Content-Section {
   margin-top: 100;
@@ -451,7 +489,7 @@ body {
   flex-direction: column-reverse;
   align-items: center;
   justify-content: space-evenly;
-  height: 1000px;
+  height: 1300px;
 }
 
 .HiddenTitle {
@@ -464,7 +502,80 @@ body {
 }
 
 .AboutMeSummary {
-  font-size: 16px;
+  font-size: 14px;
+}
+
+.Pictures img {
+  height: auto;
+  width: 300px;
+  margin-bottom: 0 !important;
+}
+
+.Pictures {
+  height: auto;
+  margin-bottom: 0 !important;
+}
+
+.Text {
+  margin-bottom: 100;
+  max-width: 70% !important;
+  margin-left: 0;
+}
+
+
+.SmilingPic img {
+  width: 90px;
+  height: 90px;
+  padding: 2cqmin;
+  left: 10;
+  border: 1px solid white;
+  margin-top: 20px;
+}
+
+.LetsChat, .LetsExplore {
+  font-size: 13;
+  padding: 13;
+}
+
+.LetsChatTitle, .ExploreTitle {
+  font-size: 15;
+}
+
+.BottomOfPage {
+  height: 200;
+}
+
+.EcobearLogo img {
+  width: 300px; /* Ensure images don't exceed their container's width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 0; /* Remove border radius if not needed */
+}
+
+
+}
+
+@media screen and (min-width: 310px) and (max-width: 369px) {
+  
+  .Content-Section {
+  margin-top: 120;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 1400px;
+}
+
+.HiddenTitle {
+  display: block;
+  font-size: 30;
+}
+
+.AboutMeTitle {
+  display: none;
+}
+
+.AboutMeSummary {
+  font-size: 14px;
 }
 
 .Pictures img {
