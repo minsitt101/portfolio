@@ -192,7 +192,7 @@ body {
   .Pictures {
     margin-right: 10;
     margin-bottom: 100;
-    animation: fade-up 2s, moveAround 7s;
+    animation: fade-up 2s, moveAround infinite 7s;
     animation-delay: 0s, 2s;
   }
 
