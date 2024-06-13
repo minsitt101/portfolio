@@ -1,0 +1,1224 @@
+
+/*CENTERING */
+
+.High-Fi-Prototype, .Leaderboard-Wireframes, .High-Fi-Prototype-Fav-Store, 
+.High-Fi-Prototype-Leaderboards, .High-Fi-Prototype-Chickencoop, .Walkthroughs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+.UserFlowImage, .UserFlowsMap, .LoFiImage, .MascotImage, .ResultsImages, .HomePagePrototypes, .HomePageSubtitle,
+.ShoppingPrototypes, .ShoppingSubtitle, .AffirmationVideo, .AffirmationSubtitle, .AIChatboxPrototypes, 
+.ImpactPagePrototype, .EcobearLogo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+/*BACKGROUND COLOR */
+
+
+body {
+    margin: 0;
+}
+
+
+.navigation_bar {
+    margin: 0;
+    height: 20%;
+    background: linear-gradient(to bottom, rgba(222, 200, 183, 0.8), rgba(222, 218, 219, 1.0), rgba(245, 245, 245, 1.0));
+}
+
+.BottomOfPage {
+  background: linear-gradient(to bottom, rgba(222, 200, 183, 0.8), rgba(222, 218, 219, 1.0));
+  height: 300px;
+  margin: 0;
+}
+
+.Content-Section {
+  margin: 0;
+  background: #F5F5F5;
+}
+
+/*NAV BAR */
+.MinSittLogo img {
+  width: 120px; /* Add 'px' for proper CSS syntax */
+  height: auto; /* Add 'px' for proper CSS syntax */
+  margin-left: 30px; /* Add 'px' for proper CSS syntax */
+}
+
+.MinSittLogo img {
+  transition: opacity 0.3s ease; /* Add transition effect */
+}
+
+.MinSittLogo:hover img {
+  opacity: 0.7; /* Reduce opacity on hover */
+}
+
+
+.Home a, .Projects a, .About a {
+  color: black;
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+  font-family: "Work Sans";
+}
+
+.navigation_bar {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.6);
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  padding: 10px;
+  height: 50;
+}
+
+.top_section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar a:hover {
+  color: #8E7f76;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+.navbar ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  margin: 10px;
+  padding: 4px 30px;
+  position: relative;
+  border-right: 1px solid black;
+}
+
+.navbar li:last-child {
+  border-right: none;
+}
+
+.navbar li a {
+  text-decoration: none;
+  color: black;
+}
+
+
+/* Hamburger menu styles */
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  margin-right: 40px;
+  margin-top: 0px;
+}
+
+.menu-icon-line {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 4px 0;
+}
+
+/* Media query for small screens */
+@media (max-width: 800px) {
+  .navbar ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: rgba(255, 255, 255, 1.0);
+    position: absolute;
+    top: 60px; /* Adjust according to your layout */
+    right: 0;
+    margin-left: 1000px;
+    border-top: 1px solid black;
+       
+  }
+
+  .navbar ul.show {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: flex;
+  }
+}
+
+  /*LANDING PAGE */
+
+  .landing-page {
+    font-family: "Work Sans";
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Snackpass_Title {
+    font-size: 50px;
+    padding: 10px;
+    font-weight: bold;
+    margin-top: 100;
+  }
+
+  .Snackpass_one-liner {
+    font-size: 18px;
+    font-weight: 300;
+    width: 50%;
+    text-align: center;
+  }
+
+  .High-fi-prototypes {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #Prototypes img  {
+    width: 90%; 
+    height: auto; 
+    padding: 40px;
+    border-radius: 0%;
+    margin-left: 40px;
+  }
+
+  /* PROJECT DETAILS SECTION */
+
+  .ProjectDetails {
+    display: flex;
+    flex-wrap: wrap;
+    width: 900px; /* specify units like px for width */
+    margin-left: 50px; /* specify units like px for margin */
+    flex-direction: colum;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: realtive;
+  }
+
+  .ProjectDetails {
+    font-size: 20;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between; /* Evenly space out the divs */
+    flex-wrap: wrap; /* Allow items to wrap onto the next line */
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+
+.Files {
+  margin-right: 10px;
+}
+
+#SlideDeck, #FigmaFile {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.Role,
+.Time,
+.ProjectType,
+.Software,
+.Skills,
+.Files {
+    flex: 0 0 calc(20% - 10px); /* Set the width of each div to 20% of the container width minus margin */
+    margin: 5px; /* Add margin to create space between the divs */
+}
+
+#ProjectDetailSection,
+#ProjectDetailDescription {
+    line-height: 1.7;
+    margin: 0; /* Remove default margin */
+}
+
+/* Media query for smaller viewports */
+@media screen and (max-width: 600px) {
+    .Role,
+    .Time,
+    .ProjectType,
+    .Software,
+    .Skills,
+    .Files {
+        flex: 0 0 calc(100% - 10px); /* Set the width of each div to 100% minus margin */
+    }
+}
+
+
+  .Time {
+    margin-left: 20;
+  }
+  /* OVERVIEW SECTION */
+
+  .Context {
+    font-family: "Work Sans";
+    max-width: 1500px;
+  }
+
+  .ContextTitle {
+    font-family: "Work Sans";
+    font-weight: bold;
+    font-size: 40px;
+    justify-content: center;
+    width: 90%;
+    margin-left: 200;
+  }
+
+  .ContextSummary {
+    font-family: "Work Sans";
+    font-weight: 350;
+    font-size: 17px;
+    width: 70%;
+    margin-left: 200;
+    line-height: 1.5;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+
+.Snackpass-Pages {
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.Snackpass-Pictures-1 {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  flex-direction: row;
+  margin: 0;
+  padding: 5;
+  margin-left: 200px;
+}
+
+
+.Picture1 {
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.Picture1 img {
+  width: 200px; /* Ensure images don't exceed their container's width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 0; /* Remove border radius if not needed */
+  padding: 10px;
+}
+
+  /* PROBLEM STATEMENT SECTION */
+
+.ProblemStatement {
+  max-width: 1500px;
+}
+
+.ProblemStatementTitle {
+    font-family: "Work Sans";
+    font-weight: bold;
+    font-size: 40px;
+    margin-left: 200;
+    margin-top: 20;
+}
+
+.Quote {
+    font-family: "Work Sans";
+    font-weight: 300;
+    font-size: 30px;
+    width: 70%;
+    margin-left: 200;
+    margin-top: 20;
+   
+}
+
+.SummaryOfProblem {
+    font-family: "Work Sans";
+    font-weight: 350;
+    font-size: 17px;
+    width: 70%;
+    margin-left: 200;
+    line-height: 1.5;
+}
+
+  /* Validation Section */
+
+.Validation {
+}
+
+.Statistics {
+  padding: 5px;
+}
+
+.StatHighlight {
+  font-size: 30px;
+}
+
+.SentenceHighlight {
+  font-size: 20px;
+}
+
+.ValidationSummary,  .Takeaways{
+    font-family: "Work Sans";
+    font-weight: 350;
+    font-size: 17px;
+    width: 75%;
+    margin-left: 200;
+    line-height: 1.5;
+}
+
+.StatisticsLine {
+  font-family: "Work Sans";
+  font-weight: 350;
+  font-size: 17px;
+  width: 50%;
+  margin-left: 250;
+  line-height: 1.5;
+}
+
+.ValidationTitle {
+  font-family: "Work Sans";
+  font-weight: bold;
+  font-size: 40px;
+  margin-left: 200;
+  margin-top: 40;
+}
+
+.bullet-list {
+  list-style-type: disc; /* Use 'disc' for filled circles or 'circle' for empty circles */
+  margin-left: 20px; /* Adjust margin as needed */
+}
+.list-item {
+  margin-bottom: 10px; /* Adjust margin as needed */
+  padding-left: 20px; /* Adjust padding to increase space between bullets */
+}
+
+  /* Wireframe Showcase Section */
+
+.SolutionsProcessTitle {
+    font-family: "Work Sans";
+    font-weight: bold;
+    font-size: 40px;
+    margin-left: 200;
+}
+
+.SolutionsTextIntro{
+  font-family: "Work Sans";
+  font-weight: 350;
+  font-size: 17px;
+  width: 70%;
+  margin-left: 200;
+  line-height: 1.5;
+}
+
+
+/* Favorite Store, Leaderboards, Chickencoop Feature */
+
+.FavoriteStoreFeatureTitle, .LeaderboardTitle, .ChickencoopTitle {
+  font-family: "Work Sans";
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: 20;
+  margin-left: 200;
+}
+
+.LeaderboardTitle {
+  margin-top: 30;
+}
+
+.Favorite-Store-Wireframes, .Leaderboard-Wireframes, .Chickencoop-Wireframes {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  flex-direction: row;
+  margin: 0;
+  padding: 5;
+  margin-left: 200px;
+  flex-wrap: wrap;
+}
+
+.FavStoreWireframes1 img, .LeaderboardWireframes1 img, .ChickencoopWireframes1 img {
+  max-width: 600; /* Ensure images don't exceed their container's width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 0; /* Remove border radius if not needed */
+  padding: 10px;
+}
+
+.ChickencoopWireframes1 img {
+  max-width: 500; /* Ensure images don't exceed their container's width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 0; /* Remove border radius if not needed */
+  padding: 10px;
+  margin-left: 200;
+}
+
+.FavStoreWireframes2 img, .LeaderboardWireframes2 img {
+  max-width: 400; /* Ensure images don't exceed their container's width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 0; /* Remove border radius if not needed */
+  padding: 10px;
+}
+
+.FavStoreText, .LeaderboardText, .ChickencoopText {
+  font-family: "Work Sans";
+  font-weight: 350;
+  font-size: 17px;
+  width: 70%;
+  margin-left: 200;
+  line-height: 1.5;
+}
+
+.UserFlowTitle {
+  font-family: "Work Sans";
+  font-weight: bold;
+  font-size: 17px;
+  display: flex;
+  justify-content: center;
+  padding: 10;
+  margin-top: 10;
+
+}
+
+.StrategicReasoning, .DesginJustification {
+  font-family: "Work Sans";
+  font-weight: bold;
+  color: #04BCFC;
+  font-size: 17px;
+  margin-left: 200;
+  line-height: 1.5;
+}
+
+.ReasoningForChickencoop {
+  margin-left: 250;
+  font-family: "Work Sans";
+  font-weight: 350;
+  font-size: 17px;
+  width: 70%;
+}
+
+.Favoritestore_Wireframe_1, .Favoritestore_Wireframe_2 {
+  font-family: "Work Sans";
+  font-weight: light;
+  display: flex;
+  justify-content: center;
+}
+
+.Favoritestore_Wireframe_1 {
+  margin-top: 40;
+}
+
+.Leaderboard_Wireframe_1, .Leaderboard_Wireframe_2 {
+  font-family: "Work Sans";
+  font-weight: light;
+  display: flex;
+  justify-content: center;
+}
+
+.Leaderboard_Wireframe_2 {
+  margin-top: 40;
+}
+
+.High-Fi-Prototype-Fav-Store img, .High-Fi-Prototype-Leaderboards img {
+  width: 800; /* Ensure images don't exceed their container's width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 0; /* Remove border radius if not needed */
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.High-Fi-Prototype-Chickencoop img {
+  width: 600; /* Ensure images don't exceed their container's width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 0; /* Remove border radius if not needed */
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Final Results */
+
+.FinalResultsTitle {
+  font-family: "Work Sans";
+  font-weight: bold;
+  font-size: 40px;
+  display: flex;
+  margin-top: 100px;
+  margin-left: 200;
+}
+
+.FinalResultsText{
+font-family: "Work Sans";
+font-weight: 350;
+font-size: 17px;
+width: 70%;
+margin-left: 200;
+line-height: 1.5;
+}
+
+
+/* Reflection */
+
+.Reflection {
+  padding: 0;
+  margin-top: 100px;
+  margin-bottom: 60px;
+}
+
+.ReflectionTitle {
+  font-family: "Work Sans";
+  font-weight: bold;
+  font-size: 40px;
+  margin-top: 20;
+  margin-left: 200;
+}
+
+.ReflectionTextLast{
+  font-family: "Work Sans";
+  font-weight: 350;
+  font-size: 17px;
+  width: 70%;
+  margin-left: 200;
+  margin-top: 20;
+  margin-bottom: 90;
+  padding: 5;
+  line-height: 1.5;
+  }
+
+.ReflectionText {
+font-family: "Work Sans";
+font-weight: 350;
+font-size: 17px;
+width: 70%;
+margin-left: 200;
+margin-top: 20;
+padding: 5;
+line-height: 1.5;
+}
+
+/* VIDEOS */ 
+
+.Walkthroughs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  flex-wrap: wrap;
+  margin-top: 20;
+}
+
+
+/* BUTTON SCROLL-TOP */
+
+.button_area {
+  display: flex;
+  justify-content: center;
+}
+
+.scroll-top-btn {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  background-color:rgba(135, 152, 168, 0.5);  /* Blue-ish background color */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 44px;
+  cursor: pointer;
+  margin-top: 60px;
+  z-index: 9999;
+}
+
+.scroll-top-btn:hover {
+   transform: translateY(-10px);
+   background-color: rgba(135, 152, 168);
+   transition: transform 0.5s ease
+
+}
+
+.scroll-top-btn img {
+  width: 30px;
+  height: 30px;
+}
+
+/* BOTTOM PAGE */
+
+.LetsChat {
+  flex-wrap: wrap;
+  margin-top: 30;
+  
+}
+
+.LetsExplore {
+  flex-wrap: wrap;
+  margin-top: 30;
+
+  
+}
+
+.LetsChatTitle, .ExploreTitle {
+  font-size: 30;
+  font-weight: 500;
+  font-family: "Roboto Serif";
+}
+
+.BottomOfPage  a {
+ text-decoration: underline;
+ color: inherit;
+}
+
+.HomeBottom a:hover, .AboutBottom a:hover, .ProjectsBottom a:hover, .Linkedin a:hover, .Email a:hover {
+  color: #8E7f76;
+}
+
+.BottomOfPage {
+  font-family: "Work Sans";
+  display: flex;
+  justify-content: column;
+  justify-content: row;
+  justify-content: space-evenly;
+  
+}
+
+.SmilingPic img {
+    position: relative;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    right: 0;
+    top: 20;
+    border: 1px solid white;
+}
+
+
+/*Animations*/
+
+.hidden {
+  opacity:  0;
+  transform: translateY(30px);
+  transition: all 1.3s;
+}
+
+.show {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+
+
+@media screen and (max-width: 1200px) and (max-height: 11096.2px) {
+
+  .MinSittLogo img {
+    width: 120px; /* Add 'px' for proper CSS syntax */
+    height: auto; /* Add 'px' for proper CSS syntax */
+    margin-left: 30px; /* Add 'px' for proper CSS syntax */
+}
+
+  .ProjectDetails {
+      display: flex;
+      flex-direction: column;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 50%;
+      margin-left: 0;
+  }
+}
+
+
+
+@media screen and (min-width: 770px) and (max-width: 1000px) {
+
+  .MinSittLogo img {
+    width: 120px; /* Add 'px' for proper CSS syntax */
+    height: auto; /* Add 'px' for proper CSS syntax */
+    margin-left: 30px; /* Add 'px' for proper CSS syntax */
+}
+
+  .Snackpass_Title {
+    font-size: 40px;
+    padding: 10px;
+    font-weight: bold;
+    margin-right: 0 !important;
+    justify-content: center;
+    margin-top: 100;
+  }
+
+  .Snackpass_one-liner {
+    font-size: 15px;
+    width: 85%;
+    margin-right: 0 !important;
+    justify-content: center;
+    margin-left: 0 !important;
+  }
+
+  #Prototypes img{
+    width: 100%;
+    margin-left: 0 !important;
+    padding: 0 !important;
+    justify-content: center;
+  }
+
+  .ProjectDetails {
+    font-size: 17px;
+    display: flex;
+    flex-direction: row;
+    margin: 0 !important;
+    padding: 10;
+    justify-content: center;
+  }
+
+  .ContextTitle, .ProblemStatementTitle, .ValidationTitle, .SolutionsProcessTitle,
+  .FavoriteStoreFeatureTitle, .LeaderboardTitle, .ReflectionTitle, .ChickencoopTitle, .FinalResultsTitle {
+    font-size: 30px;
+    width: 70%;
+    justify-content: center;
+    padding: 30;
+  }
+
+  .ReflectionTextLast {
+    font-size: 15px;
+    width: 70%;
+    justify-content: center;
+    padding: 5;
+  }
+  
+  .Context, .ProblemStatement, .Validation, .SolutionsProcess, .FinalResults, .Reflection {
+    margin-top: 100;
+  }
+
+  .ContextSummary, .SummaryOfProblem, .ValidationSummary, .StatisticsLine, .Takeaways, 
+  .SolutionsTextIntro, .FavStoreText, .LeaderboardText, .ChickencoopText, 
+  .ReasoningForChickencoop, .ReflectionText, .FinalResultsText {
+    font-size: 16px;
+    width: 70%;
+    justify-content: center;
+    padding: 5;
+  }
+
+  .StrategicReasoning, .DesginJustification, .UserFlowTitle  {
+    font-size: 18px;
+    width: 70%;
+    justify-content: center;
+    padding: 5;
+  }
+
+  .UserFlowTitle {
+    padding: 10;
+  }
+
+  .ContextTitle, .ContextSummary, .Quote, .ProblemStatementTitle, .SummaryOfProblem, .ValidationSummary,
+  .ValidationTitle, .StatisticsLine, .Takeaways, .SolutionsTextIntro, .SolutionsProcessTitle, 
+  .FavoriteStoreFeatureTitle, .StrategicReasoning, .FavStoreText, .DesginJustification, .UserFlowTitle,
+  .LeaderboardTitle, .LeaderboardText, .ChickencoopText, .ReasoningForChickencoop, .ReflectionTitle, 
+  .ReflectionText, .ChickencoopTitle, .FinalResultsTitle, .FinalResultsText, .ReflectionTextLast{
+    margin: 0 auto;
+  }
+
+  .Snackpass-Pictures-1 {
+    width: 70%;
+    height: auto;
+    margin-left: 100;
+    justify-content: center;
+  }
+ 
+  .Quote {
+    font-size: 22px;
+    padding: 5;
+  }
+
+  .Reflection {
+    margin-bottom: 30;
+    margin-top: 20;
+  }
+
+  
+  .Favorite-Store-Wireframes, .Leaderboard-Wireframes, .Chickencoop-Wireframes {
+    margin: 0;
+  }
+
+  .FavStoreWireframes1 img, .LeaderboardWireframes1 img, .ChickencoopWireframes1 img{
+    max-width: 60%;
+    height: auto;
+    margin-left: 120;
+  }
+
+  .FavStoreWireframes2 img, .LeaderboardWireframes2 img {
+    max-width: 60%;
+    height: auto;
+    margin-left: 145;
+  }
+
+  .High-Fi-Prototype-Fav-Store img, .High-Fi-Prototype-Leaderboards img {
+    max-width: 90%;
+    height: auto;
+    padding: 10
+  }
+
+  .High-Fi-Prototype-Chickencoop img {
+    width: 60%;
+    height: auto;
+    padding: 10
+  }
+
+  .Walkthroughs video {
+    width: 50%;
+    height: auto;
+    justify-content: center;
+    margin-left: 150 !important;
+  }
+  
+
+  .navdiv {
+    margin: 0;
+  }
+  }
+
+
+@media screen and (min-width: 500px) and (max-width: 770px) {
+    
+  .MinSittLogo img {
+    width: 120px; /* Add 'px' for proper CSS syntax */
+    height: auto; /* Add 'px' for proper CSS syntax */
+    margin-left: 30px; /* Add 'px' for proper CSS syntax */
+}
+
+  .Snackpass_Title {
+    font-size: 40px;
+    padding: 10px;
+    font-weight: bold;
+    margin-right: 0 !important;
+    justify-content: center;
+  }
+
+  .Snackpass_one-liner {
+    font-size: 15px;
+    width: 85%;
+    margin-right: 0 !important;
+    justify-content: center;
+    margin-left: 0 !important;
+  }
+
+  #Prototypes img{
+    width: 100%;
+    margin-left: 0 !important;
+    padding: 0 !important;
+    justify-content: center;
+  }
+
+  .ProjectDetails {
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    margin: 0 !important;
+    padding: 10;
+    justify-content: center;
+  }
+
+  .Time {
+    margin-left: 0;
+  }
+
+  .ContextTitle, .ProblemStatementTitle, .ValidationTitle, .SolutionsProcessTitle,
+  .FavoriteStoreFeatureTitle, .LeaderboardTitle, .ReflectionTitle, .ChickencoopTitle, .FinalResultsTitle {
+    font-size: 30px;
+    width: 70%;
+    justify-content: center;
+    padding: 20;
+  }
+
+  .ReflectionTextLast {
+    font-size: 15px;
+    width: 70%;
+    justify-content: center;
+    padding: 5;
+  }
+  
+  .Context, .ProblemStatement, .Validation, .SolutionsProcess, .FinalResults {
+    margin-top: 100;
+  }
+
+  .ContextSummary, .SummaryOfProblem, .ValidationSummary, .StatisticsLine, .Takeaways, 
+  .SolutionsTextIntro, .FavStoreText, .LeaderboardText, .ChickencoopText, 
+  .ReasoningForChickencoop, .ReflectionText, .FinalResultsText {
+    font-size: 15px;
+    width: 70%;
+    justify-content: center;
+    padding: 5;
+  }
+
+  .StrategicReasoning, .DesginJustification, .UserFlowTitle  {
+    font-size: 17px;
+    width: 70%;
+    justify-content: center;
+    padding: 5;
+  }
+
+  .UserFlowTitle {
+    padding: 10;
+  }
+
+  .ContextTitle, .ContextSummary, .Quote, .ProblemStatementTitle, .SummaryOfProblem, .ValidationSummary,
+  .ValidationTitle, .StatisticsLine, .Takeaways, .SolutionsTextIntro, .SolutionsProcessTitle, 
+  .FavoriteStoreFeatureTitle, .StrategicReasoning, .FavStoreText, .DesginJustification, .UserFlowTitle,
+  .LeaderboardTitle, .LeaderboardText, .ChickencoopText, .ReasoningForChickencoop, .ReflectionTitle, 
+  .ReflectionText, .ChickencoopTitle, .FinalResultsTitle, .FinalResultsText, .ReflectionTextLast{
+    margin: 0 auto;
+  }
+
+  .Snackpass-Pictures-1 {
+    margin: 0 auto;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .Snackpass-Pictures-1 img {
+    width: 200px;
+    display: flex;
+  }
+
+  .Quote {
+    font-size: 20px;
+    padding: 5;
+  }
+
+  .Favorite-Store-Wireframes, .Leaderboard-Wireframes, .Chickencoop-Wireframes {
+    margin: 0;
+  }
+
+  .FavStoreWireframes1 img, .LeaderboardWireframes1 img, .ChickencoopWireframes1 img{
+    max-width: 80%;
+    height: auto;
+    margin-left: 35;
+  }
+
+  .FavStoreWireframes2 img, .LeaderboardWireframes2 img {
+    max-width: 70%;
+    height: auto;
+    margin-left: 55;
+  }
+
+  .High-Fi-Prototype-Fav-Store img, .High-Fi-Prototype-Leaderboards img {
+    max-width: 95%;
+    height: auto;
+    margin-left: 0;
+    padding: 10
+  }
+
+  .High-Fi-Prototype-Chickencoop img {
+    width: 80%;
+    height: auto;
+    margin-left: 50;
+    padding: 10
+  }
+
+  .Walkthroughs video {
+    width: 60%;
+    height: auto;
+    justify-content: center;
+    margin-left: 150 !important;
+  }
+  
+
+  .Relfection {
+    margin-top: 20;
+    margin-bottom: 60;
+  }
+
+  .SmilingPic img {
+    width: 150px;
+    height: 150px;
+    padding: 2cqmin;
+    left: 10;
+    border: 1px solid white;
+  }
+
+  .LetsChat, .LetsExplore {
+    font-size: 13;
+    padding: 13;
+  }
+
+  .LetsChatTitle, .ExploreTitle {
+    font-size: 15;
+  }
+
+  .BottomOfPage {
+    height: 200;
+  }
+  
+}
+
+@media screen and (min-width: 300px) and (max-width: 500px) {
+  
+  .MinSittLogo img {
+    width: 120px; /* Add 'px' for proper CSS syntax */
+    height: auto; /* Add 'px' for proper CSS syntax */
+    margin-left: 30px; /* Add 'px' for proper CSS syntax */
+}
+
+  .Snackpass_Title {
+    font-size: 40px;
+    padding: 10px;
+    font-weight: bold;
+    margin-right: 0 !important;
+    justify-content: center;
+  }
+
+  .Snackpass_one-liner {
+    font-size: 15px;
+    width: 85%;
+    margin-right: 0 !important;
+    justify-content: center;
+    margin-left: 0 !important;
+  }
+
+  #Prototypes img{
+    width: 100%;
+    margin-left: 0 !important;
+    padding: 0 !important;
+    justify-content: center;
+  }
+
+  .ProjectDetails {
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    margin: 0 !important;
+    padding: 10;
+    justify-content: center;
+  }
+
+  .Time {
+    margin-left: 0;
+  }
+
+  .ContextTitle, .ProblemStatementTitle, .ValidationTitle, .SolutionsProcessTitle,
+  .FavoriteStoreFeatureTitle, .LeaderboardTitle, .ReflectionTitle, .ChickencoopTitle, .FinalResultsTitle {
+    font-size: 30px;
+    width: 70%;
+    justify-content: center;
+    padding: 20;
+  }
+
+  .ReflectionTextLast {
+    font-size: 15px;
+    width: 70%;
+    justify-content: center;
+    padding: 5;
+  }
+  
+  .Context, .ProblemStatement, .Validation, .SolutionsProcess, .FinalResults {
+    margin-top: 100;
+  }
+
+  .ContextSummary, .SummaryOfProblem, .ValidationSummary, .StatisticsLine, .Takeaways, 
+  .SolutionsTextIntro, .FavStoreText, .LeaderboardText, .ChickencoopText, 
+  .ReasoningForChickencoop, .ReflectionText, .FinalResultsText {
+    font-size: 15px;
+    width: 70%;
+    justify-content: center;
+    padding: 5;
+  }
+
+  .StrategicReasoning, .DesginJustification, .UserFlowTitle  {
+    font-size: 17px;
+    width: 70%;
+    justify-content: center;
+    padding: 5;
+  }
+
+  .UserFlowTitle {
+    padding: 10;
+  }
+
+  .ContextTitle, .ContextSummary, .Quote, .ProblemStatementTitle, .SummaryOfProblem, .ValidationSummary,
+  .ValidationTitle, .StatisticsLine, .Takeaways, .SolutionsTextIntro, .SolutionsProcessTitle, 
+  .FavoriteStoreFeatureTitle, .StrategicReasoning, .FavStoreText, .DesginJustification, .UserFlowTitle,
+  .LeaderboardTitle, .LeaderboardText, .ChickencoopText, .ReasoningForChickencoop, .ReflectionTitle, 
+  .ReflectionText, .ChickencoopTitle, .FinalResultsTitle, .FinalResultsText, .ReflectionTextLast{
+    margin: 0 auto;
+  }
+
+  .Snackpass-Pictures-1 {
+    margin: 0 auto;
+    width: 50%;
+    justify-content: center;
+  }
+
+  .Snackpass-Pictures-1 img {
+    width: 150px;
+    display: flex;
+  }
+
+  .Quote {
+    font-size: 20px;
+    padding: 5;
+  }
+
+  .Favorite-Store-Wireframes, .Leaderboard-Wireframes, .Chickencoop-Wireframes {
+    margin: 0;
+  }
+
+  .FavStoreWireframes1 img, .LeaderboardWireframes1 img, .ChickencoopWireframes1 img{
+    max-width: 80%;
+    height: auto;
+    margin-left: 35;
+  }
+
+  .FavStoreWireframes2 img, .LeaderboardWireframes2 img {
+    max-width: 70%;
+    height: auto;
+    margin-left: 55;
+  }
+
+  .High-Fi-Prototype-Fav-Store img, .High-Fi-Prototype-Leaderboards img {
+    max-width: 95%;
+    height: auto;
+    margin-left: 0;
+    padding: 10
+  }
+
+  .High-Fi-Prototype-Chickencoop img {
+    width: 70%;
+    height: auto;
+    margin-left: 5;
+    padding: 10
+  }
+
+  .Walkthrough1, .Walkthroguh2 {
+    width: 90%;
+    height: auto;
+    justify-content: center;
+  }
+
+  .Relfection {
+    margin-top: 20;
+    margin-bottom: 60 !important;
+  }
+
+  .SmilingPic img {
+    width: 90px;
+    height: 90px;
+    padding: 2cqmin;
+    left: 10;
+    border: 1px solid white;
+    margin-top: 20px;
+  }
+
+  .LetsChat, .LetsExplore {
+    font-size: 13;
+    padding: 13;
+  }
+
+  .LetsChatTitle, .ExploreTitle {
+    font-size: 15;
+  }
+
+  .BottomOfPage {
+    height: 200;
+  }
+}

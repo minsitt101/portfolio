@@ -1,0 +1,628 @@
+body {
+  margin: 0;
+  background: linear-gradient(to bottom, rgba(222, 200, 183, 0.8), rgba(222, 218, 219, 1.0), rgba(245, 245, 245, 1.0), rgba(222, 200, 183, 0.8));
+}
+
+
+.BottomOfPage {
+  background: linear-gradient(to bottom, rgba(222, 200, 183, 0.8), rgba(222, 218, 219, 1.0));
+  height: 300px;
+  margin: 0;
+}
+
+.Content-Section {
+  margin-top: 50;
+  height: 850;
+}
+
+/*SPACING */
+
+.Content-Section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly
+}
+
+.Text {
+  margin-bottom: 100;
+  margin-left: 50;
+  max-width: 40%;
+}
+
+/*NAV BAR */
+
+
+
+.MinSittLogo img {
+    width: 120px; /* Add 'px' for proper CSS syntax */
+    height: auto; /* Add 'px' for proper CSS syntax */
+    margin-left: 30px; /* Add 'px' for proper CSS syntax */
+  }
+  
+  .MinSittLogo img {
+    width: 120px; /* Add 'px' for proper CSS syntax */
+    height: auto; /* Add 'px' for proper CSS syntax */
+    margin-left: 30px; /* Add 'px' for proper CSS syntax */
+  }
+  
+  .MinSittLogo img {
+    transition: opacity 0.3s ease; /* Add transition effect */
+  }
+  
+  .MinSittLogo:hover img {
+    opacity: 0.7; /* Reduce opacity on hover */
+    cursor: pointer;
+  }
+  
+  .Home a, .Projects a, .About a {
+    color: black;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    font-family: "Work Sans";
+  }
+  
+  .navigation_bar {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.6);
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    padding: 10px;
+    height: 50;
+  }
+  
+  .top_section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar li {
+    margin: 10px;
+    padding: 4px 30px;
+    position: relative;
+    border-right: 1px solid black;
+  }
+  
+  .navbar li:last-child {
+    border-right: none;
+  }
+  
+  .navbar li a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .navbar a:hover {
+    color: #8E7f76;
+  }
+  
+  
+  /* Hamburger menu styles */
+  .menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin-right: 40px;
+    margin-top: 0px;
+  }
+  
+  .menu-icon-line {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 4px 0;
+  }
+  
+  /* Media query for small screens */
+  @media (max-width: 800px) {
+    .navbar ul {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      background: rgba(255, 255, 255, 1.0);
+      position: absolute;
+      top: 60px; /* Adjust according to your layout */
+      right: 0;
+      margin-left: 1000px;
+      border-top: 1px solid black;
+         
+    }
+  
+    .navbar ul.show {
+      display: flex;
+    }
+  
+    .menu-icon {
+      display: flex;
+    }
+  }
+
+  /*HIDDEN TITLE */
+
+  .HiddenTitle {
+    font-size: 40px;
+    font-family: "Roboto Serif";
+    font-weight: 500;
+  }
+
+  .HiddenTitle {
+    display: none;
+  }
+
+  /* ABOUT ME */
+
+  .AboutMeTitle {
+    font-size: 40px;
+    font-family: "Roboto Serif";
+    font-weight: 500;
+    animation: fade-up 2s;
+  }
+
+  .AboutMeSummary {
+    font-family: "Work Sans";
+    font-weight: 350;
+    font-size: 14px;
+    line-height: 2.0;
+    animation: fade-down 2s;
+  }
+
+  /* IMAGES */
+
+  .Pictures img {
+    width: 500px; /* Add 'px' for proper CSS syntax */
+    height: auto;
+  }
+
+  .Pictures {
+    margin-right: 10;
+    margin-bottom: 100;
+    animation: fade-up 2s, moveAround infinite 7s;
+    animation-delay: 0s, 2s;
+  }
+
+/* BOTTOM OF PAGE */
+
+.HomeBottom a:hover, .AboutBottom a:hover, .ProjectsBottom a:hover, .Linkedin a:hover, .Email a:hover {
+  color: #8E7f76;
+}
+
+.LetsChat {
+  flex-wrap: wrap;
+  margin-top: 30;
+  
+}
+
+.LetsExplore {
+  flex-wrap: wrap;
+  margin-top: 30;
+
+  
+}
+
+.LetsChatTitle, .ExploreTitle {
+  font-size: 30;
+  font-weight: 500;
+  font-family: "Roboto Serif";
+}
+
+.BottomOfPage  a {
+ text-decoration: underline;
+ color: inherit;
+}
+
+.BottomOfPage {
+  font-family: "Work Sans";
+  display: flex;
+  justify-content: column;
+  justify-content: row;
+  justify-content: space-evenly;
+  
+}
+
+.SmilingPic img {
+    position: relative;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    right: 0;
+    top: 20;
+    border: 1px solid white;
+}
+
+
+
+/* ANIMATIONS */
+
+@keyframes moveAround {
+  0%, 100% {
+      transform: translate(0, 0);
+  }
+  25% {
+      transform: translate(5px, -5px);
+  }
+  50% {
+      transform: translate(0, -10px);
+  }
+  75% {
+      transform: translate(-6px, -6px);
+  }
+}
+
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(30px) scale(0.9);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
+}
+
+@keyframes fade-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px) scale(0.9);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
+}
+
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 709px) and (max-width: 900px) {
+  
+  .Content-Section {
+  margin-top: 120;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 1200px;
+}
+
+.HiddenTitle {
+  display: block;
+  animation: fade-up 2s;
+}
+
+.AboutMeTitle {
+  display: none;
+}
+
+.Pictures img {
+  height: auto;
+  margin-bottom: 0 !important;
+}
+
+.Pictures {
+  height: auto;
+  margin-bottom: 0 !important;
+}
+
+.Text {
+  margin-bottom: 100;
+  max-width: 70% !important;
+  margin-left: 0;
+}
+
+}
+
+@media screen and (min-width: 630px) and (max-width: 709px) {
+  
+  .Content-Section {
+  margin-top: 200;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 1200px;
+}
+
+.HiddenTitle {
+  display: block;
+  animation: fade-up 2s;
+}
+
+.AboutMeTitle {
+  display: none;
+}
+
+.Pictures img {
+  height: auto;
+  margin-bottom: 0 !important;
+}
+
+.Pictures {
+  height: auto;
+  margin-bottom: 0 !important;
+}
+
+.Text {
+  margin-bottom: 100;
+  max-width: 70% !important;
+  margin-left: 0;
+}
+
+}
+
+@media screen and (min-width: 550px) and (max-width: 630px) {
+  
+  .Content-Section {
+  margin-top: 430;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 1000px;
+}
+
+.HiddenTitle {
+  display: block;
+  animation: fade-up 2s;
+}
+
+.AboutMeTitle {
+  display: none;
+}
+
+.Pictures img {
+  height: auto;
+  margin-bottom: 0 !important;
+}
+
+.Pictures {
+  height: auto;
+  margin-bottom: 0 !important;
+}
+
+.Text {
+  margin-bottom: 100;
+  max-width: 70% !important;
+  margin-left: 0;
+}
+
+
+
+}
+
+@media screen and (min-width: 445px) and (max-width: 550px) {
+  
+  .Content-Section {
+  margin-top: 300;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 1100px;
+}
+
+.HiddenTitle {
+  display: block;
+  font-size: 35;
+  animation: fade-up 2s;
+}
+
+.AboutMeTitle {
+  display: none;
+}
+
+.AboutMeSummary {
+  font-size: 14px;
+}
+
+.Pictures img {
+  height: auto;
+  width: 400px;
+  margin-bottom: 0 !important;
+}
+
+.Pictures {
+  height: auto;
+  margin-bottom: 0 !important;
+}
+
+.Text {
+  margin-bottom: 100;
+  max-width: 70% !important;
+  margin-left: 0;
+}
+
+.SmilingPic img {
+  width: 90px;
+  height: 90px;
+  padding: 2cqmin;
+  left: 10;
+  border: 1px solid white;
+  margin-top: 20px;
+}
+
+.LetsChat, .LetsExplore {
+  font-size: 13;
+  padding: 13;
+}
+
+.LetsChatTitle, .ExploreTitle {
+  font-size: 15;
+}
+
+.BottomOfPage {
+  height: 200;
+}
+
+.EcobearLogo img {
+  width: 300px; /* Ensure images don't exceed their container's width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 0; /* Remove border radius if not needed */
+}
+
+
+}
+
+@media screen and (min-width: 369px) and (max-width: 445px) {
+  
+  .Content-Section {
+  margin-top: 270;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 1100px;
+}
+
+.HiddenTitle {
+  display: block;
+  font-size: 30;
+}
+
+.AboutMeTitle {
+  display: none;
+}
+
+.AboutMeSummary {
+  font-size: 14px;
+}
+
+.Pictures img {
+  height: auto;
+  width: 300px;
+  margin-bottom: 0 !important;
+}
+
+.Pictures {
+  height: auto;
+  margin-bottom: 0 !important;
+}
+
+.Text {
+  margin-bottom: 100;
+  max-width: 70% !important;
+  margin-left: 0;
+}
+
+
+.SmilingPic img {
+  width: 90px;
+  height: 90px;
+  padding: 2cqmin;
+  left: 10;
+  border: 1px solid white;
+  margin-top: 20px;
+}
+
+.LetsChat, .LetsExplore {
+  font-size: 13;
+  padding: 13;
+}
+
+.LetsChatTitle, .ExploreTitle {
+  font-size: 15;
+}
+
+.BottomOfPage {
+  height: 200;
+}
+
+.EcobearLogo img {
+  width: 300px; /* Ensure images don't exceed their container's width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 0; /* Remove border radius if not needed */
+}
+
+
+}
+
+@media screen and (min-width: 310px) and (max-width: 369px) {
+  
+  .Content-Section {
+  margin-top: 500;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 1000px;
+}
+
+.HiddenTitle {
+  display: block;
+  font-size: 30;
+}
+
+.AboutMeTitle {
+  display: none;
+}
+
+.AboutMeSummary {
+  font-size: 14px;
+}
+
+.Pictures img {
+  height: auto;
+  width: 300px;
+  margin-bottom: 0 !important;
+}
+
+.Pictures {
+  height: auto;
+  margin-bottom: 0 !important;
+}
+
+.Text {
+  margin-bottom: 100;
+  max-width: 70% !important;
+  margin-left: 0;
+}
+
+
+.SmilingPic img {
+  width: 90px;
+  height: 90px;
+  padding: 2cqmin;
+  left: 10;
+  border: 1px solid white;
+  margin-top: 20px;
+}
+
+.LetsChat, .LetsExplore {
+  font-size: 13;
+  padding: 13;
+}
+
+.LetsChatTitle, .ExploreTitle {
+  font-size: 15;
+}
+
+.BottomOfPage {
+  height: 200;
+}
+
+.EcobearLogo img {
+  width: 300px; /* Ensure images don't exceed their container's width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 0; /* Remove border radius if not needed */
+}
+
+
+}

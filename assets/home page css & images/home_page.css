@@ -1,0 +1,794 @@
+body {
+  background: linear-gradient(to bottom, rgba(222, 200, 183, 0.8), rgba(222, 218, 219, 1.0), rgba(245, 245, 245, 1.0));
+  margin: 0;
+}
+
+.content_section {
+  background: #F5F5F5;
+  margin-top: 220px;
+}
+
+.BottomOfPage {
+  background: linear-gradient(to bottom, rgba(222, 200, 183, 0.8), rgba(222, 218, 219, 1.0));
+  height: 300px;
+  margin: 0;
+}
+
+.Landing_Page {
+  height: 500;
+}
+
+/*TOP NAV BAR CODE */
+
+.MinSittLogo img {
+    width: 120px; /* Add 'px' for proper CSS syntax */
+    height: auto; /* Add 'px' for proper CSS syntax */
+    margin-left: 30px; /* Add 'px' for proper CSS syntax */
+  }
+
+  .MinSittLogo:hover img {
+    opacity: 0.7; /* Reduce opacity on hover */
+  }
+
+
+  
+
+.Home a, .Projects a, .About a {
+  color: black;
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+  font-family: "Work Sans";
+}
+
+.navigation_bar {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.6);
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  padding: 10px;
+  height: 50;
+}
+
+.top_section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+.navbar a:hover {
+  color: #8E7f76;
+}
+
+.navbar ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  margin: 10px;
+  padding: 4px 30px;
+  position: relative;
+  border-right: 1px solid black;
+}
+
+.navbar li:last-child {
+  border-right: none;
+}
+
+.navbar li a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Hamburger menu styles */
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  margin-right: 40px;
+  margin-top: 0px;
+}
+
+.menu-icon-line {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 4px 0;
+}
+
+/* Media query for small screens */
+@media (max-width: 800px) {
+  .navbar ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: rgba(255, 255, 255, 1.0);
+    position: absolute;
+    top: 60px; /* Adjust according to your layout */
+    right: 0;
+    margin-left: 1000px;
+    border-top: 1px solid black;
+    font-size: 5px;
+  }
+
+  .navbar ul.show {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: flex;
+  }
+}
+
+
+/*PROFILE PICTURE & INTRO CODE */
+
+#profile-pic img{
+  position: relative;
+  border-radius: 50%;
+  overflow: auto;
+  background-position: center;
+  width: 250px; /* Adjust the width and height to your desired size */
+  height: 250px;
+  border: 1px solid white;
+  padding: 20px;
+  margin-top: 150px;
+  animation: fade-down 0.5s;
+}
+
+
+.middle_section {
+  display: flex;
+  justify-content: center;
+  padding: 60px;
+  gap: 20px;
+  font-family: "Work Sans";
+  max-height: 300px;
+  margin-left: 20px;
+  
+}
+
+#background_text {
+  max-width: 800px;
+}
+
+.MyName {
+  font-family: "Roboto Serif";
+  font-size: 70px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-left: 15px;
+  margin-top: 70;
+  animation: fade-up 0.5s;
+  color: #5A6A79
+}
+
+.Major {
+  font-size: 18px;
+  font-weight: 300;
+  margin-left: 20px;
+  animation: fade-up 2s;
+}
+
+.Intro {
+  font-size: 20px;
+  font-weight: 300;
+  width: 600px;
+  line-height: 1.5;
+  margin-left: 20px;
+  animation: fade-up 1s;
+}
+
+
+/* Scroll-to-top-button */
+
+.button_area {
+  display: flex;
+  justify-content: center;
+}
+
+.scroll-top-btn {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  background-color:rgba(135, 152, 168, 0.5);  /* Blue-ish background color */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 44px;
+  cursor: pointer;
+  margin-top: 60px;
+  z-index: 9999;
+}
+
+.scroll-top-btn:hover {
+   transform: translateY(-10px);
+   background-color: rgba(135, 152, 168);
+   transition: transform 0.5s ease
+
+}
+
+.scroll-top-btn img {
+  width: 30px;
+  height: 30px;
+}
+
+/*Project Overveview Title */
+
+.content_section {
+  display: flex;
+  flex-direction: row;
+  flex-direction: column;
+}
+
+.Project_Overview {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+
+.ProjectOverview {
+  font-family: "Work Sans";
+  font-size: 40px;
+  font-weight: 200; /* Sets a black border with 2px width around the <ul> element */
+  padding: 10px;
+  line-height: 10px;
+  display: flex;
+  justify-content: center;
+  width: 500px;
+}
+
+/* Snackpass Project Section and Ecobear */
+
+.Snackpass, .Ecobear {
+  width: 100%;
+  display: flex;
+  /* flex-direction: row-reverse; if I want to inverse the picture and text */
+  justify-content: center;
+  align-items: center;
+  font-family: "Work Sans";
+}
+
+.SnackpassTitle, .EcobearTitle {
+  font-family: "Roboto Serif";
+}
+
+#Snackpass_project_text, #Ecobear_project_text {
+  width: 600px; 
+  font-weight: 300;
+  line-height: 2.0;
+}
+
+
+#Snackpass_showcase_picture img, #Ecobear_showcase_picture img {
+  width: 350px; 
+  height: 350px; 
+  padding: 40px;
+  border-radius: 20%;
+}
+
+/* PortfolioWebsite Section*/
+
+.PortfolioWebsite {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+  align-items: center;
+  font-family: "Work Sans";
+}
+
+.PortfolioWebsiteTitle {
+  font-family: "Roboto Serif";
+}
+
+#PortfolioWebsite_showcase_picture img {
+  width: 350; 
+  height: auto; 
+  padding: 40px;
+  border-radius: 20%;
+}
+
+#PortfolioWebsite_project_text {
+  width: 600px; 
+  font-weight: 300;
+  line-height: 2.0;
+}
+
+
+/*General Animations*/
+
+#Snackpass_showcase_picture img:hover,  #PortfolioWebsite_showcase_picture img:hover, 
+#Ecobear_showcase_picture img:hover {
+  transition: transform 0.3s ease;
+  transform: translateY(-10px);
+}
+
+/*General Content Fonts */
+
+.PortfolioWebsiteTitle {
+  font-weight: bold;
+  font-size: 30px;
+  padding: 0px;
+  color: #8798AE
+}
+
+.SnackpassTitle {
+  font-weight: bold;
+  font-size: 30px;
+  padding: 0px;
+  color: #04BCFC
+}
+
+.EcobearTitle {
+  font-weight: bold;
+  font-size: 30px;
+  padding: 0px;
+  color: #89ab9e;
+}
+
+
+.Description {
+  font-size: 18px;
+  font-weight: 300px;
+}
+
+/* KEY FRAMES & ANIMATIONS */
+
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(30px) scale(0.9);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
+}
+
+@keyframes fade-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px) scale(0.9);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
+}
+
+.hidden {
+  opacity:  0;
+  transform: translateY(30px);
+  transition: all 1.3s;
+}
+
+.show {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+
+
+/*BOTTOM PAGE SPACING  */
+
+.Description {
+  margin-bottom: 90px;
+}
+
+/*BOTTOM PAGE*/
+
+.LetsChat {
+  flex-wrap: wrap;
+  margin-top: 30;
+}
+
+.LetsExplore {
+  flex-wrap: wrap;
+  margin-top: 30;
+  
+}
+
+.LetsChatTitle, .ExploreTitle {
+  font-size: 30;
+  font-weight: 500;
+  font-family: "Roboto Serif";
+}
+
+.BottomOfPage  a {
+ text-decoration: underline;
+ color: inherit;
+}
+
+.BottomOfPage {
+  font-family: "Work Sans";
+  display: flex;
+  justify-content: column;
+  justify-content: row;
+  justify-content: space-evenly;
+  
+}
+
+.SmilingPic img {
+    position: relative;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    right: 0;
+    top: 20;
+    border: 1px solid white;
+}
+
+.HomeBottom a:hover, .AboutBottom a:hover, .ProjectsBottom a:hover, .Linkedin a:hover, .Email a:hover {
+  color: #8E7f76;
+}
+
+@media screen and (min-width: 896px) and (max-width: 1030px) {
+  .MinSittLogo img {
+    width: 120px; /* Add 'px' for proper CSS syntax */
+    height: auto; /* Add 'px' for proper CSS syntax */
+    margin-left: 30px; /* Add 'px' for proper CSS syntax */
+}
+
+
+  .Intro {
+    width: 500px;
+  }
+
+
+  #PortfolioWebsite_project_text, #Snackpass_project_text, #Ecobear_project_text {
+  width: 400;
+}
+   
+
+}
+
+@media screen and (min-width: 700px) and (max-width: 896px) {
+
+  .Intro {
+    width: 400px;
+    font-size: 18px;
+  }
+
+  .MyName {
+    font-size: 65px;
+  }
+  
+  .Major {
+    font-size: 16px;
+    font-weight: 300;
+  }
+  
+
+  #PortfolioWebsite_project_text, #Snackpass_project_text, #Ecobear_project_text {
+  width: 350;
+}
+}
+   
+@media screen and (min-width: 700px) and (max-width: 800px) {
+
+  .MinSittLogo img {
+    width: 120px; /* Add 'px' for proper CSS syntax */
+    height: auto; /* Add 'px' for proper CSS syntax */
+    margin-left: 30px; /* Add 'px' for proper CSS syntax */
+}
+
+  .Intro {
+    width: 400px;
+    font-size: 18px;
+  }
+
+  .MyName {
+    font-size: 50px;
+    width: 550px;
+    margin-top: 0;
+  }
+
+  #profile-pic img {
+    width: 200px;
+    height: 200px;
+    margin-top: 500px;
+  }
+
+
+  .Landing_Page {
+    height: 800;
+  }
+  
+
+  #PortfolioWebsite_project_text, #Snackpass_project_text, #Ecobear_project_text {
+  width: 300;
+}
+
+.SnackpassTitle, .PortfolioWebsiteTitle, .EcobearTitle {
+  font-size: 23px;
+}
+
+
+.Role, .Description , .Time {
+  font-size: 15px;
+
+}
+
+.Description {
+  font-size: 15px;
+}
+
+.Major {
+  width: 500px;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.middle_section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#Snackpass_showcase_picture img, #Ecobear_showcase_picture img {
+  width: 300px; 
+  height: 300px; 
+  padding: 40px;
+  border-radius: 20%;
+}
+
+#PortfolioWebsite_showcase_picture img{
+  width: 300px; 
+  height: auto; 
+  padding: 40px;
+  border-radius: 20%;
+}
+
+}
+
+@media screen and (min-width: 500px) and (max-width: 700px) {
+
+  .MinSittLogo img {
+    width: 120px; /* Add 'px' for proper CSS syntax */
+    height: auto; /* Add 'px' for proper CSS syntax */
+    margin-left: 30px; /* Add 'px' for proper CSS syntax */
+}
+
+
+  .MyName {
+    width: 400px;
+    font-size: 40px;
+    margin-top: 0;
+  }
+  
+  .Major {
+    width: 400px;
+    font-size: 13px;
+    font-weight: 300;
+  }
+
+  .Intro {
+    width: 400px;
+    font-size: 17px;
+  }
+
+  #profile-pic {
+    margin-top: 250;
+  }
+
+  #profile-pic img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .Landing_Page {
+    height: 600;
+  }
+
+  .middle_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Snackpass, .PortfolioWebsite, .Ecobear {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
+  #Snackpass_project_text, #PortfolioWebsite_project_text, #Ecobear_project_text  {
+    width: 300px;
+  }
+
+  
+.SnackpassTitle, .PortfolioWebsiteTitle, .EcobearTitle {
+  font-size: 25px;
+}
+
+.Role, .Time {
+  font-size: 15px;
+}
+
+.Description {
+  font-size: 15px;
+}
+
+  .ProjectOverview {
+    font-size: 30px;
+    width: 300px;
+  }
+
+  #Snackpass_showcase_picture img, #Ecobear_showcase_picture img {
+    width: 350px; 
+    height: 350px; 
+    padding: 40px;
+    border-radius: 20%;
+  }
+  
+  #PortfolioWebsite_showcase_picture img{
+    width: 350px; 
+    height: auto; 
+    padding: 40px;
+    border-radius: 20%;
+  }
+  
+
+  .SmilingPic img {
+    width: 90px;
+    height: 90px;
+    padding: 2cqmin;
+    left: 10;
+    border: 1px solid white;
+    margin-top: 20px;
+  }
+
+  .LetsChat, .LetsExplore {
+    font-size: 13;
+    padding: 13;
+  }
+
+  .LetsChatTitle, .ExploreTitle {
+    font-size: 15;
+  }
+
+  .BottomOfPage {
+    height: 200;
+  }
+
+  .EcobearLogo img {
+    width: 300px; /* Ensure images don't exceed their container's width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 0; /* Remove border radius if not needed */
+  }
+
+}
+
+
+@media screen and (min-width: 300px) and (max-width: 500px) {
+
+  .MinSittLogo img {
+    width: 120px; /* Add 'px' for proper CSS syntax */
+    height: auto; /* Add 'px' for proper CSS syntax */
+    margin-left: 30px; /* Add 'px' for proper CSS syntax */
+}
+
+  .MyName {
+    width: 320px;
+    font-size: 30px;
+    margin-top: 0;
+  }
+  
+  .Major {
+    width: 250px;
+    font-size: 10px;
+    font-weight: 300;
+  }
+
+  .Intro {
+    width: 250px;
+    font-size: 13px;
+  }
+
+  #profile-pic {
+    margin-top: 200;
+  }
+
+  #profile-pic img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .middle_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Snackpass, .PortfolioWebsite, .Ecobear {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
+  #Snackpass_project_text, #PortfolioWebsite_project_text, #Ecobear_project_text  {
+    width: 300px;
+  }
+
+  
+.SnackpassTitle, .PortfolioWebsiteTitle, .EcobearTitle {
+  font-size: 20px;
+}
+
+
+
+.Role,  .Time {
+  font-size: 14px;
+}
+
+.Description {
+  font-size: 14px;
+}
+
+
+  .ProjectOverview {
+    font-size: 25px;
+    width: 300px;
+  }
+
+  #Snackpass_showcase_picture img, #Ecobear_showcase_picture img {
+    width: 300px; 
+    height: 300px; 
+    padding: 40px;
+    border-radius: 20%;
+  }
+  
+  #PortfolioWesbite_showcase_picture img {
+    width: 300px; 
+    height: auto; 
+    padding: 40px;
+    border-radius: 20%;
+  }
+  
+  .ReflectionText :last-child {
+    margin-bottom: 100;
+  }
+
+  .SmilingPic img {
+    width: 90px;
+    height: 90px;
+    padding: 2cqmin;
+    left: 10;
+    border: 1px solid white;
+    margin-top: 20px;
+  }
+
+  .LetsChat, .LetsExplore {
+    font-size: 13;
+    padding: 13;
+  }
+
+  .LetsChatTitle, .ExploreTitle {
+    font-size: 15;
+  }
+
+  .BottomOfPage {
+    height: 200;
+  }
+
+  .EcobearLogo img {
+    width: 300px; /* Ensure images don't exceed their container's width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 0; /* Remove border radius if not needed */
+  }
+  
+
+}
