@@ -175,12 +175,11 @@ background: #F5F5F5;
 /* CONTEXT SECTION */
 
 .Context {
-  font-family: "Work Sans";
   max-width: 1500px;
 }
 
 .ContextTitle {
-  font-family: "Work Sans";
+  font-family: "Roboto Serif";
   font-weight: bold;
   font-size: 40px;
   justify-content: center;
@@ -188,22 +187,86 @@ background: #F5F5F5;
   margin-left: 200;
 }
 
-.ContextSummary, .DesignathonPrompt {
+.ContextSummary {
   font-family: "Work Sans";
   font-weight: 350;
   font-size: 17px;
   width: 70%;
   margin-left: 200;
-  line-height: 1.5;
+  line-height: 2.0;
   display: flex;
   flex-wrap: wrap;
 }
 
+/* PROJECT DETAILS */
+
+.ProjectDetails {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 100;
+  margin-left: 50;
+  margin-right: 50;
+  gap: 5px; /* Adjust the gap as needed */
+}
+
+.Role {
+  max-width: 140;
+}
+
+.ProjectType, .Time, .Skills, .Software {
+  max-width: 200;
+}
+
+.Skills {
+  max-width: 140;
+}
+
+#ProjectDetailSection {
+  font-family: "Roboto Serif";
+}
+
+#ProjectDetailDescription {
+  font-family: "Work Sans";
+  font-size: 16;
+  line-height: 2.0;
+}
+
+@media screen and (max-width: 700px) {
+  
+  .ProjectDetails {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .Role {
+    margin-right: 65;
+  }
+
+  .Time {
+    margin-right: 25;
+  }
+
+  .ProjectType {
+    margin-left: 0;
+    margin-right: 75;
+  }
+
+  .Software {
+    margin-right: 5;
+  }
+  
+  .Skills {
+    margin-right: 60;
+  }
+}
+
 /*TITLES*/
 
-.GoalsTitle, .WireframesTitle, .ColorSchemesTitle, .AccessibilityTitle, .UserExperienceTitle, 
+.ContextTitle, .GoalsTitle, .WireframesTitle, .ColorSchemesTitle, .AccessibilityTitle, .UserExperienceTitle, 
 .DesignLogoTitle, .ReflectionTitle, .MidFiTitle {
-  font-family: "Work Sans";
+    font-family: "Roboto Serif";
     font-weight: bold;
     font-size: 40px;
     margin-left: 200;
@@ -259,7 +322,7 @@ background: #F5F5F5;
     font-size: 17px;
     width: 70%;
     margin-left: 200;
-    line-height: 1.5;
+    line-height: 2.0;
 }
 
 .ReflectionBullet, .MidFiBullet {
@@ -268,12 +331,12 @@ background: #F5F5F5;
   font-size: 17px;
   width: 50%;
   margin-left: 250;
-  line-height: 1.5;
+  line-height: 2.0;
   padding: 5;
 }
 
 .PageSubtitile {
-  font-family: "Work Sans";
+  font-family: "Roboto Serif";
   font-weight: bold;
   font-size: 18px;
   margin-left: 200;
@@ -418,6 +481,10 @@ align-items: center;
     margin-left: 0 !important;
     padding: 0 !important;
     justify-content: center;
+  }
+
+  .Context, .Goals, .WireframesSection, .ColorSchemeSection, .DesignLogoSection, .Mid-Fidelity-Wireframes, .AccessibilitySection, .UserExperienceSection, .Reflection {
+    margin-top: 100;
   }
 
 

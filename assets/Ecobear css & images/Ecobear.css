@@ -189,75 +189,68 @@ body {
 
   .ProjectDetails {
     display: flex;
-    flex-wrap: wrap;
-    width: 900px; /* specify units like px for width */
-    margin-left: 50px; /* specify units like px for margin */
-    flex-direction: column;
     flex-direction: row;
     justify-content: space-evenly;
-    position: realtive;
+    margin-bottom: 100;
+    gap: 5px; /* Adjust the gap as needed */
+  }
+  
+  .Role, .ProjectType, .Time, .Skills, .Software {
+    max-width: 200;
+  }
+  
+  #ProjectDetailSection {
+    font-family: "Roboto Serif";
+  }
+  
+  #ProjectDetailDescription {
+    font-family: "Work Sans";
+    font-size: 16;
+    line-height: 2.0;
   }
 
-  .ProjectDetails {
-    font-size: 18px;
-    display: flex;
-    justify-content: center;
-    justify-content: space-between; /* Evenly space out the divs */
-    flex-wrap: wrap; /* Allow items to wrap onto the next line */
-    margin-bottom: 100px;
-    margin-top: 50px;
+  .High-fi-PrototypeSection {
+    margin-top: 100;
+  }
+
+  @media screen and (max-width: 700px) {
+  
+    .ProjectDetails {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .Time {
+      margin-right: 60;
+    }
+
+    .ProjectType {
+      margin-left: 70;
+    }
+
+    .Software {
+      margin-right: 50;
+    }
+    
+    .Skills {
+      margin-right: 10;
+    }
+
 }
 
-.Files {
-  margin-right: 10px;
-}
-
- #FigmaFile {
-  text-decoration: none;
-  display: inline-block;
-}
-
-.Role,
-.Time,
-.ProjectType,
-.Software,
-.Skills,
-.Files {
-    flex: 0 0 calc(20% - 10px); /* Set the width of each div to 20% of the container width minus margin */
-    margin: 5px; /* Add margin to create space between the divs */
-}
-
-#ProjectDetailSection,
-#ProjectDetailDescription {
-    line-height: 1.7;
-    margin: 0; /* Remove default margin */
-}
 
 /* Media query for smaller viewports */
-@media screen and (max-width: 600px) {
-    .Role,
-    .Time,
-    .ProjectType,
-    .Software,
-    .Skills,
-    .Files {
-        flex: 0 0 calc(100% - 10px); /* Set the width of each div to 100% minus margin */
-    }
-}
 
 
-  .Time {
-    margin-left: 20;
-  }
   /* OVERVIEW SECTION */
 
   .Context {
-    font-family: "Work Sans";
     max-width: 1500px;
   }
 
   .ContextTitle {
-    font-family: "Work Sans";
+    font-family: "Roboto Serif";
     font-weight: bold;
     font-size: 40px;
     justify-content: center;
@@ -271,28 +264,12 @@ body {
     font-size: 17px;
     width: 70%;
     margin-left: 200;
-    line-height: 1.5;
+    line-height: 2.0;
     display: flex;
     flex-wrap: wrap;
   }
 
-  
 
-.Snackpass-Pages {
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-}
-
-.Snackpass-Pictures-1 {
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  flex-direction: row;
-  margin: 0;
-  padding: 5;
-  margin-left: 200px;
-}
 
 
 .Picture1 {
@@ -313,7 +290,7 @@ body {
 
 .PreliminaryResearch_Conceptualization_Title, .KeyFunctionalityTitle, .UserFlowLofiTitle, .MascotSectionTitle, 
 .ResultsTitle, .ReflectionTitle, .High-Fi-Title, .ShoppingScreenSectionTitle {
-    font-family: "Work Sans";
+    font-family: "Roboto Serif";
     font-weight: bold;
     font-size: 40px;
     margin-left: 200;
@@ -326,7 +303,7 @@ body {
 
 .HomePageSectionTitle, .ShoppingScreenSectionTitle, .AffirmationScreenTitle, .ImpactPageTitle, 
 .AIChatboxTitle {
-  font-family: "Work Sans";
+  font-family: "Roboto Serif";
   font-weight: bold;
   font-size: 30px;
   margin-top: 20;
@@ -342,7 +319,7 @@ body {
     font-size: 17px;
     width: 70%;
     margin-left: 200;
-    line-height: 1.5;
+    line-height: 2.0;
 }
 
 .AffirmationWalkthrough {
@@ -365,7 +342,7 @@ body {
   font-size: 17px;
   width: 50%;
   margin-left: 250;
-  line-height: 1.5;
+  line-height: 2.0;
   padding: 5;
  }
 
@@ -408,7 +385,7 @@ body {
 }
 
 .SustainableLivingTitle, .EmergingTechnologyTitle, .MissionStatementTitle {
-  font-family: "Work Sans";
+  font-family: "Roboto Serif";
   font-weight: bold;
   font-size: 17px;
   margin-left: 200;
@@ -416,7 +393,7 @@ body {
 }
 
 .UserFlowsMap {
-  font-family: "Work Sans";
+  font-family: "Roboto Serif";
   font-weight: bold;
   color: #89ab9e;
   font-size: 17px;
@@ -569,15 +546,6 @@ body {
     height: auto; /* Add 'px' for proper CSS syntax */
     margin-left: 30px; /* Add 'px' for proper CSS syntax */
 }
-
-  .ProjectDetails {
-      display: flex;
-      flex-direction: column;
-      flex-direction: row;
-      flex-wrap: wrap;
-      width: 50%;
-      margin-left: 0;
-  }
 }
 
 
@@ -614,14 +582,7 @@ body {
     justify-content: center;
   }
 
-  .ProjectDetails {
-    font-size: 17px;
-    display: flex;
-    flex-direction: row;
-    margin: 0 !important;
-    padding: 10;
-    justify-content: center;
-  }
+
 
   .ContextTitle, .KeyFunctionalityTitle, .PreliminaryResearch_Conceptualization_Title, .UserFlowLofiTitle, .MascotSectionTitle,
   .High-Fi-Title, .ResultsTitle, .ReflectionTitle {
@@ -751,14 +712,7 @@ body {
     justify-content: center;
   }
 
-  .ProjectDetails {
-    font-size: 14px;
-    display: flex;
-    flex-direction: row;
-    margin: 0 !important;
-    padding: 10;
-    justify-content: center;
-  }
+  
 
   .Time {
     margin-left: 0;
@@ -913,14 +867,7 @@ body {
     justify-content: center;
   }
 
-  .ProjectDetails {
-    font-size: 14px;
-    display: flex;
-    flex-direction: row;
-    margin: 0 !important;
-    padding: 10;
-    justify-content: center;
-  }
+
 
   .Time {
     margin-left: 0;
