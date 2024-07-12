@@ -6,12 +6,13 @@ body {
 .content_section {
   background: #F5F5F5;
   margin-top: 220px;
+  
 }
 
 .BottomOfPage {
   background: linear-gradient(to bottom, rgba(222, 200, 183, 0.8), rgba(222, 218, 219, 1.0));
   height: 300px;
-  margin: 0;
+
 }
 
 .Landing_Page {
@@ -250,7 +251,7 @@ body {
 
 /* Snackpass Project Section and Ecobear */
 
-.Snackpass, .Ecobear {
+.Snackpass, .PortfolioWebsite {
   width: 100%;
   display: flex;
   /* flex-direction: row-reverse; if I want to inverse the picture and text */
@@ -263,23 +264,55 @@ body {
   font-family: "Roboto Serif";
 }
 
-#Snackpass_project_text, #Ecobear_project_text {
-  width: 600px; 
+#Snackpass_project_text {
+  width: 550px; 
   font-weight: 300;
   line-height: 2.0;
+  margin-left: 50;
+}
+
+#Ecobear_project_text {
+  max-width: 550px; 
+  font-weight: 300;
+  line-height: 2.0;
+  margin-left: 150;
+}
+
+#Ecobear_showcase_picture {
+  margin-left: 70;
 }
 
 
-#Snackpass_showcase_picture img, #Ecobear_showcase_picture img {
-  width: 350px; 
-  height: 350px; 
-  padding: 40px;
-  border-radius: 20%;
+#Snackpass_showcase_picture img {
+  width: 600; 
+  height: auto; 
+  margin-left: 50;
+}
+
+
+#PortfolioWebsite_project_text {
+  width: 550px; 
+  font-weight: 300;
+  line-height: 2.0;
+  margin-left: 50;
+}
+
+
+#Ecobear_showcase_picture img {
+  width: 600; 
+  height: auto; 
+  margin-right: 50;
+}
+
+#PortfolioWebsite_showcase_picture img {
+  width: 600; 
+  height: auto; 
+  margin-left: 0;
 }
 
 /* PortfolioWebsite Section*/
 
-.PortfolioWebsite {
+.Ecobear {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -288,21 +321,12 @@ body {
   font-family: "Work Sans";
 }
 
+.PortfolioWesbite {
+  margin-bottom: 500px;
+}
+
 .PortfolioWebsiteTitle {
   font-family: "Roboto Serif";
-}
-
-#PortfolioWebsite_showcase_picture img {
-  width: 350; 
-  height: auto; 
-  padding: 40px;
-  border-radius: 20%;
-}
-
-#PortfolioWebsite_project_text {
-  width: 600px; 
-  font-weight: 300;
-  line-height: 2.0;
 }
 
 
@@ -436,7 +460,10 @@ body {
   color: #8E7f76;
 }
 
-@media screen and (min-width: 896px) and (max-width: 1030px) {
+
+  
+
+@media screen and (min-width: 896px) and (max-width: 1128px) {
   .MinSittLogo img {
     width: 120px; /* Add 'px' for proper CSS syntax */
     height: auto; /* Add 'px' for proper CSS syntax */
@@ -449,14 +476,22 @@ body {
   }
 
 
-  #PortfolioWebsite_project_text, #Snackpass_project_text, #Ecobear_project_text {
-  width: 400;
-}
+  #Ecobear_project_text, #PortfolioWebsite_project_text, #Snackpass_project_text {
+    width: 600;
+    margin-left: 150px;
+  }
+
+
+  .Snackpass, .PortfolioWebsite, .Ecobear {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
    
 
 }
 
-@media screen and (min-width: 700px) and (max-width: 896px) {
+@media screen and (min-width: 808px) and (max-width: 896px) {
 
   .Intro {
     width: 400px;
@@ -473,12 +508,30 @@ body {
   }
   
 
-  #PortfolioWebsite_project_text, #Snackpass_project_text, #Ecobear_project_text {
-  width: 350;
-}
+  #Ecobear_project_text, #PortfolioWebsite_project_text, #Snackpass_project_text {
+    width: 550px;
+    margin-left: 100px;
+  }
+
+  #Ecobear_showcase_picture {
+    margin: 0;
+  }
+
+  #Snackpass_showcase_picture img, #PortfolioWebsite_showcase_picture img, #Ecobear_showcase_picture img {
+    width: 550px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .Snackpass, .PortfolioWebsite, .Ecobear {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+   
 }
    
-@media screen and (min-width: 700px) and (max-width: 800px) {
+@media screen and (min-width: 700px) and (max-width: 808px) {
 
   .MinSittLogo img {
     width: 120px; /* Add 'px' for proper CSS syntax */
@@ -486,32 +539,44 @@ body {
     margin-left: 30px; /* Add 'px' for proper CSS syntax */
 }
 
-  .Intro {
-    width: 400px;
-    font-size: 18px;
-  }
 
   .MyName {
-    font-size: 50px;
-    width: 550px;
+    width: 400px;
+    font-size: 40px;
     margin-top: 0;
+  }
+  
+  .Major {
+    width: 400px;
+    font-size: 13px;
+    font-weight: 300;
+  }
+
+  .Intro {
+    width: 400px;
+    font-size: 17px;
+  }
+
+  #profile-pic {
+    margin-top: 250;
   }
 
   #profile-pic img {
-    width: 200px;
-    height: 200px;
-    margin-top: 500px;
+    width: 150px;
+    height: 150px;
   }
-
 
   .Landing_Page {
-    height: 800;
+    height: 600;
   }
-  
 
-  #PortfolioWebsite_project_text, #Snackpass_project_text, #Ecobear_project_text {
-  width: 300;
-}
+  .middle_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
 
 .SnackpassTitle, .PortfolioWebsiteTitle, .EcobearTitle {
   font-size: 23px;
@@ -533,25 +598,19 @@ body {
   font-weight: 300;
 }
 
-.middle_section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+
+#Ecobear_project_text, #PortfolioWebsite_project_text, #Snackpass_project_text {
+  width: auto;
+  margin-left: 100;
 }
 
-#Snackpass_showcase_picture img, #Ecobear_showcase_picture img {
-  width: 300px; 
-  height: 300px; 
-  padding: 40px;
-  border-radius: 20%;
+.Snackpass, .PortfolioWebsite, .Ecobear {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
 }
 
-#PortfolioWebsite_showcase_picture img{
-  width: 300px; 
-  height: auto; 
-  padding: 40px;
-  border-radius: 20%;
-}
+
 
 }
 
@@ -606,8 +665,14 @@ body {
     align-items: center !important;
   }
 
-  #Snackpass_project_text, #PortfolioWebsite_project_text, #Ecobear_project_text  {
-    width: 300px;
+  #PortfolioWebsite_project_text {
+    width: 400px;
+    margin: 0 auto;
+  }
+
+  #Ecobear_project_text, #Snackpass_project_text {
+    width: 400px;
+    margin: 0 auto;
   }
 
   
@@ -627,21 +692,6 @@ body {
     font-size: 30px;
     width: 300px;
   }
-
-  #Snackpass_showcase_picture img, #Ecobear_showcase_picture img {
-    width: 350px; 
-    height: 350px; 
-    padding: 40px;
-    border-radius: 20%;
-  }
-  
-  #PortfolioWebsite_showcase_picture img{
-    width: 350px; 
-    height: auto; 
-    padding: 40px;
-    border-radius: 20%;
-  }
-  
 
   .SmilingPic img {
     width: 90px;
@@ -665,13 +715,20 @@ body {
     height: 200;
   }
 
-  .EcobearLogo img {
-    width: 300px; /* Ensure images don't exceed their container's width */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 0; /* Remove border radius if not needed */
+  #Ecobear_showcase_picture {
+    margin: 0;
+  }
+
+
+
+  #Snackpass_showcase_picture img, #PortfolioWebsite_showcase_picture img, #Ecobear_showcase_picture img {
+    width: 550px;
+    height: auto;
+    margin: 0 auto !important;
   }
 
 }
+
 
 
 @media screen and (min-width: 300px) and (max-width: 500px) {
@@ -720,16 +777,14 @@ body {
     align-items: center !important;
   }
 
-  #Snackpass_project_text, #PortfolioWebsite_project_text, #Ecobear_project_text  {
-    width: 300px;
-  }
-
   
 .SnackpassTitle, .PortfolioWebsiteTitle, .EcobearTitle {
   font-size: 20px;
 }
 
-
+#Ecobear_showcase_picture {
+  margin-left: 0 !important;
+}
 
 .Role,  .Time {
   font-size: 14px;
@@ -739,24 +794,15 @@ body {
   font-size: 14px;
 }
 
-
   .ProjectOverview {
     font-size: 25px;
     width: 300px;
   }
 
-  #Snackpass_showcase_picture img, #Ecobear_showcase_picture img {
-    width: 300px; 
-    height: 300px; 
-    padding: 40px;
-    border-radius: 20%;
-  }
-  
-  #PortfolioWesbite_showcase_picture img {
-    width: 300px; 
-    height: auto; 
-    padding: 40px;
-    border-radius: 20%;
+  #Snackpass_showcase_picture img, #PortfolioWebsite_showcase_picture img, #Ecobear_showcase_picture img {
+    width: 300px;
+    height: auto;
+    margin: 0 auto;
   }
   
   .ReflectionText :last-child {
@@ -785,11 +831,15 @@ body {
     height: 200;
   }
 
-  .EcobearLogo img {
-    width: 300px; /* Ensure images don't exceed their container's width */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 0; /* Remove border radius if not needed */
+  #PortfolioWebsite_project_text {
+    width: 250px;
+    margin: 0 auto;
   }
-  
+
+  #Ecobear_project_text, #Snackpass_project_text {
+    width: 250px;
+    margin: 0 auto;
+  }
+
 
 }
