@@ -79,8 +79,14 @@ body {
   margin: 10px;
   padding: 4px 30px;
   position: relative;
-  border-right: 1px solid black;
+  
 }
+
+.Projects {
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+}
+
 
 .navbar li:last-child {
   border-right: none;
@@ -463,7 +469,7 @@ body {
 
   
 
-@media screen and (min-width: 896px) and (max-width: 1128px) {
+@media screen and (min-width: 896px) and (max-width: 1250px) {
   .MinSittLogo img {
     width: 120px; /* Add 'px' for proper CSS syntax */
     height: auto; /* Add 'px' for proper CSS syntax */
@@ -477,8 +483,8 @@ body {
 
 
   #Ecobear_project_text, #PortfolioWebsite_project_text, #Snackpass_project_text {
-    width: 600;
-    margin-left: 150px;
+    width: 500;
+    margin-left: 50px;
   }
 
 
@@ -495,7 +501,7 @@ body {
 
   .Intro {
     width: 400px;
-    font-size: 18px;
+    font-size: 17px;
   }
 
   .MyName {
@@ -503,14 +509,14 @@ body {
   }
   
   .Major {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 300;
   }
   
 
   #Ecobear_project_text, #PortfolioWebsite_project_text, #Snackpass_project_text {
     width: 550px;
-    margin-left: 100px;
+    margin-left: 70px;
   }
 
   #Ecobear_showcase_picture {
@@ -600,8 +606,13 @@ body {
 
 
 #Ecobear_project_text, #PortfolioWebsite_project_text, #Snackpass_project_text {
-  width: auto;
-  margin-left: 100;
+  width: 450px;
+  margin-left: 50;
+}
+
+#PortfolioWebsite_project_text {
+  width: 500px;
+  margin-left: 50;
 }
 
 .Snackpass, .PortfolioWebsite, .Ecobear {
